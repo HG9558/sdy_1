@@ -1,0 +1,247 @@
+.my-friend-detail-wrapper {
+    .friend-account {
+        width: 100%;
+        background: $bg-32;
+        border-radius: 16px;
+        padding: 28px 20px;
+        box-sizing: border-box;
+
+        .title {
+            cursor: pointer;
+            color: $c-81;
+
+            &:after {
+                content: "";
+                display: flex;
+                height: 1px;
+                background-color: $c-81;
+                margin-top: 20px;
+            }
+
+            .title-text {
+                color: $c-81;
+                font-weight: 500;
+            }
+        }
+
+        .account-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 27px;
+
+            .account-info_left {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 88px;
+                    margin-right: 20px;
+                }
+
+                .friend-name {
+                    color: $c-81;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+
+                    .level {
+                        margin-left: 17px;
+                        background: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);
+                        border-radius: 4px;
+                        width: 46px;
+                        height: 16px;
+                        display: inline-block;
+                        color: $c-39;
+                        text-align: center;
+                        line-height: 16px;
+                        font-size: 14px;
+                    }
+                }
+
+                .logo-date {
+                    color: $c-81;
+                    margin-top: 7px;
+                }
+            }
+
+            .account-info_right {
+                display: flex;
+                color: $c-a5;
+
+                .box {
+                    width: 130px;
+                    height: 80px;
+                    border: 1px solid #766645;
+                    border-radius: 6px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .box-title {
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                    }
+
+                    .amount {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .statistics-time {
+        width: 100%;
+        background: $bg-32;
+        border-radius: 16px;
+        padding: 28px 20px;
+        box-sizing: border-box;
+        margin-top: 10px;
+
+        .date-title {
+            color: #9A9DAA;
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 12px;
+        }
+
+        .date-search {
+            margin-top: 18px;
+            display: flex;
+            align-items: center;
+
+            input::-webkit-input-placeholder {
+                color: #9A9DAA;
+            }
+
+            .el-range-editor.el-input__inner {
+                background-color: $b-f5;
+                border-color: transparent;
+                box-shadow: inset 3px 3px 4px rgba(141, 92, 77, 0.15), inset -3px -3px 4px rgba(255, 255, 255, 0.25);
+                cursor: pointer;
+            }
+
+            /deep/.el-range-input {
+                background-color: transparent;
+                cursor: pointer;
+                color: $c-81;
+            }
+
+            /deep/ .el-range-separator {
+                color: $c-81;
+            }
+
+            /deep/ .el-icon-date {
+                color: $c-81;
+            }
+
+            .search-btn-group {
+                margin-left: 30px;
+                display: flex;
+                align-items: center;
+
+                .btn {
+                    Width: 134px;
+                    height: 40px;
+                    border-radius: 4px;
+                    text-align: center;
+                    cursor: pointer;
+                    line-height: 40px;
+                    font-size: 14px;
+                    color: #fff;
+                }
+
+                .search-btn {
+                    background: $c-a5;
+                    border-color: transparent;
+                    color: $c-f;
+                    margin-right: 18px;
+                    font-weight: 600;
+                }
+
+                .reset-btn {
+                    background: #C9B9AA;
+                    border-color: transparent;
+                    color: $c-f;
+                }
+            }
+        }
+
+        .date-box {
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+
+            .btn {
+                background-color: #C9B9AA;
+                color: $c-f;
+                border-radius: 4px;
+                margin-right: 10px;
+                width: 80px;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                font-size: 14px;
+                cursor: pointer;
+
+                &.on {
+                    background: $c-a5;
+                }
+            }
+        }
+    }
+
+    .record-list-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .record-list-item {
+            margin-bottom: 20px;
+            width: 32%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            box-sizing: border-box;
+            padding: 20px 0 0 20px;
+            position: relative;
+            // background-image: url('../img/real.png');
+            background-size: 100% 100%;
+            $liColor: real,
+            elec,
+            esport,
+            sport,
+            chesse,
+            lottery;
+
+            @each $x in $liColor {
+                $i: index($liColor, $x);
+
+                &.record-list-item-#{$i} {
+                    background-image: url('../img/' + $x + '.png');
+                }
+            }
+
+            .record-list-text {
+                color: $c-f;
+                font-size: 16px;
+            }
+
+            .record-list-number {
+                font-family: PingFang SC;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 39px;
+                color: $c-f;
+            }
+        }
+    }
+}

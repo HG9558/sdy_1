@@ -1,0 +1,99 @@
+.add-bank-card-dialog {
+    padding: 10px 20px;
+    .add-bank-card-form-wrapper {
+        .add-bank-card-form {
+            /deep/ .el-form-item {
+                .el-form-item__label {
+                    color: #ffffff;
+                    &::before {
+                        color: inherit;
+                    }
+                }
+                .el-form-item__error {
+                    white-space: nowrap;
+                }
+            }
+            .sm-code-input {
+                cursor: pointer;
+                /deep/ .el-form-item__content {
+                    @include flex();
+                    .sm-code-container {
+                        flex-shrink: 0;
+                        .g-button {
+                            margin-left: 30px;
+                            width: 120px;
+                            height: 36px;
+                            box-sizing: border-box;
+                            text-align: center;
+                            .el-button--success {
+                                border: 1px solid $ft-b;
+                                border-radius: 34px;
+                                color: $ft-b;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .add-bank-card-btn {
+        min-width: 120px;
+        height: 36px;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 46px auto 0;
+        border-radius: 34px;
+    }
+    .province,
+    .city {
+        width: 100%;
+    }
+    .tab-container {
+        @include flex(flex-start);
+        .tab-txt {
+            width: 130px;
+            font-size: 14px;
+            text-align: right;
+            padding-right: 12px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+        }
+        .tab-main {
+            @include flex(flex-start);
+            width: 450px;
+            margin-bottom: 18px;
+            .money-type {
+                width: 104px;
+                height: 40px;
+                border-radius: 4px;
+                text-align: center;
+                line-height: 40px;
+                margin-right: 20px;
+                color: #C8D2D2;
+                border: 1px solid #A5B3B2;
+                cursor: pointer;
+                font-size: 14px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.on {
+                    font-weight: 600;
+                    color: #0E3E2E;
+                    background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.multi-language {
+    .add-bank-card-dialog .tab-container {
+        align-items: baseline;
+        .tab-txt {
+            width: auto;
+            white-space: nowrap;
+        }
+    }
+}

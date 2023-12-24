@@ -1,0 +1,69 @@
+.info-msg-wrap {
+    background: #D5D7E9;
+    border-radius: 10px;
+    min-height: 440px;
+    padding: 23px 20px;
+    font-size: 14px;
+    .clear-div {
+        @include flex();
+        .clear-btn {
+            background-color: $bg-ead;
+            color: $c-1f;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            white-space: nowrap;
+        }
+    }
+    .info-msg-inner {
+        @include flex();
+        margin-bottom: 20px;
+        cursor: pointer;
+        .text-content {
+            width: 590px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-right: 15px;
+            color: #6F6F87;
+            &.text-content-text-gray {
+                color: $c-1f;
+            }
+        }
+        .create-time {
+            color: #6F6F87;
+            &.text-content-text-gray {
+                color: $c-1f;
+            }
+        }
+    }
+}
+
+.message-dialog {
+    .el-dialog__body {
+        .unbing-time-div {
+            text-align: center;
+        }
+        .unbing-div {
+            margin: 20px 0 30px;
+        }
+        .unbing-btn-div {
+            width: 150px;
+            height: 38px;
+            border: 1px solid $c-81;
+            font-size: 14px;
+            background: $bg-ead;
+            color: #3B4165;
+            border-radius: 34px;
+            margin: 0 auto;
+            // &:hover {
+            //     background-color: $c-81 !important;
+            //     color: $c-f !important;
+            // }
+        }
+    }
+}

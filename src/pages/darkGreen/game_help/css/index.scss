@@ -1,0 +1,89 @@
+    .help-box {
+        width: 100%;
+        padding-top: 125px;
+        @include common-bg;
+        .help-content {
+            width: 1140px;
+            height: 100%;
+            margin: 0 auto;
+            padding: 15px 0 45px;
+            @include flex(space-between, row, nowrap, flex-start);
+            .tabs {
+                width: 200px;
+                background: $primary-bg;
+                border-radius: 10px;
+                padding: 25px 0;
+                box-sizing: border-box;
+                .tab-item {
+                    height: 64px;
+                    line-height: 64px;
+                    font-size: 16px;
+                    color: #A5B3B2;
+                    cursor: pointer;
+                    position: relative;
+                    padding: 0 15px;
+                    box-sizing: border-box;
+                    .tab-item-inner {
+                        @include flex();
+                        .pic {
+                            flex-shrink: 0;
+                        }
+                        .icon {
+                            width: 34px;
+                        }
+                        .arrow {
+                            width: 17px;
+                        }
+                        .help-category-name {
+                            flex-grow: 1;
+                            text-align: center;
+                            white-space: nowrap;
+                            max-width: 105px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 182px;
+                        height: 1px;
+                        background: linear-gradient(90deg, rgba(64, 90, 83, 0) 6.5%, #365149 49.55%, rgba(64, 90, 83, 0) 94.75%);
+                        margin: 0 auto;
+                    }
+                    &:last-child {
+                        &:after {
+                            height: 0px;
+                        }
+                    }
+                }
+                .active {
+                    width: 100%;
+                    height: 64px;
+                    color: #27553F;
+                    background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+                }
+            }
+            .view {
+                width: 900px;
+                background: $primary-bg;
+                border-radius: 10px;
+                padding: 0 50px 50px 50px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .multi-language {
+      .help-box .help-content .tabs .tab-item {
+        .tab-item-inner {
+          height: 100%;
+          span{
+            text-align: center;
+            font-size: 14px;
+            line-height: normal;
+          }
+        }
+      }
+    }

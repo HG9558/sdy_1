@@ -1,0 +1,85 @@
+.add-bank-card-dialog {
+    padding: 10px 40px 20px;
+    .add-bank-card-form-wrapper {
+        .add-bank-card-form {
+            /deep/ .el-form-item {
+                .el-form-item__label {
+                    color: $c-4d;
+                    &::before {
+                        color: inherit;
+                    }
+                }
+            }
+            .sm-code-input {
+                cursor: pointer;
+                /deep/ .el-form-item__content {
+                    @include flex();
+                    .sm-code-container {
+                        flex-shrink: 0;
+                        .g-button {
+                            margin-left: 30px;
+                            width: 120px;
+                            height: 36px;
+                            box-sizing: border-box;
+                            text-align: center;
+                            .el-button--success {
+                                border: 1px solid $c-ff4;
+                                border-radius: 34px;
+                                color: $c-ff4;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .add-bank-card-btn {
+        width: 170px;
+        height: 48px;
+        font-size: 22px;
+        margin: 46px auto 0;
+        background: linear-gradient(312.61deg, #475B86 11.98%, #C5D6FF 165.62%);
+        border-radius: 34px;
+    }
+    .province,
+    .city {
+        width: 100%;
+    }
+    .tab-container {
+        @include flex(flex-start);
+        .tab-txt {
+            width: 130px;
+            font-size: 14px;
+            text-align: right;
+            padding-right: 12px;
+            box-sizing: border-box;
+        }
+        .tab-main {
+            @include flex(flex-start);
+            width: 450px;
+            margin-bottom: 18px;
+            .money-type {
+                width: 135px;
+                height: 40px;
+                border-radius: 4px;
+                text-align: center;
+                line-height: 40px;
+                color: $c-4d;
+                font-size: 14px;
+                margin-right: 20px;
+                background: transparent;
+                border: 1px solid $c-4d;
+                cursor: pointer;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                &.on {
+                    color: #fff;
+                    background: $c-4d;
+                    border-color: $c-ff4;
+                }
+            }
+        }
+    }
+}

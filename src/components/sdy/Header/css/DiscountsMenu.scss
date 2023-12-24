@@ -1,0 +1,28 @@
+.discounts-container {
+    @include flex(center, wrap, row, flex-start);
+    max-width: 100% !important;
+    height: 150px;
+    .discount-item {
+        width: 144px;
+        margin-right: 20px;
+        cursor: pointer;
+        position: relative;
+        .discounts-img {
+            width: 145px;
+            height: 88px;
+            position: relative;
+            background-size: 100% 100%;
+            @each $x in discount_chess discount_electronic discount_lottery discount_real discount_slot discount_spots {
+                &.#{$x} {
+                    background-image: url('../img/menu/discountMenu/' + $x + '.png');
+                }
+            }
+        }
+        .enter-game {
+            position: absolute;
+            left: 15px;
+            top: 20px;
+            color: #FAE7B1;
+        }
+    }
+}

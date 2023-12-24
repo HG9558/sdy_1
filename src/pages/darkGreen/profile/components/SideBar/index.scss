@@ -1,0 +1,193 @@
+.aside {
+    width: 200px;
+    margin-right: 43px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    padding-top: 26px;
+    padding-bottom: 16px;
+    background: rgba(14, 62, 46, 0.8);
+    border-radius: 10px;
+    /deep/ .el-divider--horizontal {
+        width: 172px;
+        margin: 28px 0 16px;
+    }
+    /deep/ .el-divider {
+        background-color: #27553F;
+    }
+}
+
+.profile-top {
+    padding: 0 10px 0 10px;
+    margin-bottom: 34px;
+    .user-container {
+        @include flex(flex-start, column);
+        position: relative;
+        .user-avatar {
+            width: 44px;
+            border-radius: 5px;
+        }
+        .username {
+            margin-top: 8px;
+            line-height: 20px;
+            color: #ffffff;
+        }
+    }
+    .text-center {
+        text-align: center;
+        position: relative;
+    }
+    .level-badge {
+        padding: 0 4px;
+        white-space: nowrap;
+        box-sizing: border-box;
+        min-width: 50px;
+        height: 14px;
+        font-size: 12px;
+        color: #27553F;
+        font-weight: 500;
+        position: absolute;
+        @include flex(center);
+        top: 33px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+        box-shadow: 0px 4px 4px rgba(0, 12, 54, 0.16);
+        backdrop-filter: blur(1.5px);
+        border-radius: 2.5px;
+    }
+    .user-info {
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        margin: 7px 0 31px;
+        flex-wrap: wrap;
+        .col {
+            text-align: center;
+            flex-basis: 0;
+            max-width: 100%;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .username {
+            color: #C8D2D2;
+            text-align: center;
+            font-weight: bolder;
+            line-height: 26px;
+            font-weight: normal;
+        }
+    }
+}
+
+.link-item {
+    text-align: center;
+    .ico-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 30px;
+        }
+    }
+    .txt-wrap {
+        margin-top: 5px;
+        font-size: 12px;
+        color: #ffffff;
+    }
+}
+
+.profile-nav {
+    margin-bottom: 16px;
+    .profile-nav-item {
+        width: 124px;
+        height: 47px;
+        margin: 0 auto;
+    }
+    .menu-item {
+        cursor: pointer;
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+}
+
+.menu-item {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    &:hover {
+        background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+        border-radius: 6px;
+        .txt-wrap {
+            color: #0E3E2E;
+            font-weight: 600;
+        }
+        .img-bg {
+            @each $icon in user vip discount wallet trade message bet suggest agent firend {
+                &.#{$icon} {
+                    background-image: url('../../img/sideBar/' + $icon + '_active.png');
+                }
+            }
+        }
+    }
+    &.router-link-active {
+        background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+        position: relative;
+        border-radius: 6px;
+        &::before{
+            content: '';
+            position: absolute;
+            left: -37px;
+            top: 2px;
+            border-radius: 0 3px 3px 0;
+            width: 3px;
+            height: 43px;
+            background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+        }
+        .txt-wrap {
+            color: #0E3E2E;
+            font-weight: 600;
+        }
+        .img-bg {
+            @each $icon in user vip discount wallet trade message bet suggest agent firend {
+                &.#{$icon} {
+                    background-image: url('../../img/sideBar/' + $icon + '_active.png');
+                }
+            }
+        }
+    }
+    .img-bg {
+        width: 26px;
+        height: 26px;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        @each $icon in user vip discount wallet trade message bet suggest agent firend {
+            &.#{$icon} {
+                background-image: url('../../img/sideBar/' + $icon + '.png');
+            }
+        }
+    }
+    .txt-wrap {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        padding-left: 20px;
+        color: #A5B3B2;
+    }
+}
+
+.multi-language {
+  .profile-nav .profile-nav-item {
+    width: 160px;
+    height: 60px;
+    .menu-item.router-link-active::before {
+      top: 50%;
+      transform: translateY(-50%);
+      left: -18px;
+    }
+  }
+}

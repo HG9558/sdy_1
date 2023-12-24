@@ -1,0 +1,205 @@
+.match-comp {
+    //  background: rgba(34, 35, 40, 1);
+     color: $c-cec;
+     font-family: 'PingFang HK';
+     .tabs {
+         width: 292px;
+         display: flex;
+         justify-content: space-around;
+         margin-bottom: 14px;
+         .tab-item {
+             font-size: 14px;
+             width: 50px;
+             height: 30px;
+             line-height: 30px;
+        }
+    }
+        .el-scrollbar {
+            margin-left: -7px;
+        }
+   
+       .giftTab {
+           margin: 5px auto 0;
+           width: 140px;
+           height: 25px;
+           margin: 0 auto 15px;
+           display: flex;
+           border-radius: 12px;
+           overflow: hidden;
+   
+           .tab-item {
+               width: 70px;
+               text-align: center;
+               line-height: 25px;
+               font-size: 12px;
+               // background-color: #3A3A3A;
+               cursor: pointer;
+           }
+       }
+   
+       .dateTab {
+           display: flex;
+           justify-content: space-around;
+           width: 293px;
+        //    margin-left: 6px;
+           .tab-item {
+               width: 86px;
+               border-radius: 6px;
+           }
+       }
+   
+       .tab-item {
+             border-radius: 6px;
+             transition: 0.2s;
+             text-align: center;
+             cursor: pointer;
+             background: rgba(77, 167, 243, 0.15);
+             border-radius: 4px;
+             color: #8ec7f6;
+             &.active {
+                 position: relative;
+                 color:  #ffffff;
+                 background: linear-gradient(180deg, #95D5FB 0.1%, #0287FD 13.17%, #7DDEFD 54.9%, #73DAFF 83.93%, #61B2F9 100%);
+                 border-radius: 4px;
+             }
+         }
+     .list-wrapper {
+         margin: 0 !important;
+         width: 311px;
+         height: 463px;
+         overflow-x: hidden;
+        .match-list {
+            color: #333333;
+            .match-item {
+                background: #dbedfc;
+                // box-shadow: 0px 0px 10px rgba(18, 18, 18, 0.6);
+                border-radius: 6px;
+                margin-bottom: 10px;
+                padding-bottom: 1px;
+                font-size: 12px;
+                padding-left: 6px;
+                box-sizing: border-box;
+                cursor: pointer;
+                .playing{
+                    box-shadow: 0 0 0px 2px #4DA7F3;
+                    width: 267px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    box-sizing: border-box;
+                }
+                .date-title {
+                    height: 28px;
+                    line-height: 28px;
+                    box-sizing: border-box;
+                    .match-detail-show {
+                        float: right;
+                        margin-right: 20px;
+                    }
+                }
+                .match-name-time {
+                    background: #ffffff;
+                    border-radius: 5px;
+                    // margin: 0 12px 10px 10px;
+                    padding: 8px 10px 10px;
+                    box-sizing: border-box;
+                    width: 268px;
+                    overflow: hidden;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    .leagueName {
+                        background: #ffffff;
+                        border-radius: 5px 5px 0px 0px;
+                        // height: 34px;
+                        float: left;
+                        span{
+                            display: inline-block;
+                            max-width: 120px;
+                            word-wrap: break-word;
+                        }
+                    }
+                    .match-time {
+                        margin-left: 5px;
+                        float: left;
+                    }
+                    .action {
+                        float: right;
+                        margin-right: 10px;
+                        // pointer-events: none;
+                        font-style: 13px;
+                        cursor: pointer;
+                        .room {
+                            background: url(../../img/live/icon-anchor-play.png) no-repeat left center;
+                            &.play{
+                                background: url(../../img/live/icon-anchor-play.png)  no-repeat center center/contain;
+                            } 
+                        }
+                        .event {
+                            background: url(../../img/live/icon-event-notPlay.png) no-repeat center center;
+                            &.play{
+                                background: url(../../img/live/icon-event-play.png) no-repeat center center/contain;
+                            } 
+                        }
+                        .icon {
+                            display: inline-block;
+                            width: 18px;
+                            height: 14px;
+                            margin-right: 5px;
+                            background-size: contain;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .no-date-title{
+                    margin-bottom: 10px;
+                }
+                .team-w {
+                    height: 59px;
+                    background: #edf6fe;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    width: 268px;
+                    padding: 3px 0 3px;
+                    .team {
+                        font-style: 12px;
+                        height: 27px;
+                        padding-left: 10px;
+                        box-sizing: border-box;
+                        padding: 3px 0 3px 10px;
+                        .img-box {
+                            width: 21px;
+                            vertical-align: middle;
+                        }
+                        .team-name {
+                            margin-left: 10px;
+                        }
+                        .vs {
+                            float: right;
+                            margin-right: 18px;
+                            color: #70b8f4;
+                        }
+                    }
+                }
+            }
+            .show {
+                // height: 234px;
+            }
+    
+        }
+     }
+     .no-more {
+         text-align: center;
+         line-height: 60px;
+     }
+    }
+    
+    .el-scrollbar:active>.el-scrollbar__bar, 
+    .el-scrollbar:focus>.el-scrollbar__bar, 
+    .el-scrollbar:hover>.el-scrollbar__bar {
+       opacity: 0 !important;
+    }
+    .gift-no-data {
+        margin-left: -7px;
+        img {
+            width: 100%;
+        }
+    }

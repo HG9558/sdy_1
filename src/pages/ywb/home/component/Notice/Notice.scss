@@ -1,0 +1,75 @@
+.notice {
+    width: 1200px;
+    overflow: hidden;
+    height: 40px;
+    @include flex();
+    background: linear-gradient(180deg, #EFF0F9 2.4%, #DFE5F3 100%);
+    box-shadow: 0px 2px 5px rgba(188, 169, 151, 0.3);
+    border-radius: 50px;
+    margin: 0 auto;
+    .notice-icon {
+        padding-top: 4px;
+        margin-left: 35px;
+        margin-right: 14px;
+        width: 16px;
+    }
+    .notice-content {
+        padding-right: 35px;
+        box-sizing: border-box;
+        width: 100%;
+        color: $c-3;
+        overflow: hidden;
+        font-weight: 400;
+        margin-top: 5px;
+        .notice-item {
+            cursor: pointer;
+            @include flex(flex-start);
+            float: left;
+            margin-right: 120px;
+            text-align-last: left;
+        }
+        .notice-title {
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .notice-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    /deep/ .notice-dialog{  
+        .el-dialog{
+            min-width: 474px;
+            .el-dialog__body{
+                padding: 0;
+            }
+        }   
+        .notice-dialog-cont{
+            max-height: 500px;
+            overflow:  hidden auto; 
+            &::-webkit-scrollbar{
+                width: 5px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background: #bbb;
+            }
+        }
+        .notice-dialog-img{
+            display: block;
+            width: 474px; 
+        }
+        .notice-title{
+            text-align: center;
+            font-size: 20px;
+            padding: 10px 0 0 0;
+        }
+        .noticec-dialog-text{
+            text-align: justify;
+            font-size: 18px;
+            padding: 0 10px 15px;
+            margin-top: 10px;
+            line-height: 28px; 
+        }
+    }
+}

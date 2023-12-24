@@ -1,0 +1,229 @@
+.vipinfo {
+    .vipinfo-top {
+        margin-bottom: 20px;
+        padding: 20px 15px 20px;
+        position: relative;
+        background: #DFE5F3;
+        border-radius:10px;
+        .content-title {
+            font-size: 16px;
+            color: $c-81;
+            font-weight: 500;
+            margin-bottom: 20px;
+            border-bottom: 1.2px solid #deccba;
+            box-shadow: 0px 1px 0px #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 52px;
+            /deep/.el-icon-arrow-left {
+                font-weight: bold;
+            }
+            .en-title {
+                width: 445px;
+            }
+        }
+        .header-left {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 50px;
+        }
+        .header-left-bottom {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            margin-top: 120px;
+            margin-left: -11px;
+            text-align: center;
+            .header-left-bottom-div {
+                text-align: center;
+                div {
+                    font-size: 14px;
+                }
+            }
+        }
+        .rule-title {
+            height: 35px;
+            line-height: 35px;
+            font-weight: 500;
+            color: $c-1f;
+            font-size: 14px;
+            border-bottom: 1px solid #D5D7E9;
+            margin-bottom: 20px;
+        }
+        .vipinfo-title {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 42px 0 15px;
+        }
+        .vipinfo-inner-thead.vipinfo-inner {
+            .vipinfo-inner-level {
+                margin: 0;
+                background:transparent;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+        .vipinfo-inner {
+            color: #3B4165;
+            background:#DFE5F3;
+            display: flex;
+            align-items: center;
+            &:nth-of-type(2n+1){
+                color: #E49A73;
+            }
+            &:nth-of-type(1){
+                color: #3B4165 !important;
+            }
+            .vipinfo-inner-level {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 34px;
+                text-align: center;
+                flex-grow: 1;
+                margin-left: 1px;
+                background-color: #fff;
+                margin-bottom: 1px;
+                font-size: 12px;
+                width: 10%;
+                font-weight: 400;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .vipinfo-inner-thead{
+            color: #3B4165 !important;
+            background: linear-gradient(90deg, #F2AE89 0%, #FFCCB0 50.83%, #F2AE89 100%);
+        }
+        .vipinfo-word {
+            font-size: 14px;
+            color: #3B4165;
+            line-height: 21px;
+            margin-bottom: 10px;
+        }
+    }
+    .middle{
+        border-radius: 0 0 10px 10px;
+        background: linear-gradient(180deg, #EFF0F9 2.4%, #DFE5F3 100%);
+        box-shadow:  0px 4px 8px 0px rgba(76, 78, 129, 0.4);
+    }
+    .un-return-watter-container {
+        background: linear-gradient(180deg, #EFF0F9 2.4%, #DFE5F3 100%);
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 20px;
+        .watter-title {
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #D5D7E9;
+            box-shadow: 0px 1px 0px #ffffff;
+            font-size: 14px;
+            margin-bottom: 12px;
+            color: $c-1f;
+        }
+        .table-header {
+            background: linear-gradient(90deg, #F2AE89 0%, #FFCCB0 50.83%, #F2AE89 100%);
+            display: flex;
+            border-radius: 5px 5px 0 0;
+            align-items: center;
+            color: #3B4165;
+            font-size: 14px;
+            font-weight: 500;
+            height: 30px;
+            .thead:first-child {
+                width: 100px;
+                text-align: center;
+            }
+            .thead:last-child {
+                width: 206px;
+                text-align: center;
+            }
+        }
+        .table-body {
+            .vipinfo-list-word {
+                display: flex;
+                .item-title {
+                    width: 100px;
+                    border: 0.5px solid $c-69;
+                    text-align: center;
+                    word-break: break-all;
+                    white-space: nowrap;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 1px 0;
+                    color: $c-1f;
+                }
+                .item {
+                    width: 81px;
+                    line-height: 40px;
+                    border: 0.5px solid $c-69;
+                    margin: 1px;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: normal;
+                    word-break: break-all;
+                    display: flex;
+                    flex-wrap: wrap;
+                    span {
+                        margin-right: 6px;
+                        display: block;
+                    }
+                    &:last-child {
+                        flex-grow: 1;
+                        text-align: left;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+}
+
+.el-carousel__item--card.is-active {
+    width: 422px;
+}
+
+@for $i from 0 through 9 {
+    .v-#{$i} {
+        @if ($i > 8) {
+            color: #989eac;
+        }
+        @else if ($i < 4 or $i>=7) {
+            color: #9b9b9b;
+        }
+        @else if($i >=4 and $i < 7) {
+            color: #855400;
+        }
+    }
+}
+
+.downgrade-day {
+    position: absolute;
+    right: 11px;
+    font-size: 11px;
+    bottom: -25px;
+}
+
+.multi-language {
+    .vipinfo .un-return-watter-container .table-body .vipinfo-list-word .item-title {
+        padding: 10px;
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+    .vipinfo .un-return-watter-container .table-header .thead:first-child {
+        padding: 0 10px;
+        white-space: nowrap;
+    }
+}

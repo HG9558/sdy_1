@@ -1,0 +1,211 @@
+/deep/ {
+    .el-input__inner {
+        background: rgba(34, 35, 40, 0.8);
+        border: 1px solid #545666;
+        box-sizing: border-box;
+        border-radius: 6px;
+        color: #808293;
+        position: relative;
+        padding-left: 44px;
+        text-indent: 10px;
+        font-size: inherit;
+        height: 41px;
+        &::-webkit-input-placeholder {
+            color: #808293;
+        }
+    }
+    .el-form-item {
+        margin-bottom: 40px;
+    }
+    .el-input__prefix {
+        width: 40px;
+        left: 0;
+        border-radius: 8px 0px 0px 8px;
+        @include flex(center);
+    }
+    .el-input__icon {
+        color: $c-f;
+        font-size: 20px;
+    }
+    .el-icon-circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        border: 1px solid $c-f;
+        vertical-align: middle;
+        box-sizing: border-box;
+        transform: translate(-10px, 1px);
+    }
+    .mobile-login-form {
+        position: relative;
+        .el-select {
+            width: 70px;
+            position: absolute;
+            left: 40px;
+            z-index: 1000;
+            top: 0;
+            .el-input__inner {
+                padding-left: 0;
+                padding-right: 10px;
+                border-radius: 0 4px 4px 0;
+                color: rgba(128, 130, 147, 1) !important;
+            }
+        }
+        .el-select__caret {
+            color: $c-f !important;
+            font-weight: bold !important;
+        }
+        .mobile-select {
+            .el-input__inner {
+                padding-left: 125px;
+            }
+        }
+        .el-popper {
+            margin-top: 0 !important;
+            .el-select-dropdown__item {
+                color: $c-60;
+                font-weight: normal;
+            }
+            .el-select-dropdown__list {
+                background-color: transparent;
+            }
+            .el-select-dropdown__item.selected {
+                background-color: rgba(231, 211, 160, 1) !important;
+            }
+            .el-select-dropdown__item.hover {
+                background-color: transparent;
+            }
+            .popper__arrow {
+                display: none;
+            }
+        }
+        .el-input__inner:focus {
+            border: 1px solid #545666;
+        }
+        .el-select .el-input.is-focus .el-input__inner {
+            border: 1px solid #545666;
+        }
+    }
+    .is-error+.el-select .el-input__inner {
+        border-color: #F56C6C;
+        border-left: none;
+    }
+    .el-select-dropdown {
+        left: auto !important;
+        top: auto !important;
+        background-color: rgba(34, 35, 40, 1);
+        border: 1px solid #545666;
+    }
+    .code-input {
+        .el-input__suffix {
+            right: 0;
+            .el-input__clear {
+                position: absolute;
+                top: 0;
+                right: 115px;
+            }
+        }
+    }
+}
+
+.layout-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: $c-f;
+    background-image: url(../img/login_bg.png);
+    // background-image: url(../img/login_bg_year.png);
+    background-size: 100% 100%;
+    .layout_center_main {
+        @include flex(center, column);
+        width: 940px;
+        background: rgba(40, 41, 47, 0.8);
+        // background-image: url(../img/login_bg_year_sm.png);
+        background-size: 100% 100%;
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 60px 0;
+        box-sizing: border-box;
+        top: 50%;
+        .slogan-container {
+            @include flex(center, column);
+            .slogan_img {
+                margin-bottom: 40px;
+                width: 250px;
+            }
+            .logo-title {
+                font-size: 26px;
+                font-family: Yuanti SC;
+                font-weight: 700;
+                color: rgba(231, 211, 160, 1);
+                letter-spacing: 0.16em;
+                margin: 22px 0 40px;
+            }
+        }
+    }
+}
+
+
+/* 登录注册共有表单样式 */
+
+.form-container {
+    width: 465px;
+    .forget-div {
+        color: $c-f;
+        font-weight: 500;
+        font-size: 14px;
+        margin: -10px 0 10px;
+        letter-spacing: 0px;
+        text-align: right;
+    }
+    /deep/.code-from {
+        margin-bottom: 0;
+    }
+    .goto-other {
+        @include flex();
+        margin-top: 11px;
+        color: $c-f;
+        font-size: 14px;
+        font-weight: 500;
+        .no-login {
+            color: $c-f;
+            cursor: pointer;
+        }
+        &.have-account {
+            cursor: pointer;
+            justify-content: flex-end;
+            .have-account-txt {
+                margin-right: 5px;
+                color: $c-f;
+            }
+        }
+    }
+}
+
+.multi-language {
+    .form-container {
+        /deep/ .code-input {
+            .el-input__inner {
+                width: 290px;
+            }
+
+            .el-input__suffix {
+                .el-button {
+                    white-space: pre-wrap;
+                    word-break: break-word;
+                    width: 168px;
+                    padding: 0 10px;
+                }
+                .el-input__clear {
+                    right: 185px;
+                }
+            }
+        }
+    }
+}

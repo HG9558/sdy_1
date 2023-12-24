@@ -1,0 +1,190 @@
+.aside {
+    width: 200px;
+    margin-right: 43px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    color: $ft-f6;
+    padding-top: 26px;
+    padding-bottom: 16px;
+    background: $bg-32;
+    box-shadow: 0 8px 24px 0 rgba(0, 14, 20, 0.16);
+    border-radius: 12px;
+    font-size: 14px;
+    text-align: center;
+    /deep/ .el-divider--horizontal {
+        width: 172 px;
+        margin: 20px 0;
+    }
+    /deep/ .el-divider {
+        background-color: $bg-3d;
+    }
+}
+
+.profile-top {
+    padding: 0 10px 0 10px;
+    margin-bottom: 20px;
+    .user-container {
+        @include flex(flex-start, column);
+        position: relative;
+        .user-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 5px;
+        }
+        .username {
+            font-weight: 400;
+            margin-top: 12px;
+            line-height: 20px;
+            color: $c-f;
+            margin-bottom: 5px;
+        }
+    }
+    .text-center {
+        text-align: center;
+        position: relative;
+    }
+    .level-badge {
+        padding: 0 4px;
+        white-space: nowrap;
+        box-sizing: border-box;
+        min-width: 50px;
+        height: 14px;
+        line-height: 14px;
+        font-size: 12px;
+        color: $c-39;
+        font-weight: 500;
+        background: linear-gradient( 135.44deg, $bg-fb 0.76%, $bg-ff 97%);
+        border-radius: 2.5px;
+        border: 0;
+        position: absolute;
+        top: 33px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.link-item {
+    text-align: center;
+    &.router-link-active .txt-wrap {
+        color: $c-cec;
+    }
+    .ico-wrap {
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 40px;
+            max-width: 40px;
+            max-height: 40px;
+        }
+    }
+    .txt-wrap {
+        font-size: 12px;
+        color: $ft-f6;
+    }
+}
+
+.profile-nav {
+    margin-bottom: 16px;
+    .profile-nav-item {
+        height: 48px;
+        width: 124px;
+        margin: 0 auto;
+        position: relative
+    }
+    .menu-item {
+        cursor: pointer;
+        padding: 0 10px;
+        margin: 20px 0;
+        border-radius: 6px;
+    }
+}
+
+.menu-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    transition: all 0.3s;
+    &:before {
+        position: absolute;
+        content: '';
+        left: -38px;
+        background-color: transparent;
+        height: 43px;
+        width: 3px;
+    }
+    .txt-wrap {
+        text-align: left;
+        font-size: 14px;
+    }
+    &:hover {
+        background: linear-gradient( 135.44deg, $bg-fb 0.76%, $bg-ff 97%);
+        border-radius: 6px;
+        &:before {
+            background: linear-gradient( 135.44deg, $bg-fb 0.76%, $bg-ff 97%);
+        }
+        .txt-wrap {
+            color: $c-39;
+            font-weight: 600;
+        }
+        .img-bg {
+            @each $icon in user vip discount wallet trade message bet share  suggest agent {
+                &.#{$icon} {
+                    background-image: url('../../img/sideBar/' + $icon + '_active.png');
+                }
+            }
+        }
+    }
+    &.router-link-active {
+        background: linear-gradient( 135.44deg, $bg-fb 0.76%, $bg-ff 97%);
+        border-radius: 6px;
+        .txt-wrap {
+            color: $c-39;
+            font-weight: 600;
+        }
+        .img-bg {
+            @each $icon in user vip discount wallet trade message bet share suggest agent {
+                &.#{$icon} {
+                    background-image: url('../../img/sideBar/' + $icon + '_active.png');
+                }
+            }
+        }
+        &:before {
+            background: linear-gradient( 135.44deg, $bg-fb 0.76%, $bg-ff 97%);
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+    }
+    .img-bg {
+        width: 26px;
+        height: 26px;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @each $icon in user vip discount wallet trade message bet share suggest agent {
+            &.#{$icon} {
+                background-image: url('../../img/sideBar/' + $icon + '.png');
+            }
+        }
+    }
+    .txt-wrap {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        padding-left: 20px;
+    }
+}
+
+.multi-language {
+    .profile-nav .profile-nav-item {
+        width: 160px;
+        height: 60px;
+        .menu-item.router-link-active::before {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -18px;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.footer-container {
+    width: 100%;
+    height: 550px;
+    background:  linear-gradient(135.44deg, #454F7B 0.76%, #222943 97%);
+    padding-top: 90px;
+    box-sizing: border-box;
+    @include flex(flex-start, column);
+    .footer_icon_container{
+        img{
+            width: 1151.3px;
+        }
+    }
+    .footer_main_container {
+        margin-top: 14px;
+        position: relative;
+        width: 100%;
+        .line{
+            margin: auto;
+            width: 1142px;
+            border-top: 1.5px solid #D5D7E9;
+        }
+       
+        .notice-msg {
+            width: 984px;
+            margin: auto;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.6);
+            padding-top: 20px ;
+           text-align: center;
+        }
+        .brand_wrapper {
+            @include flex(center);
+            margin:40px 0 26px 0;
+            img{
+                width: 1074px;
+            }
+        }
+    }
+    .footer_link_box {
+        width: 1160px;
+        @include flex(center);
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 40px;
+        .link_item {
+            position: relative;
+            cursor: pointer;
+            padding: 0 30px;
+            // border-right: 1.2px solid rgba(255, 255, 255, 0.6);
+            &::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 4px;
+                width: 1px;
+                height: 14px;
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+            &:last-child {
+                margin-right: 0;
+                &::after{
+                    content: "";
+                    width: 0;
+                 
+                }
+            }
+        }
+    }
+    .copyright{
+        margin-top: 23px;
+        color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        font-size: 12px;
+    }
+}

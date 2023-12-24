@@ -1,0 +1,242 @@
+.my-friend-detail-wrapper {
+    .friend-account {
+        width: 100%;
+        padding: 28px 20px;
+        box-sizing: border-box;
+
+        .title {
+            cursor: pointer;
+            color: #C8D2D2;
+
+            &:after {
+                content: "";
+                display: flex;
+                height: 1px;
+                background-color: #27553F;
+                margin-top: 20px;
+            }
+
+            .title-text {
+                color: #C8D2D2;
+                font-weight: 500;
+            }
+        }
+
+        .account-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 27px;
+
+            .account-info_left {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 88px;
+                    margin-right: 20px;
+                }
+
+                .friend-name {
+                    color: #EDB77F;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+
+                    .level {
+                        margin-left: 17px;
+                        background: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);
+                        border-radius: 4px;
+                        width: 46px;
+                        height: 16px;
+                        display: inline-block;
+                        color: #27553F;
+                        text-align: center;
+                        line-height: 16px;
+                        font-size: 14px;
+                    }
+                }
+
+                .logo-date {
+                    color: #889796;
+                    margin-top: 7px;
+                }
+            }
+
+            .account-info_right {
+                display: flex;
+                color: #EDB77F;
+
+                .box {
+                    width: 130px;
+                    height: 80px;
+                    border: 1px solid #845232;
+                    border-radius: 6px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .box-title {
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                    }
+
+                    .amount {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .statistics-time {
+        width: 100%;
+        padding: 28px 20px;
+        box-sizing: border-box;
+        margin-top: 10px;
+
+        .date-title {
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 12px;
+        }
+
+        .date-search {
+            margin-top: 18px;
+            display: flex;
+            align-items: center;
+
+            input::-webkit-input-placeholder {
+                color: #A5B3B2;
+            }
+
+            .el-range-editor.el-input__inner {
+                color: #FFFFFF;
+                background: rgba(8, 45, 32, 0.9);
+                border: 1px solid #427453;
+                cursor: pointer;
+            }
+
+            /deep/.el-range-input {
+                background-color: transparent;
+                cursor: pointer;
+                color: #FFFFFF;
+            }
+
+            /deep/ .el-range-separator {
+                color: #FFFFFF;
+            }
+
+            /deep/ .el-icon-date {
+            }
+
+            .search-btn-group {
+                margin-left: 30px;
+                display: flex;
+                align-items: center;
+
+                .btn {
+                    Width: 134px;
+                    height: 40px;
+                    border-radius: 4px;
+                    text-align: center;
+                    cursor: pointer;
+                    line-height: 40px;
+                    font-size: 14px;
+                    color: #fff;
+                }
+
+                .search-btn {
+                    background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+                    border-color: transparent;
+                    color: #27553F;
+                    margin-right: 18px;
+                    font-weight: 600;
+                }
+
+                .reset-btn {
+                    background: #27553F;
+                    border-color: transparent;
+                    color: #C8D2D2;
+                }
+            }
+        }
+
+        .date-box {
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+
+            .btn {
+                background: #27553F;
+                color: #C8D2D2;
+                border-radius: 4px;
+                margin-right: 10px;
+                width: 80px;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                font-size: 14px;
+                cursor: pointer;
+
+                &.on {
+                    background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+                    color: #27553F;
+                }
+            }
+        }
+    }
+
+    .record-list-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .record-list-item {
+            margin-bottom: 20px;
+            width: 32%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            box-sizing: border-box;
+            padding: 20px 0 0 20px;
+            position: relative;
+            // background-image: url('../img/real.png');
+            background-size: 100% 100%;
+            $liColor: real,
+            elec,
+            esport,
+            sport,
+            chesse,
+            lottery;
+
+            @each $x in $liColor {
+                $i: index($liColor, $x);
+
+                &.record-list-item-#{$i} {
+                    background-image: url('../img/' + $x + '.png');
+                }
+            }
+
+            .record-list-text {
+                color: #ffffff;
+                font-size: 16px;
+            }
+
+            .record-list-number {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 39px;
+                color: #ffffff;
+            }
+        }
+    }
+}

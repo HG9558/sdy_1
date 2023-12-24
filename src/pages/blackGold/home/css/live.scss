@@ -1,0 +1,85 @@
+.live-container {
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    // padding-bottom: 60px;
+    box-sizing: border-box;
+    background: url('../../img/gride_barckground_top.png') 214px 0px no-repeat, url("../../img/gride_barckground_bottom.png") 0px 180px no-repeat;
+    background-size: 987px 842px;
+    background-color: rgba(34, 35, 40, 0.8);
+
+    .live-tabs {
+        padding: 32px 16px 28px 16px;
+        @include flex(flex-start);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .live-tab-item {
+        text-align: center;
+        transition: 0.2s;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        color: #C8D2D2;
+        cursor: pointer;
+        background-size: 100% 100%;
+        border-radius: 6px;
+        margin-right: 20px;
+        @include flex(center);
+
+        .tab-img {
+            width: 20px;
+            margin-right: 8px;
+        }
+        .live-tips-two {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 55%;
+                transform: translateY(-50%) matrix(-1, 0, 0, 1, 0, 0);
+                width: 2px;
+                height: 18px;
+                background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                left: 90%;
+                top: 55%;
+                transform: translateY(-50%);
+                width: 64px;
+                height: 50px;
+                background: url("../../img/live/live_img.png") no-repeat center center;
+                background-size: contain;
+            }
+            .tab-directSeeding {
+                position: relative;
+                margin-left: 20px
+            }
+        }
+        .right {
+            position: absolute;
+            left: 900px;
+            &::before {
+                left: 90%;
+                width: 150px;
+                background: url("../../img/live/schedule_img.png") no-repeat center center;
+                background-size: contain;
+            }
+        }
+
+
+        // &.active {
+        //     background-image: url("../../img/live/btn_bg_active.png");
+        // }
+    }
+    .live-tab-item-two {
+        margin-left: 690px;
+    }
+
+}

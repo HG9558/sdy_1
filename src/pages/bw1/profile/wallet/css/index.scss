@@ -1,0 +1,62 @@
+.top-div {
+    background: linear-gradient(180deg, #EFF0F9 2.4%, #DFE5F3 100%);
+    box-shadow: 0px 4px 8px 0px rgba(76, 78, 129, 0.4);
+    border-radius:0 0 10px 10px;
+    padding: 0 24px 24px;
+    margin-bottom: 42px;
+    position: relative;
+    .no-data-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .no-data-img {
+            width: 98px;
+            margin-top: 29px;
+        }
+        .no-data-txt {
+            font-size: 14px;
+            margin: 16px 0 40px;
+            text-align: center;
+        }
+    }
+    .no-data-gif {
+        text-align: center;
+        margin: 30px 0;
+        img {
+            display: inline-block;
+        }
+        span {
+            display: block;
+        }
+    }
+}
+
+.wallet-withdraw {
+    background: linear-gradient(180deg, #EFF0F9 2.4%, #DFE5F3 100%);
+    box-shadow: 0px 4px 8px 0px rgba(76, 78, 129, 0.4);
+    .content-title_inner{
+        @include flex();
+        border-bottom: 1.2px solid #D5D7E9;
+        .title{
+            top: 22px;
+            left: 23px;
+            color: $c-1f;
+        }
+        .en-title{
+            height:auto;
+            width: 449px;
+        }
+    }
+    .wallet-title {
+        .wallet-num {
+            color: #505679;
+            font-size: 14px;
+            margin-top: 30px;
+            min-width: 120px;
+            text-align: left;
+            .cry {
+                margin-left: 25px;
+            }
+        }
+    }
+}

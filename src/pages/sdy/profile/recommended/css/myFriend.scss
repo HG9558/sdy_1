@@ -1,0 +1,86 @@
+.my-friend-wrapper {
+    width: 100%;
+    background: $bg-32;
+    border-radius: 16px;
+    padding: 28px 20px;
+    box-sizing: border-box;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    .title {
+        cursor: pointer;
+        &:after {
+            content: "";
+            display: flex;
+            height: 1px;
+            background-color: $c-39;
+            margin-top: 20px;
+        }
+        .title-text {
+            color: $c-f;
+        }
+    }
+    .content {
+        padding-top: 20px;
+        .search-myfriend {
+            /deep/ .el-form-item {
+                display: flex;
+                flex-direction: column;
+                justify-self: flex-start;
+                align-items: flex-start;
+                .el-form-item__label {
+                    text-align: left;
+                    color: #fff;
+                }
+                .el-form-item__content {
+                    margin-left: 0px !important;
+                    input::-webkit-input-placeholder {
+                        color: #fff;
+                    }
+                    .el-input__inner {
+                        width: 100%;
+                        background-color: $c-348;
+                        border-color: $c-54;
+                        color: #fff;
+                        .el-range-input {
+                            background-color: $c-348;
+                            color: #fff;
+                        }
+                        .el-range-separator {
+                            color: #fff;
+                        }
+                        .el-icon-date {
+                            color: #fff;
+                        }
+                    }
+                    .el-input__inner .el-range-input {
+                        color: #fff;
+                    }
+                    .friend-account {
+                        width: 240px;
+                        input::-webkit-input-placeholder {
+                            color: rgba(255, 255, 255, 0.35);
+                        }
+                    }
+                    .btn {
+                        width: 134px;
+                        height: 40px;
+                        border-radius: 4px;
+                        font-weight: normal;
+                        margin-bottom: 20px;
+                    }
+                    .search-btn {
+                        background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+                        border-color: transparent;
+                        color: $c-39;
+                        font-weight: 600;
+                    }
+                    .reset-btn {
+                        background: $c-39;
+                        border-color: transparent;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

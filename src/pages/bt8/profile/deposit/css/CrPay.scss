@@ -1,0 +1,201 @@
+.cr-pay-container {
+    padding-top: 16px;
+    min-height: 570px;
+    position: relative;
+    .tip {
+        color: $c-4d;
+    }
+    .select-pay-container {
+        margin: 10px 0 26px;
+        @include flex(flex-start);
+        .select-pay-item {
+            @include flex(flex-start);
+            position: relative;
+            cursor: pointer;
+            min-width: 160px;
+            height: 45px;
+            padding: 10px;
+            margin-right: 53px;
+            background: $c-f1;
+            border: 0.5px solid $c-f;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 56, 255, 0.06), inset 1px 1px 0px #FFFFFF;
+            border-radius: 6px;
+            .logo {
+                width: 26px;
+                margin-right: 7px;
+            }
+            .is-select {
+                width: 15px;
+                position: absolute;
+                top: 6px;
+                right: 7px;
+                width: 15px;
+            }
+            .pay-name {
+                @include flex(flex-start, column, nowrap, flex-start);
+                font-size: 12px;
+                color: $c-4d;
+                .text {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    .select-pay-form {
+        .select-box {
+            .select-card-container {
+                @include flex(flex-start);
+                margin: 10px 0 30px;
+                .select-item {
+                    width: 100px;
+                    height: 38px;
+                    background: $c-ff35;
+                    color: $c-f;
+                    @include flex(center, row, nowrap, center);
+                    border-radius: 4px;
+                    cursor: pointer;
+                    margin-right: 8px;
+                    font-size: 12px;
+                    &:hover,
+                    &.active {
+                        background: $c-4d;
+                    }
+                }
+            }
+        }
+        .select-form-container {
+            @include flex(flex-start, row, nowrap, center);
+            margin-bottom: 10px;
+            .handle-btn {
+                width: 79px;
+                height: 29px;
+                background: $c-4d;
+                border-radius: 6px;
+                margin-left: 10px;
+                color: $c-f;
+                @include flex(center, row, nowrap, center);
+                cursor: pointer;
+                font-size: 12px;
+                &:first-child {
+                    margin-left: 20px;
+                }
+                &.remindActive {
+                    background: $c-ff35;
+                }
+                &:hover {
+                    background-color: $c-ff3;
+                }
+            }
+        }
+        .select-info {
+            .info-item {
+                margin-bottom: 10px;
+                color: $c-4d;
+                &.tip-text {
+                    color: $c-ff6;
+                }
+            }
+        }
+    }
+    .pay-card-list-container {
+        padding: 16px 30px 30px;
+        margin: 13px 0 24px;
+        background-color: $c-ff1;
+        border-radius: 4px;
+        text-align: center;
+        .card-title {
+            font-size: 12px;
+            font-weight: 500;
+            color: $c-4d;
+        }
+        .card-list-wrapper {
+            @include flex(flex-start, row, wrap);
+            margin-top: 18px;
+            font-size: 12px;
+            .card-list {
+                @include flex(center, column, nowrap, center);
+                margin-bottom: 10px;
+                width: 12%;
+                .text {
+                    color: $c-ff5;
+                }
+            }
+        }
+    }
+    .box-no-deposit-rode {
+        @include flex(center, column, nowrap, center);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .rode-text {
+            position: relative;
+            top: 10px;
+            left: -15px;
+        }
+    }
+    .cr-dialog {
+        .cr-pay-dialog {
+            font-size: 15px;
+            @include flex(center, column, nowrap, center);
+            .qr-code {
+                width: 180px;
+                height: 180px;
+            }
+            .cr-line {
+                margin-top: 22px;
+                .cr-title {
+                    color: $c-ff4;
+                }
+                .cr-value {
+                    color: $c-3;
+                }
+            }
+            .tip {
+                font-size: 18px;
+                color: $c-4d;
+            }
+            .cr-button {
+                width: 160px;
+                height: 40px;
+                border-radius: 8px;
+                height: 40px;
+                border-color: transparent;
+                font-size: 16px;
+                display: flex;
+                margin: 22px 0;
+            }
+        }
+        /deep/ .el-dialog__footer {
+            .el-button {
+                font-size: 15px;
+                border-radius: 34px;
+            }
+        }
+    }
+    .circle-outer {
+        width: 48px;
+        height: 48px;
+        background: $c-fc;
+        cursor: pointer;
+        box-shadow: 0px 3.47725px 3.47725px rgba(0, 56, 255, 0.06), inset 0.869312px 0.869312px 0px #FFFFFF;
+        border-radius: 45px;
+        @include flex(center);
+        margin-bottom: 9px;
+        .circle-inner {
+            width: 40px;
+            height: 40px;
+            border: 0.43466px solid $c-97;
+            box-sizing: border-box;
+            border-radius: 45px;
+            @include flex(center);
+            .card-logo {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

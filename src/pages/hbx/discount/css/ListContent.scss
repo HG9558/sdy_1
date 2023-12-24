@@ -1,0 +1,79 @@
+  .discount-main {
+      @include flex(space-between, row, wrap, flex-start);
+      width: 980px;
+      background: rgba(40, 41, 47, 0.8);
+      backdrop-filter: blur(4px);
+      border-radius: 10px;
+      margin-left: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 500px;
+      align-content: flex-start;
+      .out-date {
+          .notice-mark {
+              filter: grayscale(100%);
+          }
+          &:last-child {
+              margin-bottom: 0px;
+          }
+      }
+      .discount-item-box {
+          width: 462px;
+          height: 220px;
+          margin-bottom: 20px;
+          cursor: pointer;
+          position: relative;
+          .discount-item-img {
+              width: 100%;
+              height: 100%;
+              border-radius: 20px;
+              border-bottom-left-radius: 0;
+          }
+          .mark {
+              width: 56px;
+              height: 56px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              box-sizing: border-box;
+          }
+          .notice-mark {
+              position: absolute;
+              left: -2px;
+              bottom: 0;
+              width: 188px;
+              height: 28px;
+              @include flex(flex-start);
+              font-size: 12px;
+              padding-left: 30px;
+              color: #fefefe;
+              // background-image: url('../img/time_bg.png');
+              background-size: cover;
+              box-sizing: border-box;
+              .watch {
+                  margin-right: 4px;
+              }
+              &.exits {
+                  // background-image: url('../img/long_bg.png');
+                  width: 89px;
+                  height: 25px;
+                  padding-left: 27px;
+                  line-height: 25px;
+              }
+              img {
+                  position: absolute;
+                  left: 0;
+                  bottom: -6px;
+                  width: 100%;
+                  &.long {
+                      width: 89px;
+                  }
+              }
+              span {
+                  position: relative;
+                  z-index: 1;
+                  // transform: translate(0, -1px);
+              }
+          }
+      }
+  }

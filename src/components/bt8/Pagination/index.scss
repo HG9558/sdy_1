@@ -1,0 +1,62 @@
+.el-pagination {
+    /deep/ .btn-prev {
+        width: 35px;
+        height: 30px;
+        background: $c-4d;
+        border-radius: 4px;
+        padding-left: 12px;
+        .el-icon {
+            color: $c-f;
+            font-size: 15px;
+        }
+    }
+    /deep/ .btn-next {
+        background: $c-4d;
+        border-radius: 4px;
+        padding-left: 12px;
+        width: 35px;
+        height: 30px;
+        .el-icon {
+            color: $c-f;
+            font-size: 15px;
+        }
+    }
+    /deep/ button:disabled {
+        background: $c-ff35;
+        border-radius: 4px;
+        padding-left: 12px;
+        width: 35px;
+        height: 30px;
+        .el-icon {
+            color: $c-f;
+            font-size: 15px;
+        }
+    }
+    /deep/ span:not([class*="suffix"]) {
+        height: 30px;
+        color: $c-ff4;
+    }
+    /deep/ .el-pager li {
+        width: 35px;
+        height: 30px;
+        background: $c-ff12;
+        border-radius: 4px;
+        color: $c-4d;
+        margin: 0 1px;
+    }
+    /deep/ .el-pager li.active {
+        color: $c-f;
+        background: $c-4d;
+        border-radius: 4px;
+    }
+    /deep/ .el-pagination__jump {
+        .el-pagination__editor {
+            .el-input__inner {
+                background: $c-ff12;
+                border-radius: 4px;
+                color: $c-4d;
+                font-weight: 500;
+            }
+        }
+    }
+}

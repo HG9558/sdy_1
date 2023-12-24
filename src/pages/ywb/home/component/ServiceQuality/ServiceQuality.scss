@@ -1,0 +1,62 @@
+.service {
+    color: $c-a;
+    position: relative;
+    padding-bottom: 80px;
+    margin-top: 50px;
+    .service-top-box {
+        margin: auto;
+        width: 1200px;
+        background: url('../../img/service/bg.png') no-repeat center/100% 100%;
+        filter: drop-shadow(0px 4px 8px rgba(76, 78, 129, 0.4));
+        border-radius: 10px;
+        .service-items {
+            @include flex(flex-start);
+            font-size: 13px;
+            margin-bottom: 10px;
+
+            padding: 20px 0 20px 34px;
+            border-bottom: 1.2px solid #D5D7E9;
+            .content {
+                @include flex();
+                margin-left: 10px;
+                .main {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: $c-1f;
+                    .english {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: $c-3B;
+                    }
+                }
+                .main-two {
+                    font-size: 14px;
+                    width: 580px;
+                    font-weight: 500;
+                    color: #505679;
+                    margin-left: 22px;
+                }
+            }
+            .desc-img {
+                margin-right: 18px;
+                width: 80px;
+            }
+        }
+    }
+    .service-bottom-box {
+        width: 1200px;
+        margin: auto;
+        @include flex();
+        .item-bg {
+            margin-top: 40px;
+            width: 100%;
+        }
+    }
+}
+
+.multi-language {
+    .service .service-top-box .service-items .content {
+        flex: 1;
+        padding-right: 50px;
+    }
+}

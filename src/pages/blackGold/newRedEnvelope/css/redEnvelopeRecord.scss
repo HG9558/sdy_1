@@ -1,0 +1,97 @@
+.red-envelope-record-container {
+    margin-top: 132px;
+    overflow: hidden;
+    min-height:1200px;
+    background-image: url('./images/record-bg.jpg') ;
+    background-position: 50% center !important;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-size: cover !important;
+    position: relative;
+
+    .record-content {
+        width: 738px;
+        height: 90vh;
+        margin:75px auto 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #FFFFFF;
+        font-weight: 500;
+        text-align: center;
+        .record-title {
+            min-width: 573px;
+            height:98px;
+            margin-top:40px;
+            padding-top: 5px;
+            background-image: url("./images/record-list-title-bg.png");
+            background-size: 100% 100%;
+            font-size: 36px;
+            line-height: 44px;
+            text-indent:50px;
+            white-space: nowrap;
+        }
+        .text-gradient {
+            background: linear-gradient(180deg, #FDFFA8 0%, #EEC799 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .record-title-two {
+            span {
+                background: linear-gradient(180deg, #fff 0%, #fff 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+        .record-f-title {
+            margin:20px 0;
+            font-size: 20px;
+            line-height: 24px;
+
+        }
+        .record-names {
+            font-family: 'HYYakuHei';
+            font-weight: 700;
+            font-size: 36px;
+            color: #FFFFFF;
+            margin-top: 34px;
+        }
+        .record-list {
+            margin-top:20px;
+            .record-table {
+                text-align: center;
+                min-width:325px;
+                margin:0 auto;
+                th {
+                    width:33.3%;
+                    font-size: 20px;
+                    font-family: 'FZZongYi-M05S';
+                    text-align: center;
+                }
+                td {
+                    height: 40px;
+                    color: #DFBEBE;
+                    font-size: 20px;
+                }
+            }
+        }
+        .no-data {
+            font-size: 50px;
+            margin-top:350px;
+        }
+    }
+
+}
+
+.multi-language {
+    .red-envelope-record-container .record-content .record-title {
+        font-size: 24px;
+    }
+}

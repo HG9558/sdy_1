@@ -1,0 +1,43 @@
+.banner-box-bog {
+    min-height: 588px;
+    height: 588px;
+    overflow: hidden;
+    .banner-box_loading_img {
+        width: 100%;
+        min-height: 588px;
+    }
+}
+
+/deep/ .el-carousel {
+    height: 100%;
+}
+
+/deep/ .el-carousel__container {
+    height: 100%;
+}
+
+/deep/ .el-carousel__indicator--horizontal {
+    padding: 12px 16px;
+}
+
+/deep/ .el-carousel__button {
+    width: 16px;
+    height: 16px;
+    background-image: url("../../img/dotted.png");
+    background-size: 100% 100%;
+    background-color: transparent;
+}
+
+/deep/ .el-carousel__indicator.is-active button {
+    background-image: url("../../img/dotted_active.png");
+    width: 60px;
+}
+
+.el-carousel__item img {
+    width: 1920px;
+    height: 598px;
+    position: relative;
+    left: 50%;
+    margin-left: -960px;
+    cursor: pointer;
+}

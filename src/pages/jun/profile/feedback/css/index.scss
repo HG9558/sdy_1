@@ -1,0 +1,185 @@
+.feedback-wrap {
+    background: $c-fc;
+    padding: 7px 25px 20px;
+    position: relative;
+    .feedback-type {
+        font-size: 14px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: $c-81;
+        margin: 18px 0 11px;
+    }
+    .feedback-form {
+        position: relative;
+        /deep/ {
+            .el-form-item__content {
+                margin-left: 0 !important;
+            }
+            .el-input__inner {
+                width: 280px;
+            }
+        }
+        .count-div {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            color: #af8c70;
+        }
+    }
+    .feedback-description {
+        font-size: 16px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: $c-81;
+        margin: 18px 0 11px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .upload-img {
+        width: 100%;
+        background: $b-f5;
+        border: 1px solid rgba(255, 255, 255, 0.34);
+        box-shadow: inset 3px 3px 4px rgba(141, 92, 77, 0.15), inset -3px -3px 4px rgba(255, 255, 255, 0.25);
+        border-radius: 4px;
+        @include flex(center);
+        padding-bottom: 10px;
+        position: relative;
+        .upload-inner {
+            width: 100%;
+            .upload-demo {
+                /deep/ {
+                    .el-upload-dragger {
+                        background-color: transparent;
+                        border: 0;
+                        margin-top: 46px;
+                        width: 100%;
+                        position: relative;
+                        left: 50%;
+                        z-index: 1;
+                        .upload-icon {
+                            width: 60px;
+                        }
+                        .el-upload__text {
+                            margin: 12px 0 25px;
+                            color: $c-1886;
+                            em {
+                                margin-left: 5px;
+                                font-weight: normal;
+                            }
+                        }
+                        .el-icon-upload {
+                            margin: 20px 0 16px;
+                        }
+                    }
+                    .el-upload-list--picture {
+                        position: absolute;
+                        top: 0px;
+                        left: 10px;
+                        width: 100%;
+                        height: 100%;
+                        .el-upload-list__item {
+                            background-color: $b-f5;
+                            border: 1px solid $b-f5;
+                            height: 91%;
+                            @include flex(flex-start);
+                            .el-upload-list__item-thumbnail {
+                                width: 291px;
+                                height: 180px;
+                                border: 2px solid $c-d1;
+                            }
+                            .el-upload-list__item-name {
+                                margin-left: 22px;
+                                color: $c-81;
+                                overflow: inherit;
+                                text-overflow: inherit;
+                                white-space: inherit;
+                            }
+                            .el-icon-close {
+                                position: absolute;
+                                left: 320px;
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: $c-81;
+                                top: 13px;
+                            }
+                        }
+                    }
+                }
+                /deep/ .el-upload--picture-card:hover,
+                /deep/ .el-upload:focus {
+                    color: $c-81;
+                    border-color: $c-81;
+                }
+            }
+        }
+    }
+    .btnCommit {
+        width: auto;
+        height: 29px;
+        font-size: 12px;
+        color: $c-f;
+        background: $c-9f;
+        border-radius: 5px;
+        border: 0;
+        margin: 31px auto 7px;
+        @include flex(center);
+    }
+    .btnCommit-on {
+        background: $c-81;
+        color: $c-f;
+    }
+    .mask-div {
+        padding: 15px 20px;
+        width: 340px;
+        background: $c-f;
+        box-shadow: 0px 8px 20px rgba(58, 22, 1, 0.08);
+        border-radius: 10px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        z-index: 2;
+        @include flex(flex-start, column);
+        transform: translate(-50%, -50%);
+        .smile-div {
+            margin: 0 10px 15px 10px;
+            img {
+                width: 18px;
+            }
+            /deep/ {
+                .el-icon-error {
+                    font-size: 18px;
+                    color: #F56C6C;
+                }
+            }
+        }
+        .title {
+            margin-bottom: 15px;
+        }
+        div {
+            color: $c-81;
+            font-size: 14px;
+            &:nth-child(3) {
+                color: $c-1886;
+            }
+        }
+    }
+}
+
+/deep/ .el-loading-spinner {
+    margin-top: -15px;
+    .circular {
+        width: 25px;
+        height: 25px;
+        .path {
+            stroke: $c-81;
+        }
+    }
+}
+
+.multi-language {
+  .feedback-wrap .upload-img .upload-inner .upload-demo /deep/ {
+    .el-upload-dragger {
+      left: 10%;
+    }
+  }
+}

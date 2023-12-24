@@ -1,0 +1,169 @@
+/deep/ {
+    .el-input__inner { 
+        border: 0;
+        color: $c-3D;
+        position: relative;
+        padding-left: 44px;
+        text-indent: 10px;
+        font-size: 16px;
+        border-radius: 8px;
+        height: 48px;
+        background-color: $c-f !important;
+        &::-webkit-input-placeholder {
+            color: #A8B3C9;
+        }
+    }
+    .el-input__prefix {
+        width: 50px; 
+        left: 0;
+        font-size: 23px;
+        border-radius: 8px 0px 0px 8px;
+        @include flex(center);
+    } 
+    .el-icon-mobile-phone{
+        color:$c-84;
+        height: 35px;
+    }
+    .el-icon-circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        border: 1px solid $c-f;
+        vertical-align: middle;
+        box-sizing: border-box;
+        transform: translate(-10px, 1px);
+    }
+    .el-form-item{
+        margin-bottom: 30px;
+    }
+    .el-form-item__error {
+        color: $c-ff5;
+    }
+    .mobile-login-form {
+        position: relative;
+        .el-select {
+            width: 70px;
+            position: absolute;
+            left: 40px;
+            z-index: 1000;
+            .el-input__inner {
+                padding-left: 0;
+                padding-right: 10px;
+                background-color: transparent;
+            }
+        }
+        .el-select__caret {
+            color: $c-f !important;
+            font-weight: bold !important;
+        }
+        .mobile-select {
+            .el-input__inner {
+                padding-left: 110px;
+            }
+        }
+        .el-popper {
+            margin-top: 0 !important;
+            .el-scrollbar,
+            .el-select-dropdown__item.hover,
+            .el-select-dropdown__item:hover {
+                background-color: rgba(196, 196, 196, 0.5) !important;
+            }
+            .el-select-dropdown__item {
+                color: $c-f;
+            }
+            .el-select-dropdown__list {
+                background-color: transparent;
+            }
+            .popper__arrow {
+                display: none;
+            }
+        }
+    }
+    .code-input {
+        .el-input__suffix {
+            right: 0;
+        }
+        .el-input__inner {
+            width: 340px;
+        }
+    }
+}
+
+.layout-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: $c-f;
+    background-image: url(../img/login_bg.png);
+    background-size: 100% 100%;
+    .layout_center_main {
+        @include flex(center, column);
+        height: 100%;
+        .slogan-container {
+            @include flex(center, column);
+            margin-bottom: 51px;
+            .slogan_img {
+                width: 303px;
+            }
+            .slogan_txt {
+                font-weight: 600;
+                font-size: 26px;
+                letter-spacing: 0.16em;
+                color: $c-84;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+/* 登录注册共有表单样式 */
+
+.form-container {
+    width: 465px;
+    .login-btn { 
+        border-radius: 8px;
+        height: 48px; 
+        width: 100%;
+        background:  linear-gradient(0deg, #97D6FC 0%, #3E80FF 13.54%, #61B2F9 81.77%, #96D6FB 100%);
+        &:disabled{
+            background: linear-gradient(0deg, #A09F9B 0%, #504F4E 12.5%, #8E8E8E 81.77%, #CBCBCB 100%);
+            border: none;
+            opacity: 0.4;
+        }
+      }
+    .forget-div {
+        color: $c-84;
+        font-weight: 500;
+        font-size: 14px;
+        margin: -10px 0 10px;
+        letter-spacing: 0px;
+        text-align: right;
+    }
+    /deep/.code-from {
+        margin-bottom: 0;
+    }
+    .goto-other {
+        @include flex();
+        margin-top: 11px;
+        color: $c-84;
+        font-size: 14px;
+        font-weight: 500;
+        .blue{
+            color:$c-3D9;
+        }
+        .no-login { 
+            cursor: pointer;
+        }
+        &.have-account {
+            cursor: pointer;
+            justify-content: flex-end; 
+            .go-log{
+                color: $c-3D9;
+            }
+        }
+    }
+}

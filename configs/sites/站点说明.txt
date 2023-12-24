@@ -1,0 +1,20 @@
+sdy:
+dcs - 测试环境
+pre - 预发布环境
+doc - 生产环境
+
+qmd:
+qmd - 生产环境
+
+bog:
+bog - 生产环境 博冠
+
+
+
+配置新站点：
+VUE_APP_APP_TITLE： 站点title
+VUE_APP_APP_CODE: 站点在服务器中路径(dcs/goc/qmd/bog)
+VUE_APP_APP_API_URL： 站点环境对应域名
+VUE_APP_DEFAULT_DOMAIN： 配置新站的新站域名，获取stoken用到
+VUE_APP_DEFAULT_SPTVTOKEN： 直播前缀
+VUE_APP_TOOGLETO_DOMAIN： 跳转代理前台的前台域名(没有则表示赞助页不展示跳转 登陆代理系统)

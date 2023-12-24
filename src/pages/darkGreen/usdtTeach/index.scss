@@ -1,0 +1,72 @@
+.usdt-teach{
+    padding: 144px 0 50px;
+    background-size: contain;
+    @include common-bg;
+    .contaienr{
+        width: 1200px;
+        margin: 0 auto;
+        border-radius: 10px;
+        background: rgba(32, 69, 57, 0.9);
+        overflow: hidden;
+    }
+    h1{
+        background: rgba(77, 94, 89, 0.5);
+        height: 62px;
+        line-height: 62px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #C8D2D2;
+        text-align: center;
+        position: relative;
+        .close{
+            position: absolute;
+            right: 25px;
+            top: 18px;
+            font-size: 28px;
+            cursor: pointer;
+        }
+    }
+    .step{
+        height: 1280px;
+        margin: 20px 0;
+        &.step1 {
+            background: url('./img/1.jpg') no-repeat center center;
+        }
+        &.step2 {
+            background: url('./img/2.jpg') no-repeat center center;
+        }
+        &.step3 {
+            background: url('./img/3.jpg') no-repeat center center;
+        }
+        &.step4 {
+            background: url('./img/4.jpg') no-repeat center center;
+        }
+        &.step5 {
+            background: url('./img/5.jpg') no-repeat center center;
+
+        }
+        &.step6 {
+            background: url('./img/6.jpg') no-repeat center center;
+        }
+        &.step7 {
+            background: url('./img/7.jpg') no-repeat center center;
+        }
+    }
+    .step-one{
+        height: 1520px;
+        margin: 20px 0 0;
+        background: url('./img/step-1.png') no-repeat center top /1120px auto;
+    }
+    .step-two{
+        height: 830px;
+        background: url('./img/step-2.png') no-repeat center top /1120px auto;
+    }
+    .step-three{
+        height: 820px;
+        background: url('./img/step-3.png') no-repeat center top /1120px auto;
+    }
+    .step-four{
+        height: 950px;
+        background: url('./img/step-4.png') no-repeat center top /1120px auto;
+    }
+}

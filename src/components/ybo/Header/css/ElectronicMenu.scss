@@ -1,0 +1,49 @@
+.electronic-item-outer {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    width: 20%;
+    min-width: 20%;
+    padding-top: 16px;
+    box-sizing: border-box;
+    @include flex(flex-start);
+    .electronic-item {
+        position: relative;
+        height: 229px;
+        cursor: pointer;
+        @include flex(flex-start, column);
+        .icon-container {
+            position: relative;
+            right: 0px;
+            bottom: -10px;
+        }
+        .electronic-context {
+            position: relative;
+            .electronic-title {
+                position: absolute;
+                left: 55px;
+                top: 4px;
+                width: 78px;
+                .electronic-title-en {
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+            }
+            .item-img {
+                width: 111px;
+                height: 150px;
+            }
+        }
+    }
+    .enter-game {
+        width: 81px;
+        height: 28px;
+        background-image: url('../img/select_button.png');
+        background-size: cover;
+        font-size: 12px;
+        margin-left: 18px;
+        color: $c-f;
+        @include flex(center);
+        font-weight: 500;
+    }
+}

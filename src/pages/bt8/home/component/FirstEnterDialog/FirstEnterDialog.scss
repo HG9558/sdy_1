@@ -1,0 +1,83 @@
+.unbing-dialog {
+    .el-dialog__body {
+        padding: 0 !important; 
+        .el-tabs{
+            .el-tabs__header{
+                min-height: 400px;
+                width: 210px; 
+                margin: 0; 
+                .el-tabs__nav-wrap{
+                    overflow: unset;
+                    &::after{ 
+                        height: 700px;
+                        width: 210px;
+                        background-color: rgba($c-97, 0.2);
+                    }
+                }                
+                .el-tabs__item{
+                    text-align: center;
+                    font-size: 18px;
+                    height: 50px;
+                    line-height: 50px;
+                    color: $c-4d;
+                    &.is-active{
+                        background: $c-4d;
+                        color:$c-f;
+                    } 
+                }
+                .el-tabs__active-bar{
+                    display: none;
+                }
+            }
+            .el-tabs__content{
+                min-height: 400px; 
+                flex: 1;
+            }
+        }
+        .notice-wrapper {
+            min-height: 350px;
+            overflow: hidden auto; 
+            max-height: 550px;
+            &::-webkit-scrollbar{
+                width: 5px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background: #bbb;
+            }
+            .notice-title {
+                text-align: center;
+            }
+            .notice-content {
+                padding: 0 15px 10px;
+                margin-top: 10px;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: justify;                
+            }
+            .notice-img {
+                width: 474px;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+            .notice-img-other{
+                width: 474px;
+                display: block;
+                margin-bottom: 10px;
+            }
+        } 
+        .btn-group {
+            @include flex(center);
+            margin: 20px 0;
+            .btn-detail{
+                width: 170px;
+                height: 48px;
+                left: 978px;
+                top: 961px;
+                background: linear-gradient(180deg, #475B86 11.98%, #C5D6FF 165.62%);
+                border-radius: 14px;
+                font-size: 22px;
+                border: 0;
+            }
+        }
+    }
+}

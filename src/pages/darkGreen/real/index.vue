@@ -1,0 +1,109 @@
+<template>
+  <special-layout
+    v-if="renderList.length"
+    type="real"
+    :renderList="renderList"
+    :currentSelectIndex.sync="currentSelectIndex"
+    @enterGame="_enterGame($event)"
+  >
+    <img class="sport_icons" slot="spacer" />
+    <!-- src="./img/sport_icons.png" alt=""-->
+    <img
+      class="real-main-pic"
+      :src="
+        require(`./img/${renderList[
+          currentSelectIndex
+        ].depotCode.toLowerCase()}.png`)
+      "
+      alt=""
+    />
+  </special-layout>
+</template>
+
+<script>
+import SpecialLayout from "commonComponent/SpecialLayout/SpecialLayout.vue";
+import { mapState } from "vuex";
+import playGameMixin from "../../../common/mixin/playGameMixin";
+export default {
+  name: "physical",
+  mixins: [playGameMixin],
+  components: {
+    SpecialLayout
+  },
+  watch: {
+    real: {
+      immediate: true,
+      handler(val) {
+        console.log("val---", JSON.stringify(val));
+        if (!val.length) {
+          this.$router.replace("/");
+        }
+      }
+    }
+  },
+  data() {
+    return {
+      sloginsData: {
+        AGIN:
+          this.$t('以高规格打造的AG真人配备最先进的设备以及富丽堂皇的装潢，为玩家打造绝佳真人视讯游戏体验。游戏选择多样化，包括备受欢迎的百家乐丶骰宝丶轮盘等加上全天侯监控管理，为玩家提供稳定而流畅的游戏服务'),
+        BBIN2:
+          this.$tt('xxxx主打的24小时运营的直播在线视频类游戏，让玩家拥有身临其境的感觉，独创的网络金臂百家乐，更是取代了真人荷官发牌，让玩家耳目一新。除了百家乐，xxxx还提供真钱德州扑克，温州牌九，轮盘，番摊和骰宝等多款热门游戏，保证玩家获取的投注信息公平公正公开实时，让玩家可以随时随地享受游戏的快感。', { name: 'BBIN\'s' }),
+        OBLI:
+          this.$t('投注界面友好，玩法多样不停加入新彩池。玩家投注彩池及路线图均清晰实时显示，进座旁注不同模式。主播聊天无限欢乐，能要求延长下注时间，刺激咪牌，赢钱开心赏小费。'),
+				SEX:
+					this.$t('投注界面友好，玩法多样不停加入新彩池。玩家投注彩池及路线图均清晰实时显示，进座旁注不同模式。主播聊天无限欢乐，能要求延长下注时间，刺激咪牌，赢钱开心赏小费。'),
+        PP:
+          this.$tt('xx自2012年成立以来即致力创造富游戏性与创意兼具的移动娱乐平台，不仅提供专业的技术支持和稳定的顶级设备，并支持多项平台和荣获多项国际许可认证，提供玩家最值得信任的娱乐环境。另外，数百位受过专业培训的荷官和仿真的赌场环境，更可让玩家尽享博彩乐趣。',{name:'PP'}),
+        BG:
+          this.$t('BG真人视讯为亚洲最具潜力的真人视讯品牌，提供百家乐、极速百家乐、共咪百家乐、多彩百家乐、龙虎、骰宝、轮盘、牛牛、炸金花等多样真人视讯游戏。BG真人视讯采用国际标准的真人游戏摄影棚，全场严密监控，流程公正公开，提供最公平的游戏环境。超低延迟高清视频，即时呈现！'),
+        DG:
+          this.$t('投注界面友好，玩法多样不停加入新彩池。玩家投注彩池及路线图均清晰实时显示，进座旁注不同模式。主播聊天无限欢乐，能要求延长下注时间，刺激咪牌，赢钱开心赏小费。'),
+        PPVN:
+          this.$t('投注界面友好，玩法多样不停加入新彩池。玩家投注彩池及路线图均清晰实时显示，进座旁注不同模式。主播聊天无限欢乐，能要求延长下注时间，刺激咪牌，赢钱开心赏小费。'),
+        DGVN:
+          this.$t('投注界面友好，玩法多样不停加入新彩池。玩家投注彩池及路线图均清晰实时显示，进座旁注不同模式。主播聊天无限欢乐，能要求延长下注时间，刺激咪牌，赢钱开心赏小费。'),
+        SEVN:
+          this.$t('投注界面友好，玩法多样不停加入新彩池。玩家投注彩池及路线图均清晰实时显示，进座旁注不同模式。主播聊天无限欢乐，能要求延长下注时间，刺激咪牌，赢钱开心赏小费。'),
+				AELI:
+					this.$t('以高规格打造的AE真人配备最先进的设备以及富丽堂皇的装潢，为玩家打造绝佳真人视讯游戏体验。游戏选择多样化，包括备受欢迎的百家乐丶骰宝丶轮盘等加上全天侯监控管理，为玩家提供稳定而流畅的游戏服务'),
+				SA:
+					this.$t('投注界面友好，玩法多样不停加入新彩池。玩家投注彩池及路线图均清晰实时显示，进座旁注不同模式。主播聊天无限欢乐，能要求延长下注时间，刺激咪牌，赢钱开心赏小费。'),
+				CQYX:
+					this.$t('投注界面友好，玩法多样不停加入新彩池。玩家投注彩池及路线图均清晰实时显示，进座旁注不同模式。主播聊天无限欢乐，能要求延长下注时间，刺激咪牌，赢钱开心赏小费。'),
+        EB:
+				this.$t('高清性感真人荷官直播娱乐场，独创真人融合棋牌电游风格。设有百家乐、牛牛、龙虎、炸金花、色碟、番摊等上百真人荷官桌台，专为亚洲人研发设计的投注界面，细致版面、极致操作让您拥有身临其境的体验！'),
+        ABET:
+				this.$t('高清性感真人荷官直播娱乐场，独创真人融合棋牌电游风格。设有百家乐、牛牛、龙虎、炸金花、色碟、番摊等上百真人荷官桌台，专为亚洲人研发设计的投注界面，细致版面、极致操作让您拥有身临其境的体验！'),
+        PTL:
+				this.$t('高清性感真人荷官直播娱乐场，独创真人融合棋牌电游风格。设有百家乐、牛牛、龙虎、炸金花、色碟、番摊等上百真人荷官桌台，专为亚洲人研发设计的投注界面，细致版面、极致操作让您拥有身临其境的体验！'),
+				WM:
+					this.$t('高清性感真人荷官直播娱乐场，独创真人融合棋牌电游风格。设有百家乐、牛牛、龙虎、炸金花、色碟、番摊等上百真人荷官桌台，专为亚洲人研发设计的投注界面，细致版面、极致操作让您拥有身临其境的体验！'),
+        EVO:
+				this.$t('高清性感真人荷官直播娱乐场，独创真人融合棋牌电游风格。设有百家乐、牛牛、龙虎、炸金花、色碟、番摊等上百真人荷官桌台，专为亚洲人研发设计的投注界面，细致版面、极致操作让您拥有身临其境的体验！'),
+      },
+      currentSelectIndex: 0
+    };
+  },
+  computed: {
+    ...mapState({
+      real: state => state.game.real,
+    }),
+    renderList() {
+      if (!this.real.length) {
+        return [];
+      }
+      return JSON.parse(JSON.stringify(this.real)).map(item => {
+        item.sloginsData = this.sloginsData[item.depotCode];
+        return item;
+      });
+    }
+  }
+};
+</script>
+<style lang="scss" scoped>
+.real-main-pic {
+  width: 590px;
+  position: relative;
+  top: 65px;
+}
+</style>

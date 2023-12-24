@@ -1,0 +1,105 @@
+.my-friend-wrapper {
+    width: 100%;
+    background: $bg-32;
+    border-radius: 16px;
+    padding: 28px 20px;
+    box-sizing: border-box;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+    .title {
+        cursor: pointer;
+
+        &:after {
+            content: "";
+            display: flex;
+            height: 1px;
+            background-color: $c-81;
+            margin-top: 20px;
+        }
+
+        .title-text {
+            color: $c-81;
+        }
+    }
+
+    .content {
+        padding-top: 20px;
+
+        .search-myfriend {
+            /deep/ .el-form-item {
+                display: flex;
+                flex-direction: column;
+                justify-self: flex-start;
+                align-items: flex-start;
+
+                .el-form-item__label {
+                    text-align: left;
+                    color: $c-81;
+                }
+
+                .el-form-item__content {
+                    margin-left: 0px !important;
+
+                    input::-webkit-input-placeholder {
+                        color: #9A9DAA;
+                    }
+
+                    .el-input__inner {
+                        width: 100%;
+                        color: $c-81;
+                        background-color: $b-f5;
+                        border-color: transparent;
+                        box-shadow: inset 3px 3px 4px rgba(141, 92, 77, 0.15), inset -3px -3px 4px rgba(255, 255, 255, 0.25);
+
+                        .el-range-input {
+                            background-color: transparent;
+                            color: $c-81;
+                        }
+
+                        .el-range-separator {
+                            color: $c-81;
+                        }
+
+                        .el-icon-date {
+                            color: $c-81;
+                        }
+                    }
+
+                    .el-input__inner .el-range-input {
+                        color: $c-81;
+                    }
+
+                    .friend-account {
+                        width: 240px;
+
+                        input::-webkit-input-placeholder {
+                            color: #9A9DAA;
+                        }
+                    }
+
+                    .btn {
+                        width: 134px;
+                        height: 40px;
+                        border-radius: 4px;
+                        font-weight: normal;
+                        margin-bottom: 20px;
+                    }
+
+                    .search-btn {
+                        background: $c-a5;
+                        border-color: transparent;
+                        color: $c-f;
+                        font-weight: 600;
+                    }
+
+                    .reset-btn {
+                        background: #C9B9AA;
+                        border-color: transparent;
+                        color: $c-f;
+                    }
+                }
+            }
+        }
+    }
+}

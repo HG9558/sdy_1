@@ -1,0 +1,314 @@
+.hot-match-container {
+    .hot-top {
+        position: relative;
+        height: 540px;
+        background: $c-fc;
+        box-shadow: 0px 4px 4px rgba(0, 56, 255, 0.06), inset -1px -1px 0px $c-f, inset 1px 1px 0px $c-f;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 0px 15px;
+        margin-bottom: 12px;
+        @include flex();
+        .match-list {
+            width: 290px;
+            height: 510px;
+            padding-top: 3px;
+            margin: 0px 2px 0px 10px;
+        } 
+    }
+    .hot-bottom {
+        margin-left: 12px;
+        height: 22px;
+        width: 48px;
+        border-radius: 12px;
+        display: inline-block;
+        background-color: #e1cb94;
+        line-height: 22px;
+        transition: all 0.5s;
+        span {
+            display: inline-block;
+            margin-left: 27px;
+            line-height: 22px;
+            font-size: 12px;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+        &.not-active {
+            background-color: #75788A;
+            span {
+                margin-left: 2px;
+            }
+        }
+    }
+    .live-box {
+        width: 900px;
+        height: 510px;
+        background: $c-c;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .chat-container {
+        width: 290px;
+        // height: 510px;
+        margin: 0 15px 0 10px;
+        padding-top: 3px;
+        position: absolute;
+        left: 29px;
+        top: 132px;
+        z-index: 11;
+        .msg-list {
+            // background: rgba(19, 21, 23, 0.5);
+            width: 290px;
+            // height: 449px;
+            margin: 0 auto;
+        }
+    }
+    .hot-match-wrapper {
+        @include flex();
+        background: $c-f;
+        color: $c-ce;
+        .hot-match-left {
+            height: 126px;
+            line-height: 38px;
+            color: $c-81;
+            background-size: auto 100%;
+            @include flex();
+            .hot-match-img {
+                width: 18px;
+                margin-right: 21px;
+            }
+            .title {
+                font-size: 30px;
+                font-weight: 600;
+                margin-right: 11px;
+            }
+            .text {
+                color: $c-d6;
+                font-size: 16px;
+            }
+        }
+        .hot-match-right {
+            font-size: 12px;
+            @include flex(flex-start, column, nowrap, flex-end);
+            .line {
+                width: 35px;
+                height: 2px;
+                background: $c-d6;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .hot-match-box {
+        background-color: $c-f;
+        @include flex();
+        margin-top: 20px;
+        .left-btn,
+        .right-btn {
+            width: 50px;
+            height: 170px;
+            cursor: pointer;
+            background-image: url("../../img/live/arrow_bg.png");
+            border-radius: 10px;
+            background-size: 100% 100%;
+            @include flex(center);
+            &.disabled {
+                background-image: url("../../img/live/disable_arrow_bg.png");
+                pointer-events: none;
+            }
+            .arrow-left,
+            .arrow-right {
+                width: 10px;
+            }
+        }
+        .hot-match-list {
+            width: 1074px;
+            height: 170px;
+            overflow: hidden;
+            position: relative;
+            .list-box {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: flex;
+                transition: 0.3s ease-in-out;
+                .hot-match-item {
+                    box-sizing: border-box;
+                    width: 260px;
+                    height: 170px;
+                    border-radius: 10px;
+                    background: rgba(54, 59, 70, 0.5);
+                    float: left;
+                    margin-right: 10px;
+                    font-size: 14px;
+                    overflow: hidden;
+                    position: relative;
+                    cursor: pointer;
+                    &:last-child{
+                        margin: 0;
+                    }
+                    &.active {
+                        border: 2px solid #815b39;
+                    }
+                    .anchor-label{
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        width: 44px;
+                        height: 24px;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 12px;
+                        line-height: 24px;
+                        background:  #dbcdc1;
+                        border-radius: 6px;
+                    }
+                    .match-img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .match-info{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 42px;
+                        padding: 0 10px;
+                        @include flex();
+                        background: rgba(34, 35, 40, 0.3);
+                        backdrop-filter: blur(10px);
+                        color: #fff;
+                        .teams-name{
+                            width: 180px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                        .match-hot{
+                            margin-left: auto;
+                            padding-left: 20px;
+                            background: url('../../img/live/icon-people.svg') no-repeat left center;
+                        }
+                    }
+                    // .league-item-box {
+                    //     width: 234px;
+                    //     height: 32px;
+                    //     background: rgba(255, 255, 255, 0.52);
+                    //     border-radius: 12px;
+                    //     margin: 0 auto;
+                    //     padding: 0 10px;
+                    //     box-sizing: border-box;
+                    //     @include flex();
+                    //     .league-name {
+                    //         font-size: 14px;
+                    //         color: $c-81;
+                    //         text-overflow: ellipsis;
+                    //         white-space: nowrap;
+                    //         overflow: hidden;
+                    //     }
+                    //     .time {
+                    //         font-size: 12px;
+                    //         color: $c-d6;
+                    //     }
+                    // }
+                    // &.is-live {
+                    //     pointer-events: auto;
+                    //     cursor: pointer;
+                    //     .match-state {
+                    //         background: #34a0e4 url("../../img/live/living.png") no-repeat 10px center;
+                    //         background-size: 15px auto;
+                    //     }
+                    //     .vs {
+                    //         color: $c-81;
+                    //     }
+                    // }
+                    // &.active {
+                    //     border: solid 2px $c-81;
+                    // }
+                    // .team-logo,
+                    // .team-name {
+                    //     width: 70px;
+                    //     overflow: hidden;
+                    //     text-overflow: ellipsis;
+                    //     white-space: nowrap;
+                    //     text-align: center;
+                    // }
+                    // .teams {
+                    //     margin-top: 14px;
+                    //     padding: 0 10px;
+                    //     .teams-top {
+                    //         @include flex();
+                    //         .team-logo {
+                    //             height: 40px;
+                    //             img {
+                    //                 max-width: 100%;
+                    //                 max-height: 100%;
+                    //             }
+                    //         }
+                    //         .match-state {
+                    //             box-sizing: border-box;
+                    //             width: 78px;
+                    //             height: 27px;
+                    //             line-height: 27px;
+                    //             text-align: center;
+                    //             background: $c-c;
+                    //             border-radius: 21px;
+                    //             color: $c-f;
+                    //             &.live {
+                    //                 background: linear-gradient(336.87deg, #DFC8B2 59.34%, #FAECE0 84.37%);
+                    //             }
+                    //         }
+                    //     }
+                    //     .teams-bottom {
+                    //         margin-top: 8px;
+                    //         color: $c-a7;
+                    //         @include flex();
+                    //     }
+                    // }
+                    // .anchor {
+                    //     color: $c-c8;
+                    //     margin-top: 4px;
+                    //     .anchor-header {
+                    //         width: 234px;
+                    //         height: 32px;
+                    //         text-align: center;
+                    //         position: relative;
+                    //         background: linear-gradient(360deg, #AA8767 11.12%, #FFE7CE 94.71%);
+                    //         box-shadow: 0px 4px 4px $c-c5;
+                    //         border-radius: 12px;
+                    //         margin: 0 auto;
+                    //         @include flex(center);
+                    //         color: $c-f;
+                    //         .icon-video {
+                    //             width: 10px;
+                    //             margin-right: 6px;
+                    //         }
+                    //         &:after,
+                    //         &:before {
+                    //             content: "";
+                    //             width: 58px;
+                    //             height: 1px;
+                    //             background: $c-f;
+                    //         }
+                    //         &:after {
+                    //             margin-left: 6px;
+                    //         }
+                    //         &:before {
+                    //             margin-right: 6px;
+                    //         }
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+    .bg-f {
+        background-color: $c-f;
+        margin: 40px 0;
+        border: none;
+    }
+}

@@ -1,0 +1,30 @@
+.chess-item-outer {
+    color: #91A5D0;
+    font-size: 16px;
+    font-weight: 600;
+    width: 25%;
+    min-width: 25%;
+    .chess-item {
+        position: relative;
+        height: 229px;
+        top: -5px;
+        cursor: pointer;
+        @include flex(center, column);
+        .icon-container {
+            position: relative;
+            right: 0px;
+            bottom: -10px;
+        }
+        .chess-context {
+            position: relative;
+            width: 128px;
+            height: 218px;
+            background-size: cover;
+            @each $x in chess_ob chess_ky chess_kx {
+                &.#{$x} {
+                    background-image: url('../img/menu/chessMenu/' + $x + '.png');
+                }
+            }
+        }
+    }
+}

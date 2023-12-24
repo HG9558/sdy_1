@@ -1,0 +1,143 @@
+.top-game {
+    margin-top: 40px;
+    background: url('../../img/topic_hotGame.png') no-repeat center top/ 1920px auto;
+    .top-game-content{
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 90px;   
+        border-radius: 10px;
+    }
+    .download-title{
+        margin: 0;
+    }
+    .top-game-inner{
+        box-sizing: border-box; 
+        border-radius: 30px;
+        padding: 40px 25px 30px;
+        background: url('../../img/box-bg-2.png') no-repeat center top/ 100% 100%;
+        
+    }
+    .type-chose {
+        @include flex();
+        padding: 0 36px;
+        .type {
+            @include flex(center);
+            width: 168px;
+            height: 44px;
+            font-size: 18px;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+            color: $c-39;
+            position: relative;
+            cursor: pointer;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-radius: 4px 4px 0 0;
+                box-sizing: border-box;
+                width: 172px;
+                height: 8px;
+                background: #C6D2DF;
+            }
+            &:hover {
+                &:after {
+                    background:  linear-gradient(90deg, #61B2F9 0%, #98D7FB 100%);
+                }
+            }
+            &.type-div {
+                color: $c-61;
+                font-weight: bold;
+                &:after {
+                    background:  linear-gradient(90deg, #61B2F9 0%, #98D7FB 100%);
+                }
+            }
+        }
+    }
+    .content-container {
+        height: 300px; 
+        border-radius: 8px;
+        .dn-bg {
+            display: flex;
+            color: $c-63;
+            overflow: hidden;
+            border-bottom: 4px solid #E8F3FA;
+            align-items: center;
+            padding: 10px 0 0 47px;
+            box-sizing: border-box;
+            $logoList: ( sport: 164, real: 150, poker: 177, esport: 186, lottery: 173, electronic: 139, );
+            @each $k,
+            $o in $logoList {
+                .#{$k}-logo {
+                    height: 127px;
+                }
+            }
+            .right-box {
+                height: 120px;
+                color: $c-39;
+                z-index: 99;
+                @include flex();
+                .one {
+                    width: 118px;
+                    margin: 0 23px 0 29px;
+                    .one-1 {
+                        font-size: 24px;
+                        font-weight: 500;
+                    }
+                    .one-2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+                .three {
+                    width: 621px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    color: $c-39;
+                }
+            }
+        }
+        .plat-content-box {
+            @include flex(flex-start);
+            margin-left: 30px;
+            margin-top: 20px;
+            .game-item {
+                width: 120px;
+                height: 120px;
+                font-size: 14px;
+                color: $c-f;
+                margin-right: 20px;
+                border-radius: 8px;
+                cursor: pointer;
+                background-image: url("../../img/topGame/normal_wrap.png");
+                background-size: 100% 100%;
+                position: relative;
+                .type-name {
+                    position: absolute;
+                    bottom: 11px;
+                    width: 100%;
+                    text-align: center;
+                }
+                .game-img {
+                    position: absolute;
+                    &.is-Try-icon {
+                        left: 1px;
+                        top: 2px;
+                        width: 51px;
+                    }
+                    &.isClick-img {
+                        width: 34px;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -85%);
+                    }
+                }
+                &.is-click {
+                    background-image: url("../../img/topGame/active_wrap.png");
+                    
+                }
+            }
+        }
+    }
+}

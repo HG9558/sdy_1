@@ -1,0 +1,95 @@
+.table-container {
+    width: 100%;
+    thead {
+        background: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);
+        th {
+            background: transparent;
+            height: 47px;
+            text-align: center;
+            color: $c-39;
+            font-weight: 600;
+            &:first-child {
+                border-top-left-radius: 10px;
+            }
+            &:last-child {
+                border-top-right-radius: 10px;
+            }
+        }
+    }
+    .c-f {
+        td:first-child {
+            color: $c-cec;
+        }
+    }
+    td {
+        background: $c-39;
+        color: $c-cec;
+        font-size: 14px;
+        text-align: center;
+        height: 47px;
+        border-bottom: 1px solid $c-54;
+        &.no-border {
+            border: none;
+        }
+        &.sbuStyle {
+            color: $c-cec;
+            cursor: pointer;
+        }
+    }
+}
+
+.recommend-wrapper {
+    .common-page.el-pagination {
+        margin-top: 40px;
+        /deep/ .el-pagination__total {
+            height: 30px;
+            line-height: 30px;
+            color: $c-80;
+        }
+        /deep/ .el-pager {
+            .number {
+                width: 35px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 4px;
+                color: $ft-f6;
+                margin-right: 3px;
+                background: $c-39;
+                &.active {
+                    color: $c-39;
+                    background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+                }
+            }
+        }
+        /deep/ .btn-prev,
+        /deep/ .btn-next {
+            width: 35px;
+            height: 30px;
+            border-radius: 4px;
+            margin-right: 3px;
+            background-color: $c-39;
+            .el-icon {
+                color: #999999;
+                font-size: 15px;
+            }
+        }
+    }
+    .img-container {
+        padding: 20px 0;
+        .no-data-img {
+            width: 150px;
+        }
+        .loading-img {
+            width: 150px;
+            height: 100px;
+        }
+    }
+}
+
+.recommend-load {
+    @include flex(center);
+    height: 300px;
+    position: static;
+    min-height: 0;
+    transform: translate(0, 0);
+}

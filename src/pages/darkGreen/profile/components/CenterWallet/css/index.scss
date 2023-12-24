@@ -1,0 +1,140 @@
+.center-wallet-container {
+    position: relative;
+    padding: 15px 0px 31px;
+    color: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(14, 62, 46, 0.8);
+    &.has-box-shadow {
+        box-shadow: 0px 4px 4px rgba(135, 73, 0, 0.06), inset -1px -1px 0px #FFFFFF, inset 1px 1px 0px #FFFFFF;
+    }
+    .common-container {
+        width: 100%;
+        position: relative;
+        padding-bottom: 28px;
+        .center-money-container {
+            @include flex(flex-start);
+            position: absolute;
+            left: 20px;
+            bottom: 33px;
+            font-size: 14px;
+            .wallet-img {
+                width: 43px;
+            }
+            .money-amonut-container {
+                margin-left: 8px;
+            }
+        }
+        .totoal-money-container {
+            @include flex(center, column);
+            font-size: 14px;
+            .bottom-handle {
+                @include flex();
+                margin-top: 21px;
+                .return-btn {
+                    color: #A5B3B2;
+                    padding: 0 8px;
+                    height: 30px;
+                    border: 1px solid #A5B3B2;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 30px;
+                    cursor: pointer;
+                }
+                .line {
+                    width: 1px;
+                    height: 44px;
+                    background-color: #27553F;
+                    margin: 0 21px;
+                }
+                .lock-container {
+                    @include flex();
+                    .icon_lock {
+                        width: 43px;
+                    }
+                    .text {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+        .money-num {
+            color: #EDB77F;
+        }
+    }
+    .game-wallet-container {
+        border-top: 1px solid #27553F;
+        .tip-text {
+            font-weight: 400;
+            color: #A5B3B2;
+            text-align: center;
+            padding: 30px 0 24px 24px;
+        }
+        .item-container {
+            @include flex(flex-start);
+            .item {
+                width: 120px;
+                height: 50px;
+                background: #C4AE95;
+                border-radius: 4px;
+                text-align: center;
+                color: #27553F;
+                @include flex(center, column);
+                font-size: 12px;
+                margin: 0 40px 26px 0;
+                .title {
+                    @include flex();
+                    /deep/ .el-icon-warning {
+                        color: red;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        .fold-wrapper {
+            border: 0px;
+            /deep/ .el-collapse-item__wrap {
+                background: initial;
+                border: 0px;
+                .el-collapse-item__content {
+                    @include flex(flex-start, row, wrap);
+                    .item {
+                        width: 120px;
+                        height: 50px;
+                        background: #C4AE95;
+                        border-radius: 4px;
+                        text-align: center;
+                        color: #27553F;
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: nowrap;
+                        flex-direction: column;
+                        align-items: center;
+                        font-size: 12px;
+                        margin: 0 40px 26px 0;
+                        .title {
+                            @include flex();
+                            .el-icon-warning {
+                                color: red;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .collapse {
+            cursor: pointer;
+            .collapse-toggle {
+                @include flex(center);
+                color: #A5B3B2;
+                .show-more-icon {
+                    width: 22px;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+}

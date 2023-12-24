@@ -1,0 +1,47 @@
+.red-packet-wrapper {
+    width: 100px;
+    border-radius: 25px;
+    position: fixed;
+    z-index: 9;
+    right: 10px;
+    bottom: 50px;
+    cursor: pointer;
+    .closeBtn {
+        background: url("../../redEnvelope/images/closeIcon.png") no-repeat center;
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 10px;
+        top: -20px;
+        margin: 0;
+        @include flex(center);
+    }
+    .baoImg {
+        -webkit-animation: 0.4s swing infinite;
+        width: 100px;
+    }
+    .clockTxt {
+        text-align: center;
+        white-space: nowrap;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: transparent;
+        -webkit-text-fill-color: #fc9f02;
+        -webkit-text-stroke: 0.1px #000;
+    }
+    .clockTxt:first-child {
+        margin-bottom: 0px;
+    }
+}
+
+@keyframes swing {
+    0% {}
+    50% {
+        -webkit-transform: rotate(10deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}

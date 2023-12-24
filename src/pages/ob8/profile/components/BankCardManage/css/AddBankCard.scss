@@ -1,0 +1,89 @@
+.add-bank-card-dialog {
+    padding: 10px 40px 20px;
+    .add-bank-card-form-wrapper {
+        .add-bank-card-form {
+            /deep/ .el-form-item {
+                .el-form-item__label {
+                    color: $c-3D;
+                    &::before {
+                        color: inherit;
+                    }
+                }
+            }
+            .sm-code-input {
+                cursor: pointer;
+                /deep/ .el-form-item__content {
+                    @include flex();
+                    .sm-code-container {
+                        flex-shrink: 0;
+                        .g-button {
+                            margin-left: 30px;
+                            width: 120px;
+                            height: 36px;
+                            box-sizing: border-box;
+                            text-align: center;
+                            .el-button--success {
+                                border: 1px solid $c-3D9;
+                                border-radius: 34px;
+                                color: $c-3D9;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .add-bank-card-btn {
+        width: 210px;
+        height: 50px;
+        font-size: 22px;
+        margin: 46px auto 0;
+        border-radius: 14px;
+        background: linear-gradient(0deg, #97D6FC 0%, #3E80FF 13.54%, #61B2F9 81.77%, #96D6FB 100%);
+    }
+    .province,
+    .city {
+        width: 100%;
+    }
+    .tab-container {
+        @include flex(flex-start);
+        .tab-txt {
+            width: 130px;
+            font-size: 14px;
+            text-align: right;
+            padding-right: 12px;
+            box-sizing: border-box;
+        }
+        .tab-main {
+            @include flex(flex-start);
+            width: 450px;
+            margin-bottom: 18px;
+            .money-type {
+                width: 135px;
+                height: 40px;
+                border-radius: 4px;
+                text-align: center;
+                line-height: 40px;
+                margin-right: 20px;
+                color: $c-f;
+                background: #BECAE2; 
+                cursor: pointer;
+                font-size: 18px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                &.on {
+                    color: #fff;
+                    background: $c-3D9;
+                    border-color: $c-3D9;
+                }
+            }
+        }
+    }
+    /deep/.count-time{
+        color: #61B2F9;
+        border: 1px solid #61B2F9;
+        background: none;
+    }
+}

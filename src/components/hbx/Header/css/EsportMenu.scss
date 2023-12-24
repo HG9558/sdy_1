@@ -1,0 +1,47 @@
+.esport-container {
+    height: 100%;
+    @include flex(center);
+    color: #91A5D0;
+    .electronic-item {
+        margin-right: 90px;
+        position: relative;
+        width: 234px;
+        height: 236px;
+        background-size: 100% 100%;
+        cursor: pointer;
+        @each $x in electronic_tf electronic_im electronic_obes {
+            &.#{$x} {
+                background-image: url('../img/menu/electronicMenu/' + $x + '.png');
+            }
+        }
+        .icon-container {
+            right: -50px;
+            bottom: 25px;
+            position: absolute;
+        }
+    }
+    .electronic-context {
+        @include flex(center);
+        position: relative;
+        top: 5px;
+        left: 27px;
+        .electronic-title {
+            font-size: 16px;
+            font-weight: 600;
+            .electronic-title-en {
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+    .enter-game {
+        width: 81px;
+        height: 28px;
+        background-image: url('../img/select_button.png');
+        background-size: cover;
+        font-size: 12px;
+        @include flex(center);
+        margin-left: 14px;
+        color: $c-f;
+    }
+}

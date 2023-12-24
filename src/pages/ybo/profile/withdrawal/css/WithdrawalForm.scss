@@ -1,0 +1,71 @@
+.form-container {
+    .money-notice {
+        font-size: 14px;
+        @include flex(space-between);
+        .money-notice-text {
+            @include flex(flex-start);
+            .masker-container {
+                margin-left: 10px;
+                position: relative;
+                cursor: pointer;
+                .warning {
+                    color: #ff0008;
+                }
+                .text {
+                    color: $c-84;
+                    &:hover~.notice-msg {
+                        display: block;
+                    }
+                }
+                .notice-msg {
+                    display: none;
+                    position: absolute;
+                    top: -6px;
+                    left: 120px;
+                    color: #fff;
+                    border-radius: 5px;
+                    padding: 5px;
+                    white-space: nowrap;
+                    background: rgba(0, 0, 0, 0.6);
+                    z-index: 1000;
+                }
+            }
+            .money-notice {
+                margin-left: 10px;
+                color: $c-84;
+            }
+        }
+        .notice-number {
+            @include flex();
+            color: $c-84;
+            .right {
+                margin: 0 24px 0 10px;
+            }
+        }
+    }
+    .fee-form {
+        margin-top: 20px;
+        .fee {
+            /deep/ .el-form-item__content {
+                @include flex(flex-start);
+                .money-form {
+                    width: 250px; 
+                }
+                .fee-submit {
+                    margin-left: 24px;
+                    height: 38px;
+                    background: linear-gradient(0deg, #97D6FC 0%, #3E80FF 13.54%, #61B2F9 81.77%, #96D6FB 100%);
+                }
+            }
+        }
+        .virtual-text-container {
+            color: $c-3D;
+            font-size: 14px;
+        }
+        .alipay-tip {
+            color: #D9001B;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+    }
+}

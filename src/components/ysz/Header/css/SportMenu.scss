@@ -1,0 +1,56 @@
+.sport-item-outer {
+    flex-shrink: 0;
+    width: 33.3%;
+    @include flex(center);
+    color: $c-f;
+}
+
+.sport-item {
+    position: relative;
+    width: 237px;
+    height: 197px;
+    cursor: pointer;
+    background-size: auto 100%;
+    background-repeat: no-repeat; 
+    @each $x in sports_another sports_bog sports_sdy sports_m8bet sports_saba sports_fb sports_bl sports_im2 {
+        &.#{$x} {
+            background-image: url('../img/menu/sportsMenu/' + $x + '.png');
+        }
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &.sports_saba {
+        width: 218px;
+    }
+    &.sports_m8bet {
+        width: 199px;
+    }
+}
+
+.icon-container {
+    left: 60px;
+    bottom: 0px;
+    position: absolute;
+}
+
+.sport-context {
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    .sport-title-en {
+        font-size: 12px;
+    }
+}
+
+.enter-game {
+    width: 81px;
+    height: 28px;
+    background-image: url('../img/select_button.png');
+    background-size: cover;
+    font-size: 12px;
+    position: absolute;
+    bottom: 57px;
+    left: 15px;
+    @include flex(center);
+}

@@ -1,0 +1,219 @@
+.table-wrapper {
+    background: #27553F;
+    border-radius: 10px;
+    padding: 20px;
+    width: 917px;
+    box-sizing: border-box;
+}
+
+/deep/ .el-table {
+    background: #27553F;
+    color: #FFFFFF;
+    &::before {
+        display: none;
+    }
+    .el-table__header-wrapper {
+        background: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);
+        border-radius: 4px;
+        th {
+            font-weight: 600;
+            color: #27553F !important;
+        }
+    }
+}
+
+/deep/ .el-table th.is-leaf {
+    border: 0;
+    color: #C8D2D2;
+}
+
+/deep/.is-left {
+    padding-left: 20px;
+}
+
+/deep/ .el-table tr {
+    background: transparent;
+}
+/deep/ .el-table .el-table__cell {
+    background: transparent;
+    border: 0;
+}
+
+/deep/ .el-date-editor .el-range__icon {
+    color: #f6b56a;
+    display: none;
+}
+
+/deep/ .el-date-editor .el-range-input {
+    color: #FFFFFF;
+    border: 1px solid #427453;
+    border-radius: 4px;
+    background: rgba(8, 45, 32, 0.9);
+    width: 158px;
+    height: 40px;
+}
+
+/deep/ .el-range-separator {
+    color: #889796;
+}
+
+/deep/.el-pagination__jump {
+    color: #C8D2D2;
+    .el-pagination__editor.el-input {
+        .el-input__inner {
+            background: rgba(188, 169, 151, 0.2);
+            border-radius: 4px;
+            color: #C8D2D2;
+            font-size: 14px;
+        }
+    }
+}
+
+/deep/ .el-table--enable-row-hover .el-table__body tr:hover>td.el-table__cell {
+    background-color: transparent;
+}
+
+.router-view {
+}
+
+.top-div {
+    padding: 0 24px 24px;
+    position: relative;
+    .betting-title {
+        // width: 96px;
+        height: 60px;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: left;
+        color: #f6b56a;
+        line-height: 60px;
+        border-bottom: 1px solid #3d4154;
+    }
+    .date-div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: -11px;
+        .date-picker {
+            border: 0;
+            width: 360px !important;
+            background: none;
+        }
+    }
+    .date-span {
+        display: block;
+        color: #889796;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    .filter-content {
+        display: flex;
+        margin-top: 8px;
+        justify-content: space-between;
+        .date-box {
+            display: flex;
+            .date-btn {
+                margin-right: 10px;
+                flex-shrink: 0;
+                &:last-child {
+                    margin-right: 0;
+                }
+                button {
+                    height: 40px;
+                    font-size: 14px;
+                    color: #A5B3B2;
+                    line-height: 24px;
+                    border: 0;
+                    padding: 0 15px;
+                    border-radius: 4px;
+                    background: #27553F;
+                    min-width: 75px;
+                }
+                .btn-active {
+                    background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+                    color: #27553F;
+                    border: 0;
+                }
+            }
+        }
+        .inquire {
+            width: 80px;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 500;
+            background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+            border-radius: 4px;
+            border: 0;
+            color: #27553F;
+        }
+    }
+}
+
+.bottom-div {
+    max-height: 635px;
+    padding: 0px 20px 28px 20px;
+    .no-data-div {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        height: 48px;
+        margin-top: 20px;
+        line-height: 48px;
+        span {
+            font-size: 16px;
+            color: #A5B3B2;
+            display: inline-block;
+            width: 135px;
+            height: 48px;
+            // background: #f0f0f0;
+            cursor: pointer;
+            .bot {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 42px;
+                height: 3px;
+                border-radius: 4px 4px 0 0;
+            }
+        }
+        .active-span {
+            color: #EDB77F;
+            .bot {
+                background: linear-gradient(135.44deg, #F6C88F 0.76%, #EBA760 97%);
+            }
+        }
+    }
+    .no-data-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text {
+            margin-top: 10px;
+        }
+    }
+    .no-data-gif,
+    .no-data-img {
+        text-align: center;
+        margin: 188px auto 252px;
+    }
+}
+
+.multi-language {
+  .top-div .filter-content .date-box .date-btn button {
+    line-height: normal;
+    font-size: 14px;
+  }
+  .bottom-div .no-data-img {
+    margin: 0;
+    padding: 188px 0 252px 0;
+    background: rgba(188, 169, 151, 0.15);
+    border-radius: 10px;
+  }
+}
+
+.language-vi {
+    .top-div .filter-content .date-box .date-btn button {
+        max-width: 100px;
+    }
+}

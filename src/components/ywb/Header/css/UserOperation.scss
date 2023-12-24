@@ -1,0 +1,274 @@
+.user-operation-container {
+    height: 100%;
+    @include flex(center);
+    .unlogin-container {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 40px;
+        color: #3B4165;
+        text-align: center;
+        .un_login{
+            margin-left: 24px;
+            width: 80px;
+            height: 40px;
+            background: linear-gradient(180deg, #FBBB98 0%, #E1956E 100%);
+            border-radius: 8px;
+        }
+        .un_register{
+            width: 80px;
+            height: 40px;
+            background: #D5D7E9;
+            border-radius: 8px;
+        }
+        @include flex(center);
+        .link-container {
+            cursor: pointer;
+            @include flex();
+            .login-ico {
+                width: 18px;
+            }
+            .url-desc-txt {
+                font-size: 15px;
+                font-weight: 600;
+                color: $c-f;
+            }
+        }
+        .line {
+            color: $c-f;
+            margin: 0 10px;
+        }
+    }
+    /* 登录样式 */
+    .login-container {
+        height: 100%;
+        @include flex(center);
+        width: auto;
+        padding-left: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        position: relative;
+        .user-profile-desc {
+            display: flex;
+            color: $c-81;
+            .img-box {
+                position: relative;
+                .userInfo-icon {
+                    width: 46px;
+                    vertical-align: middle;
+                }
+                .user-level {
+                    position: absolute;
+                    bottom: 0;
+                    left: -2px;
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 50px;
+                    height: 14px;
+                    color: $c-f;
+                    background: $bg-ead;
+                    box-shadow: 0px 4px 4px rgba(23, 23, 23, 0.16);
+                    backdrop-filter: blur(3px);
+                    border-radius: 2.5px;
+                    .user-level_num {
+                        position: absolute;
+                        right: 8px;
+                        top: 50%;
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: $c-1f;
+                        transform: translateY(-50%) scale(0.75);
+                    }
+                }
+                &.show-dotted {
+                    position: relative;
+                    &:after {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        background-color: red;
+                        position: absolute;
+                        top: -4px;
+                        right: -4px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .user-detail {
+                font-size: 14px;
+                display: flex;
+                @include flex(center,
+                        column,
+                        nowrap,
+                        flex-start);
+                padding-left: 10px;
+                .user_detail_top {
+                    font-size: 12px;
+                    @include flex();
+
+                }
+                .userInfo-balance {
+                    font-weight: 900;
+                    display: flex;
+                    align-items: center;
+                    .balance{
+                        color: $c-69;
+                    }
+                    .refresh{
+                        margin-left: 5px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        //- 用户下拉菜单
+        .user-drop-menu {
+            position: absolute;
+            opacity: 0;
+            top: 80px;
+            width: 172px;
+            color: #505679;
+            height: auto;
+            background: #F8F9FD;
+            box-shadow: 4px 10px 10px rgba(15, 15, 15, 0.2);
+            border-radius: 16px;
+            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: -1;
+            &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: -14px;
+                left: 72px;
+                border-left: 14px solid transparent;
+                border-right: 14px solid transparent;
+                border-bottom: 14px solid #F8F9FD;;
+            }
+            &.on {
+                opacity: 1;
+                z-index: 999;
+                display: block;
+            }
+            .user-drop-menu_head {
+                height: 83px;
+                font-size: 14px;
+                color: $c-1f;
+                padding: 0 13px;
+                border-bottom: 1.2px solid rgba(31,41,65,.2);
+                @include flex();
+                .deposit-cls {
+                    @include flex(center,
+                            column);
+                    .deposit-cls_icon {
+                        width: 30px;
+                    }
+                    .font-active {
+                        color: $c-69;
+                    }
+                }
+            }
+            .user-drop-menu_content {
+                &:before,
+                &:after {
+                    content: "";
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: linear-gradient( 90deg, rgba(247, 234, 222, 0.5) 0%, $c-f 52.62%, rgba(240, 225, 211, 0.58) 100%);
+                    margin: 17px auto;
+                }
+                &:after{
+                    background: rgba(31,41,65,.2);
+                }
+                &:before {
+                    margin-top: 0px;
+                }
+                @include flex(center,
+                        column);
+                font-size:14px;
+                .information-item {
+                    height: 35px;
+                    width: 100%;
+                    padding: 0 43px 0 44px;
+                    box-sizing: border-box;
+                    position: relative;
+                    @include flex(space-between,
+                            row,
+                            center);
+                    .information-item_img {
+                        width: 18px;
+                        margin-right: 11px;
+                    }
+                    &.active {
+                        background: linear-gradient(135.44deg, #454F7B 0.76%, #222943 97%);
+                        color: $c-69;
+                    }
+                    &:hover {
+                        .message-count {
+                            background: $c-69;
+                            .message-count_font {
+
+                                color: $c-f;
+                            }
+                        }
+                    }
+                    .message-count {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background: #1f2941;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 25px;
+                        @include flex(center);
+                        .message-count_font {
+                            font-size: 12px;
+                            transform: scale(0.75);
+                            line-height: 15px;
+                            color: $c-81;
+                        }
+                    }
+                }
+            }
+            .user-drop-menu_footer {
+                text-align: center;
+                margin-bottom: 11px;
+                font-size: 16px;
+                color: #505679;
+                font-weight: 600;
+                // &:hover {
+                //     color: #505679;
+                // }
+            }
+        }
+    }
+}
+
+.multi-language {
+    .user-operation-container .login-container .user-drop-menu {
+        width: auto;
+        top: 90px;
+        &:before {
+            left: 90px;
+        }
+        .user-drop-menu_head {
+            font-size: 12px;
+            padding: 0 10px;
+            .deposit-cls {
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .user-drop-menu_content .information-item {
+            padding: 0 20px;
+            @include flex(flex-start, row, center);
+            .information-item_img {
+                margin-right: 12px;
+            }
+        }
+    }
+}

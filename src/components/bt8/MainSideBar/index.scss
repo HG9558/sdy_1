@@ -1,0 +1,81 @@
+.mini-side-bar {
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    top: 25%;
+    height: 366px;
+    width: 71px;
+    background-image: url('./img/side-bg.png');
+    border-radius: 8px;
+    background-size: 100% 100%;
+    color: #657180;
+    padding-left: 10px;
+    box-sizing: border-box;
+    @include flex(center,
+    column);
+    .side-bar-item {
+        @include flex(center,
+        column);
+        margin-bottom: 10px;
+        cursor: pointer;
+        .text {
+            font-size: 12px;
+            color: #657180;
+        }
+        .mini-sb-icon {
+            width: 35px;
+            height: 35px;
+            margin-bottom: 5px;
+        }
+        .el-backtop {
+            display: contents;
+        }
+        &:hover {
+            .mini-sb-box-qr {
+                display: flex;
+            }
+        }
+    }
+    .mini-sb-box-qr {
+        position: absolute;
+        background-image: url("./img/sm_code_bg.png");
+        background-size: 100% 100%;
+        text-align: center;
+        width: 148px;
+        height: 284px;
+        padding: 15px 0 20px;
+        box-sizing: border-box;
+        right: 62px;
+        cursor: pointer;
+        @include flex( space-around,
+        column);
+        .side-bar-code {
+            left: -5px;
+            font-size: 12px;
+            width: 100px;
+            height: 100px;
+            .code-top_text {
+                margin: 0px !important;
+            }
+            .code-main {
+                .login-code {
+                    height: auto;
+                    margin: 0px;
+                }
+            }
+            .code_bottom_txt {
+                position: relative;
+                top: 5px;
+                color: rgba(101, 113, 128, 1);
+            }
+        }
+        .line {
+            width: 80%;
+            height: 1px;
+            background: linear-gradient( 90deg, rgba(107, 133, 192, 0), rgba(107, 133, 192, 1), rgba(107, 133, 192, 0));
+            box-shadow: 0px 1px 0px #FFFFFF;
+            position: relative;
+            left: -4px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+export const mapData = {
+  loginName: 'loginNameisVisible',
+  loginPwd: 'loginPwdisVisible',
+  reLoginPwd: 'reLoginPwdisVisible',
+  mobile: 'mobileisVisible',
+  addressis: 'addressisVisible',
+  email: 'mailCaptcharegisVisible',
+	mailCaptchareg: 'mailCaptcharegisVisible',
+  qq: 'qqisVisible',
+  realName: 'realNameisVisible',
+  mobileCaptchareg: 'mobileCaptcharegisVisible',
+  weChat: 'weChatisVisible',
+  whatsapp: 'whatsappisVisible',
+  telegram: 'telegramisVisible',
+  captchareg: 'captcharegisVisible',
+}

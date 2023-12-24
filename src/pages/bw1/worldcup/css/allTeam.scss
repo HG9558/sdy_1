@@ -1,0 +1,167 @@
+.allTeam{
+    position: relative;
+    min-height: 500px;
+}
+
+.calander{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .arrow-left, .arrow-right{
+        background: url('../img/arrow.png') no-repeat center / 14px 20px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    } 
+    .arrow-right{
+        transform: rotate(180deg);
+    }
+    .date-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-item{
+            background: #D9CCC1;
+            border-radius: 6px;
+            height: 60px;
+            width: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            margin: 0 10px;
+            cursor: pointer;
+            &.on{
+                background: #A58970;
+                color: #fff;
+            }
+        }
+    }
+    .date-picker{
+    cursor: pointer;
+        width: 30px;
+        height: 30px;
+        margin: 0 20px 0 30px;
+        background: url('../img/icon-date.png') no-repeat center/100%;
+        overflow: hidden;
+        .el-date-editor{
+            opacity: 0;
+        }
+    }
+}
+
+.teamList{
+    .list-group{
+        background: #F6F1ED;
+        border-radius: 4px;
+        padding: 20px 10px 10px;
+        margin-bottom: 20px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    .group-date{
+        color: #C1C2C4;
+        padding-left: 10px;
+    }
+    .group-content{
+        display: flex;
+        flex-wrap: wrap;
+        .group-item{
+            width: 360px;
+            padding-bottom: 12px;
+            background: #fff;
+            border-radius: 4px;
+            font-size: 12px;
+            line-height: 17px; 
+            color: #666666;
+            text-align: center;
+            margin: 10px;
+            .group-item-inner{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 120px;
+                .group-left, .group-right{
+                    width: 100px;
+                    img{
+                        height: 21px;
+                    }
+                }                
+                .group-center{
+                    .group-time{
+                        height: 18px;
+                        background: url('../img/icon-time.png') no-repeat left top/14px;
+                        padding-left: 20px;
+                        color: #C1C2C4;
+                    }
+                    .group-score{
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 23px;
+                        text-align: center;
+                        color: #A58970;
+                        margin: 6px 0 10px;
+                    }
+                    .group-status{
+                        width: 70px;
+                        height: 25px;
+                        border-radius: 13px;
+                        border: none;
+                        background: none;
+                        &.going{
+                            background: #A58970;
+                            color: #fff;
+                        }
+                        &.notStart{
+                            border: 1px solid #A58970;
+                            color: #A58970;
+                        }
+                        &.end{
+                            background: #BBBBBB;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .btn-handle {
+                background: #A58970;
+                border-radius: 5px;
+                width: 340px;
+                height: 30px;
+                color: #fff;
+                border: 0;
+            }
+        }
+    }
+    
+}
+
+.no-data{
+    text-align: center;
+    padding: 80px 0;
+    img{
+        width: 437px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 31px;
+        text-align: center;
+        color: #999999;
+        margin: 30px 0 20px;
+    }
+    .btn-more{
+        background: #A58970;
+        border-radius: 6px;
+        width: 140px;
+        height: 30px;
+        color: #fff;
+        border: 0;
+    }
+}
+
+
+ 

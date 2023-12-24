@@ -1,0 +1,27 @@
+.lottery-item-outer {
+    font-size: 16px;
+    font-weight: 600;
+    width: 25%;
+    min-width: 25%;
+    .lottery-item {
+        position: relative;
+        height: 219px;
+        display: flex;
+        justify-content: center;
+        color: #EDB77F;
+        .lottery-context {
+            cursor: pointer;
+            .lottery-title {
+                position: absolute;
+                left: 103px;
+                top: 10px;
+            }
+            .item-img {
+                width: 169px;
+            }
+        }
+        .icon-container {
+            left: 50%;
+        }
+    }
+}

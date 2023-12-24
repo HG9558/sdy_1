@@ -1,0 +1,65 @@
+.info-msg-wrap {
+    background: $c-ff1;
+    border-radius: 10px;
+    min-height: 440px;
+    padding: 23px 20px;
+    font-size: 14px;
+    .clear-div {
+        @include flex();
+        color: $c-4d;
+        .clear-btn {
+            background-color: $c-4d;
+            color: $c-f;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    }
+    .info-msg-inner {
+        @include flex();
+        margin-bottom: 20px;
+        cursor: pointer;
+        .text-content {
+            width: 590px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-right: 15px;
+            color: $c-4d;
+            &.text-content-text-gray {
+                color: $c-ff6;
+            }
+        }
+        .create-time {
+            color: $c-4d;
+            &.text-content-text-gray {
+                color: $c-ff6;
+            }
+        }
+    }
+}
+
+.message-dialog {
+    .el-dialog__body {
+        .unbing-time-div {
+            text-align: center;
+        }
+        .unbing-div {
+            margin: 20px 0 30px;
+        }
+        .unbing-btn-div {
+            width: 150px;
+            height: 38px;
+            border: none;
+            font-size: 18px;
+            background: linear-gradient(312.61deg, #475B86 11.98%, #C5D6FF 165.62%);
+            color: $c-f;
+            border-radius: 34px;
+            margin: 0 auto;
+        }
+    }
+}

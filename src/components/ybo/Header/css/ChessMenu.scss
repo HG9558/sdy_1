@@ -1,0 +1,58 @@
+.chess-item-outer {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    width: 25%;
+    min-width: 25%;
+    .chess-item {
+        position: relative;
+        height: 229px;
+        top: -5px;
+        cursor: pointer;
+        @include flex(center, column);
+        .icon-container {
+            position: relative;
+            right: 0px;
+            bottom: -10px;
+        }
+        .chess-context {
+            position: relative;
+            width: 122px;
+            height: 166px;
+            background-size: 100% 100%;
+            @each $x in chess_ob chess_ky chess_kx {
+                &.#{$x} {
+                    background-image: url('../img/menu/chessMenu/' + $x + '.png');
+                }
+            }
+            &.chess_ky {
+                width: 141px;
+            }
+            &.chess_kx {
+                width: 155px;
+                .chess-title {
+                    left: 68px;
+                }
+            }
+            .chess-title {
+                position: absolute;
+                left: 55px;
+                top: 4px;
+                .chess-title-en {
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .enter-game {
+        width: 81px;
+        height: 28px;
+        background-image: url('../img/select_button.png');
+        background-size: cover;
+        font-size: 12px;
+        color: $c-f;
+        @include flex(center);
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,184 @@
+    .emojis-popover {
+        .van-popover__content {
+            padding: 8px 0;
+            max-width: 350px;
+        }
+    }
+    
+    .emojis {
+        width: 280px;
+        height: 160px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        .emoji-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .emoji {
+            box-sizing: border-box;
+            width: 1 / 8 * 100%;
+            padding: 5px 0;
+            touch-action: manipulation;
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 25px;
+                height: 25px;
+            }
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    
+    .emoji-input {
+        flex: 1;
+        position: relative;
+        width: 209px;
+        max-width: 209px;
+        cursor: pointer;
+    }
+    
+    .message-input_field {
+        width: 209px;
+        min-height: 30px;
+        padding: 4px 10px;
+        background: rgba(77, 97, 141, .27);
+        mix-blend-mode: normal;
+        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.81), inset -2px -2px 2px #85ABFF;
+        border-radius: 4px;
+        color: #bfc8e0;
+        box-sizing: border-box;
+        cursor: pointer;
+        border-radius: 4px;
+        &.is-disabled {
+            .el-textarea__inner,.el-input__inner {
+                background-color: transparent;
+            }
+        }
+        .el-textarea__inner,.el-input__inner {
+            background-color: transparent;
+            border: 0;
+            color: #bfc8e0;
+            line-height: 13px;
+            overflow: hidden !important;
+            height: 22px !important;
+            padding:0 15px 0 0;
+        }
+        textarea::-webkit-input-placeholder {
+            color: #8EACD1;
+        }
+        textarea:-moz-placeholder {
+            /* Firefox 18- */
+            color: $c-ce;
+        }
+        textarea::-moz-placeholder {
+            /* Firefox 19+ */
+            color: $c-ce;
+        }
+        textarea:-ms-input-placeholder {
+            color: $c-ce;
+        }
+    }
+    
+    .send-btn {
+        width: 45px;
+        height: 28px;
+        background-color: $c-f;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        margin-left: 6px;
+        background-color: transparent;
+        cursor: pointer;
+        .send-img {
+            width: 21px;
+            height: 18px;
+        }
+        &.active {
+            pointer-events: auto;
+        }
+    }
+    
+    .chat-container {
+        color: $c-3;
+        height: 100%;
+        @include flex(flex-start, column);
+        .msg-list {
+            flex: 1;
+            overflow-y: auto;
+        }
+        .send-box {
+            min-height: 44px;
+            box-sizing: border-box;
+            padding: 6px 0;
+            @include flex(center);
+            .emoji-box {
+                height: 18px;
+                position: absolute;
+                top: 50%;
+                right: 6px;
+                transform: translateY(-50%);
+                .emoji-btn {
+                    width: 18px;
+                    height: 18px;
+                    background: url("../../img/live/emoji.png") no-repeat center center;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+    
+    .chat-container {
+        .message-list {
+            padding: 14px 8px;
+            font-size: 14px;
+            .message-item {
+                line-height: 1.5;
+                margin-bottom: 8px;
+                word-break: break-all;
+                .message-name {
+                    margin-right: 8px;
+                    color: #34a0e4;
+                    &.message-name__self {
+                        color: #eac0a5;
+                    }
+                    &.message-name__anchor {
+                        color: #b4d6e9;
+                    }
+                }
+                .message-text {
+                    display: inline-block;
+                    max-width: 250px;
+                    color: $c-7;
+                    &.message-text__anchor {
+                        color: #ffa100;
+                    }
+                }
+                .message-anchor {
+                    display: inline-block;
+                    width: 44px;
+                    height: 22px;
+                    background: url("../../img/live/anchor.png") no-repeat;
+                    background-size: contain;
+                    margin-right: 5px;
+                }
+                .message-emoji {
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: middle;
+                }
+                pre {
+                    display: inline;
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                }
+            }
+        }
+    }

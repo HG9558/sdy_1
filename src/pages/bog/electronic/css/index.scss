@@ -1,0 +1,14 @@
+.electronic-box {
+    width: 100%;
+    .electronic-banner {
+        width: 100%;
+        height: 688px;
+        background: url("./img/banner.png") no-repeat center center;
+        background-size: cover;
+    }
+    .electronic-content {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+    }
+}

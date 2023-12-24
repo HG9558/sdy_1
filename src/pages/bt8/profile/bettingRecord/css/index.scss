@@ -1,0 +1,344 @@
+/deep/ .el-pagination .btn-prev {
+    background: $c-ff35;
+    border-radius: 4px;
+    .el-icon {
+        color: $c-f;
+    }
+}
+
+/deep/ .el-pagination .btn-next {
+    background: $c-ff35;
+    border-radius: 4px;
+    .el-icon {
+        color: $c-f;
+    }
+}
+
+/deep/ .el-pagination button:disabled {
+    background: $c-ff35;
+    .el-icon {
+        color: $c-f;
+    }
+}
+
+/deep/ .el-pager li {
+    border-radius: 2px;
+    margin: 0 1px;
+    background: rgba(188, 169, 151, 0.2);
+    color: $c-f;
+}
+
+/deep/ .el-pager li.active {
+    background: $c-ff4;
+}
+
+/deep/ .el-date-editor .el-range__icon {
+    color: #f6b56a;
+}
+
+/deep/ .el-date-editor .el-range-input {
+    color: $c-4d;
+}
+
+/deep/ .el-table {
+    color: $c-4d;
+    background-color: transparent;
+    margin-bottom: 32px;
+    &::before {
+        display: none;
+    }
+}
+
+/deep/ .el-table th.is-leaf {
+    text-align: center;
+}
+
+/deep/ .el-table__expanded-cell {
+    text-align: left !important;
+    padding: 0 0 0 20px;
+    border: 1px solid $bg-926;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0px 1px 0px $c-f;
+    background-color: $c-ff15;
+    .el-form-item {
+        margin-bottom: 0;
+    }
+    div {
+        i.el-icon.el-icon-arrow-right {
+            color: $c-4d;
+        }
+    }
+}
+
+.order-number {
+    display: inline-block;
+    width: 135px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.top-div {
+    border-radius: 16px;
+    padding: 20px 30px 30px;
+    position: relative;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    .betting-form {
+        /deep/.el-form-item__label {
+            text-align: left;
+            width: 45px !important;
+        }
+        /deep/.el-form-item__content {
+            margin-left: 0 !important;
+        }
+    }
+    .inquire {
+        width: 80px;
+        height: 40px;
+        background: #fba002;
+        border-radius: 4px;
+        border: 0;
+        color: $c-f;
+        margin-left: 10px;
+    }
+}
+
+.bottom-div {
+    min-height: 400px;
+    border-radius: 20px;
+    padding: 28px 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    .bottom-div-inner {
+        background: $c-ff1;
+        border-radius: 8px 8px 0 0;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+    .bottom-top-div {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        div {
+            line-height: 50px;
+            display: inline-block;
+            height: 100%;
+            max-width: 200px;
+            min-width: 200px;
+            color: $c-4d;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: center;
+            overflow: hidden;
+            word-break: break-all;
+            font-size: 14px;
+        }
+    }
+    .betting-table {
+        /deep/.has-gutter tr th {
+            color: $c-4d;
+            background: #f0f0f0;
+            text-align: center;
+        }
+        /deep/.el-table__body-wrapper tr td {
+            text-align: center;
+            border-bottom: 1px solid transparent;
+            padding-left: 0px;
+        }
+    }
+    .no-data-div {
+        display: flex;
+        justify-content: space-around;
+        background: $c-ff1;
+        text-align: center;
+        height: 48px;
+        line-height: 48px;
+        border-radius: 4px;
+        margin-top: 2px;
+        span {
+            font-size: 14px;
+            color: $c-4d;
+            font-size: 14px;
+        }
+    }
+    .no-data-gif {
+        text-align: center;
+        padding-top: 63px;
+        line-height: 487px;
+    }
+    .no-data-img {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 188px auto 0px;
+        padding-bottom: 156px;
+        color: $c-bf;
+    }
+}
+
+/deep/.el-table th {
+    background: $c-ff1 !important;
+}
+
+/deep/.el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: $c-ff1 !important;
+}
+
+
+/* 改版样式添加 */
+
+.head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .head-left {
+        flex-shrink: 0;
+        .head-left-top {
+            color: $c-ff6;
+            margin: 8px 0px;
+            font-size: 14px;
+        }
+        .head-left-bottom {
+            display: flex;
+            align-items: center;
+            background: $b-f5;
+            border: 1px solid rgba(255, 255, 255, 0.34);
+            box-shadow: inset 3px 3px 4px rgba(77, 97, 141, 0.15), inset -3px -3px 4px rgba(255, 255, 255, 0.25);
+            border-radius: 4px;
+            width: 290px;
+            .plat-name {
+                width: 52px;
+                text-align: center;
+                height: 100%;
+                font-size: 14px;
+                color: $c-4d;
+            }
+            /deep/.el-form-item {
+                margin-bottom: 0;
+                .el-select {
+                    width: 100%;
+                }
+            }
+            /deep/.el-form {
+                flex: 1;
+                .el-input__inner {
+                    background-color: transparent;
+                    border: none;
+                    color: $c-ff4;
+                }
+            }
+        }
+    }
+    .head-right {
+        .head-right-top {
+            color: $c-ff6;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .head-right-bottom {
+            .date-div {
+                display: flex;
+                align-items: center;
+                .date-btn {
+                    color: $c-f;
+                    margin-left: 15px;
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 4px;
+                    background: $c-ff35;
+                    border: none;
+                    padding: 0 15px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    &.active {
+                        background: $c-4d;
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.no-data-img,
+.no-data-gif {
+    text-align: center;
+    margin: 188px auto 252px;
+}
+
+/deep/.el-table thead {
+    color: $c-ff4;
+    font-weight: 500;
+}
+
+/deep/.el-table tr {
+    background-color: transparent;
+}
+
+/deep/.is-left {
+    text-align: left !important;
+    .cell {
+        margin-left: 8px;
+    }
+}
+
+/deep/.el-pagination {
+    margin-top: 20px;
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+/deep/.el-table__expand-icon {
+    color: $c-ff4;
+    font-size: 13px;
+}
+
+/deep/.el-pagination__jump {
+    color: $c-ff4;
+    .el-input__inner {
+        background: rgba(188, 169, 151, 0.2);
+        border-radius: 4px;
+        color: $c-ff4;
+    }
+}
+
+/deep/.demo-table-expand {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: $c-ff4;
+    box-shadow: 0px 1px 0px #FFFFFF;
+    border-bottom: 1px solid #6b85c0;
+    padding-left: 30px;
+    .el-form-item {
+        display: flex;
+        align-items: center;
+    }
+    .el-form-item__label {
+        color: $c-ff4;
+    }
+    .el-form-item__content {
+        display: flex;
+    }
+    /deep/.el-table__expanded-cell {
+        box-shadow: 0px 1px 0px $c-f !important;
+    }
+}
+
+/deep/ .el-pagination__total {
+    color: $c-ff4;
+}
+
+.betting-record-wrapper {
+    background: radial-gradient(102.63% 94.75% at 40.91% 42.48%, #FBFAFF 0%, #ECF2FF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 56, 255, 0.06), inset -1px -1px 0px #FFFFFF, inset 1px 1px 0px #FFFFFF;
+}

@@ -1,0 +1,226 @@
+.center-wallet-container {
+    position: relative;
+    padding: 15px 0px 0px;
+    background-color: $bg-32;
+    // border-bottom-left-radius: 10px;
+    // border-bottom-right-radius: 10px;
+    .common-container {
+        width: 100%;
+        position: relative;
+        padding-bottom: 28px;
+        .center-money-container {
+            @include flex(flex-start);
+            transform: translateY(7px);
+            position: absolute;
+            left: 20px;
+            bottom: 35px;
+            font-size: 14px;
+            .wallet-img {
+                width: 43px;
+            }
+            .money-amonut-container {
+                margin-left: 8px;
+                color: $c-f;
+                font-size: 14px;
+                span {
+                    font-size: 16px;
+                    color: $c-e7;
+                }
+            }
+        }
+        .totoal-money-container {
+            @include flex(center, column);
+            font-size: 14px;
+            .top-container {
+                color: $c-f;
+                .totoal-money {
+                    color: $c-e7;
+                }
+            }
+            .bottom-handle {
+                @include flex();
+                margin-top: 40px;
+                .return-btn {
+                    background-color: transparent;
+                    color: $ft-f6;
+                    width: 70px;
+                    font-size: 12px;
+                    height: 30px;
+                    border-radius: 4px;
+                    text-align: center;
+                    line-height: 30px;
+                    cursor: pointer;
+                    transition: all .2s;
+                    border: 1px solid $ft-f6;
+                    &:hover {
+                        background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+                        border-color: transparent;
+                        color: #393A42;
+                    }
+                }
+                .line {
+                    width: 2px;
+                    height: 44px;
+                    background-color: $bg-3d;
+                    margin: 0 21px;
+                }
+                .lock-container {
+                    @include flex();
+                    .icon_lock {
+                        width: 43px;
+                    }
+                    .text {
+                        margin-left: 8px;
+                        color: $c-f;
+                        font-size: 14px;
+                        span {
+                            font-size: 16px;
+                            color: $c-e7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .game-wallet-container {
+        border-top: 1px solid $bg-3d;
+        margin: 0 20px;
+        .tip-text {
+            font-weight: 400;
+            color: $ft-f6;
+            padding: 30px 0 24px 24px;
+            text-align: center;
+        }
+        .item-container {
+            // padding: 20px 0;
+            @include flex(flex-start, row, wrap);
+            .item {
+                width: 120px;
+                height: 50px;
+                background: $c-c4;
+                border-radius: 4px;
+                color: $c-39;
+                @include flex(center, column, wrap, center);
+                font-size: 12px;
+                margin: 0 32px 26px 0;
+                position: relative;
+                .title {
+                    @include flex();
+                    color: $c-39;
+                    font-size: 16px;
+                    position: relative;
+                }
+                .warning {
+                    font-size: 12px;
+                    color: #393A42;
+                    right: 8px;
+                    top: 20px;
+                }
+                .exclamation {
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    right: 10px;
+                    top: 7px;
+                }
+            }
+        }
+        // 自动转账和手动转账
+        .game-z-z {
+            display: flex;
+            flex: 1;
+            position: relative;
+
+            .toggle-money {
+                border: 1px solid #E7D3A0 ; 
+                color: #E7D3A0 ;  
+                background: #393A42;
+                border-radius: 2px;
+                width: 100px;
+                height: 34px;
+                left: 0px;
+                border-radius: 5px;
+                margin: 26px 20px 20px 0px;
+                font-size: 16px;
+
+                &.on {
+                    color: #393A42;
+                    background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%)
+                }
+
+                &.auto {
+                    margin-bottom: 0;
+                }
+            }
+
+            .money {
+                position: absolute;
+                right: 20px;
+                top: 28px;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+        
+        //手动转账
+        .game-sport {
+            display: inline-block;
+            width: 220px;
+            height: 104px;
+            left: 0px;
+            top: 0px;
+            background: #393A42;
+            color: #fff;
+            border-radius: 8px;
+            margin-right: 10px;
+            margin-top: 15px;
+            &:nth-child(4n){
+                margin-right: 0;
+            }
+            .game-11 {
+                display: inline-block;
+                width: 102px;
+                margin: 19px 10px 0px 19px;
+                font-size: 18px;
+                .game-sport-one {
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                /deep/ .el-icon-warning {
+                    color: red;
+                }
+            }
+
+            .game-transfers {
+                display: inline-block;
+                margin-top: 21px;
+
+                .transfer-on {
+                    border: 1px solid #E7D3A0 ;
+                    padding: 0px 20px 0px 20px;
+                    color: #E7D3A0 ;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+                    line-height: 25px;
+                }
+
+                .transfer-out {
+                    line-height: 26px;
+                    border: 0;
+                    padding: 0px 20px 0px 20px;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    color: #393A42;
+                    background: linear-gradient(180deg, #E3CF99 0%, #E0C78C 100%), linear-gradient(180deg, #E3E2E2 0%, #9B9A9A 100%);
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}

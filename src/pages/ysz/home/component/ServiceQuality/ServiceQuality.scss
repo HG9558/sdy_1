@@ -1,0 +1,70 @@
+.service {
+    color: $c-a;
+    position: relative;
+    padding: 0 0 80px;
+    margin: 63px auto 0;
+    width: 1200px;
+    .service-title {
+        padding: 0 30px;
+        margin: 0;
+    }
+    .title-container {
+        background-image: url('../../img/service/service_title_bg.png');
+        background-size: 403px auto;
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding-top: 15px;
+        margin-bottom: 36px;
+        @include flex(center,
+        column);
+        img {
+            width: 180px;
+        }
+        .sub-text {
+            font-size: 14px;
+            color: #808293;
+            margin-top: 10px;
+        }
+    }
+    .service-top-box {
+        padding: 7px 30px 0;
+        height: 477px;
+        background: url('../../img/service/service-bg.png') no-repeat center center/100% 100%;
+        .service-items {
+            @include flex(flex-start);
+            font-size: 13px;
+            border-radius: 8px;
+            height: 110px;
+            padding-top: 5px;
+            .content {
+                @include flex();
+                margin-left: 10px;
+                .main {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #fff;
+                    .english {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #CECED3;
+                    }
+                }
+                .main-two {
+                    font-size: 14px;
+                    width: 580px;
+                    font-weight: 500;
+                    color: $c-a;
+                    margin-left: 140px;
+                }
+            }
+            .desc-img {
+                margin-right: 18px;
+                width: 84px;
+            }
+        }
+    }
+    .service-bottom-box {
+        width: 1200px;
+        margin-top: 27px;
+    }
+}

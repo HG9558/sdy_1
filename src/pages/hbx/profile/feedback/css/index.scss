@@ -1,0 +1,176 @@
+.feedback-wrap {
+    background: $bg-32;
+    padding: 7px 25px 20px;
+    position: relative;
+    .feedback-type {
+        font-size: 14px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #fff;
+        // color: $c-81;
+        margin: 18px 0 11px;
+    }
+    .feedback-form {
+        position: relative;
+        /deep/ {
+            .el-form-item__content {
+                margin-left: 0 !important;
+            }
+        }
+        .count-div {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            color: $ft-f6;
+        }
+    }
+    .feedback-description {
+        font-size: 14px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #fff;
+        margin: 26px 0 9px;
+        >span {
+            font-size: 14px;
+            color: #a09699;
+        }
+    }
+    .upload-img {
+        width: 100%;
+        background: $c-39;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        @include flex(center);
+        position: relative;
+        .upload-inner {
+            width: 100%;
+            .upload-demo {
+                position: relative;
+                /deep/ {
+                    .el-upload-dragger {
+                        background-color: transparent;
+                        border: 0;
+                        margin-top: 46px;
+                        width: 100%;
+                        position: relative;
+                        left: 35%;
+                        z-index: 1;
+                        color: #fff;
+                        .upload-container {
+                            color: $ft-f6;
+                        }
+                        .upload-icon {
+                            width: 60px;
+                        }
+                        .el-upload__text {
+                            margin: 12px 0 25px;
+                            color: $ft-f6;
+                            em {
+                                font-weight: normal;
+                                color: $c-f;
+                                margin-left: 5px;
+                            }
+                        }
+                        .el-icon-upload {
+                            margin: 20px 0 16px;
+                        }
+                    }
+                    .el-upload-list--picture {
+                        position: absolute;
+                        top: 0px;
+                        left: 10px;
+                        width: 100%;
+                        height: 100%;
+                        .el-upload-list__item {
+                            background-color: transparent;
+                            border: 1px solid transparent;
+                            height: 91%;
+                            @include flex(flex-start);
+                            .el-upload-list__item-thumbnail {
+                                width: 291px;
+                                height: 180px;
+                                border: 2px solid $c-348;
+                            }
+                            .el-upload-list__item-name {
+                                margin-left: 22px;
+                                color: $c-f;
+                                overflow: inherit;
+                                text-overflow: inherit;
+                                white-space: inherit;
+                            }
+                            .el-icon-close {
+                                position: absolute;
+                                left: 320px;
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: $c-f;
+                                top: 13px;
+                            }
+                        }
+                    }
+                }
+                /deep/ .el-upload--picture-card:hover,
+                /deep/ .el-upload:focus {
+                    color: #fff;
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+    .btnCommit {
+        width: 79px;
+        height: 29px;
+        font-size: 12px;
+        color: $c-f;
+        background: $ft-f6;
+        border-radius: 5px;
+        border: 0;
+        margin: 31px auto 7px;
+        font-weight: 600;
+        @include flex(center);
+    }
+    .btnCommit.btnCommit-on {
+        background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+        color: $c-39;
+    }
+    .mask-div {
+        width: 340px;
+        height: 106px;
+        background: $c-54;
+        box-shadow: 0px 8px 20px rgba(58, 22, 1, 0.08);
+        border-radius: 10px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        z-index: 2;
+        @include flex(flex-start, column);
+        transform: translate(-50%, -50%);
+        .smile-div {
+            margin: 17px 0 10px;
+            img {
+                width: 18px;
+            }
+        }
+        .title {
+            margin-bottom: 14px;
+        }
+        div {
+            color: $c-f;
+            font-size: 14px;
+            &:nth-child(3) {
+                color: $c-cec;
+            }
+        }
+    }
+}
+
+/deep/ .el-loading-spinner {
+    margin-top: -15px;
+    .circular {
+        width: 25px;
+        height: 25px;
+        .path {
+            stroke: $c-81;
+        }
+    }
+}

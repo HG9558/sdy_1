@@ -1,0 +1,191 @@
+$bg: $c-81;
+.national-agent {
+    .national-agent-top {
+        background: $bg-32;
+        border-radius: 10px;
+        padding-left: 20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        color: $c-cec;
+    }
+    .agent-top {
+        border-radius: 8px;
+        padding: 30px 0;
+        @include flex();
+        .line {
+            width: 1px;
+            height: 172px;
+            background-color: $bg-926;
+            flex-grow: 0;
+            padding: 0 0 0 1px;
+        }
+        .btn-box {
+            @include flex(center);
+        }
+        .top-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .top-text {
+            background: rgba(188, 169, 151, 0.1);
+            border-radius: 4px;
+            padding: 15px;
+        }
+        >div {
+            flex: 1;
+            padding-right: 20px;
+        }
+    }
+    .agent-box {
+        margin-top: 40px;
+        background: $bg-32;
+        padding: 30px;
+        border-radius: 8px;
+        position: relative;
+        color: $c-cec;
+        @include flex(center, column);
+        .tips-box {
+            margin: 20px auto;
+            color: $c-e7;
+            line-height: 40px;
+            font-size: 14px;
+            width: 80%;
+            @include flex(center, column);
+        }
+        .agent-bg {
+            position: absolute;
+            left: 20px;
+            top: 0;
+            width: 317px;
+            height: 233px;
+            background-image: url("../img/nationalAgent/agent_bg.png");
+            background-size: cover;
+        }
+        .date-btns {
+            @include flex();
+        }
+        .agent-btn {
+            width: 154px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+    .no-qr-code {
+        width: 110px;
+        height: 117px;
+        text-align: center;
+        line-height: 117px;
+        background: $c-f;
+        margin: 0 auto;
+    }
+    .qrcode {
+        width: 120px;
+        margin: 0 auto;
+        padding: 5px;
+        background: $c-f;
+    }
+    .grey {
+        background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+        border-color: transparent;
+        color: $c-39;
+        font-weight: 600;
+    }
+    .defBtn {
+        color: $c-f;
+        background: $bg-32;
+        border-color: transparent;
+    }
+    .onBtn {
+        background: $c-81;
+        border-color: transparent;
+    }
+    .agent-text {
+        margin: 20px 0;
+        color: $c-81;
+        font-size: 14px;
+        @include flex();
+        span {
+            margin-right: 40px;
+        }
+        .agent-rule {
+            cursor: pointer;
+        }
+    }
+    .agent-data {
+        @include flex(center);
+        border-top: solid 1px $c-81;
+        border-bottom: solid 1px $c-81;
+        padding: 20px 0;
+        width: 500px;
+        .data-item {
+            @include flex(center,
+            column);
+            flex: 1;
+            border-right: $c-81 solid 1px;
+            &:last-child {
+                border-right: none;
+            }
+            .item-text {
+                color: $c-a;
+                margin-top: 18px;
+            }
+            .item-val {
+                margin: 18px 0;
+            }
+        }
+    }
+    .agent-list {
+        .agent-seach {
+            @include flex(center);
+            margin: 30px 5px;
+            .agent-input {
+                /deep/ .el-input__inner {
+                    width: 190px;
+                }
+            }
+        }
+        .agent-seach-data {
+            .no-data-img {
+                @include flex(center,
+                column);
+                img {
+                    width: 280px;
+                }
+            }
+        }
+    }
+}
+
+.agent-dialog-content {
+    h1 {
+        margin: 20px 0;
+    }
+}
+
+//- todo 统一处理分页
+/deep/ .el-pagination .btn-prev {
+    background: #3d4154;
+    border-radius: 12px 2px 2px 12px;
+    .el-icon {
+        color: #f6b56a;
+    }
+}
+
+/deep/ .el-pagination .btn-next {
+    background: #3d4154;
+    border-radius: 2px 12px 12px 2px;
+    .el-icon {
+        color: #f6b56a;
+    }
+}
+
+/deep/ .el-pagination button:disabled {
+    background: $c-a;
+    .el-icon {
+        color: $c-f;
+    }
+}
+
+/deep/ .el-pager li.active {
+    color: $c-f;
+}

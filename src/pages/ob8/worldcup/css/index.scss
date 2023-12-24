@@ -1,0 +1,43 @@
+.worldcup_wrap{
+    .banner{
+        width: 100%;
+        height: 600px;
+        background: #333 url('./img/banner.jpg') no-repeat 50%;
+        background-size: auto 100%;
+        margin-top: -88px;
+    } 
+    .worldcup_container{
+        background: rgba(233, 237, 248, 0.6) ;
+        padding: 50px 0 80px;
+        .content{
+            width: 1200px;
+            min-height: 600px; 
+            background: linear-gradient(180deg, #F4F9FF 0%, #FCFDFF 100%);
+            box-shadow: 0px 4px 20px rgba(207, 212, 225, 0.89);
+            border-radius: 10px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            .tab{
+                display: flex;
+                .tab-item{
+                    border-radius: 4px;
+                    width: 140px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    margin-right: 20px;
+                    background: linear-gradient(0deg, #A09F9B 0%, #504F4E 12.5%, #8E8E8E 81.77%, #CBCBCB 100%);;
+                    color: #fff;
+                    opacity: 0.4;
+                    cursor: pointer;
+                    &.on{
+                        background: linear-gradient(0deg, #97D6FC 0%, #3E80FF 13.54%, #61B2F9 81.77%, #96D6FB 100%);;         
+                        color: #fff;    
+                        opacity: 1;       
+                    }
+                }
+            }
+        }
+    }
+}

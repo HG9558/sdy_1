@@ -1,0 +1,121 @@
+.top-game {
+    margin-top: 60px;
+    .top-title {
+        width: 1200px;
+        height: 95px;
+        margin-bottom: 15px;
+    }
+    .type-chose {
+        @include flex();
+        padding: 0 36px;
+        .type {
+            @include flex(center);
+            width: 168px;
+            height: 44px;
+            font-size: 18px;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+            color: rgba(77, 97, 141, .4);
+            position: relative;
+            cursor: pointer;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-radius: 4px 4px 0 0;
+                box-sizing: border-box;
+                width: 172px;
+                height: 8px;
+                background: $bg-bc;
+            }
+            &:hover {
+                &:after {
+                    background: $bg-926;
+                }
+            }
+            &.type-div {
+                color: $c-4d;
+                font-weight: bold;
+                &:after {
+                    background: $bg-926;
+                }
+            }
+        }
+    }
+    .content-container {
+        height: 300px;
+        background: $c-fc;
+        border-radius: 8px;
+        .dn-bg {
+            display: flex;
+            overflow: hidden;
+            border-bottom: 1px solid #f3ebe4;
+            align-items: center;
+            padding: 10px 0 0 47px;
+            border-bottom: 1px solid #6B85C0;
+            $logoList: ( sport: 164, real: 150, poker: 177, esport: 186, lottery: 173, electronic: 139, );
+            @each $k,
+            $o in $logoList {
+                .#{$k}-logo {
+                    height: 127px;
+                }
+            }
+            .right-box {
+                height: 120px;
+                color: $c-4d;
+                z-index: 99;
+                @include flex();
+                .one {
+                    width: 118px;
+                    margin: 0 23px 0 29px;
+                    .one-1 {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                    .one-2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: rgba(77, 97, 141, 0.6);
+                    }
+                }
+                .three {
+                    width: 621px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    color: rgba(77, 97, 141, 0.6);
+                }
+            }
+        }
+        .plat-content-box {
+            @include flex(flex-start);
+            margin-left: 20px;
+            margin-top: 20px;
+            .game-item {
+                width: 120px;
+                height: 120px;
+                margin-right: 20px;
+                cursor: pointer;
+                position: relative;
+                .type-name {
+                    position: absolute;
+                    bottom: 11px;
+                    width: 100%;
+                    text-align: center;
+                }
+                .game-img {
+                    position: absolute;
+                    &.is-Try-icon {
+                        left: 2px;
+                        top: -2px;
+                        width: 51px;
+                    }
+                    &.isClick-img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

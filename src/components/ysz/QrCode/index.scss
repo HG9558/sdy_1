@@ -1,0 +1,119 @@
+.code-container {
+    position: relative;
+    @include flex(space-between, column);
+    &.home-code,
+    &.header-code {
+        .code-main.already-login {
+            background-image: url('./img/login_sm_code_container.png');
+            width: 110px;
+            height: 117px;
+            .login-code {
+                width: 102px;
+                height: 107px;
+            }
+        }
+    }
+    .code-top_text {
+        margin-bottom: 0px;
+        width: 101px;
+        color: #9A9DAA;
+        @include flex(center,
+        column);
+        img {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+    &.side-bar-code {
+        .code-main {
+            background-image: none;
+        }
+    }
+    .bottom_un_login {
+        color: #9A9DAA;
+        margin-top: 20px;
+    }
+    &.header-code {
+        .code-main.un-login-main {
+            width: 88px;
+            height: 94px;
+            .un-login {
+                width: 90%;
+            }
+            &.un-login-main {
+                background-image: url('./img/login_sm_code_container.png');
+            }
+        }
+    }
+    .code-main {
+        width: 110px;
+        height: 117px;
+        background-image: url('./img/code_wrapper.png');
+        background-size: 100% 100%;
+        @include flex(center);
+        .home-un-login {
+            cursor: pointer;
+            width: 80px;
+        }
+        .un-login {
+            width: 68px;
+        }
+        .login-code {
+            width: 86px;
+        }
+        &.login-code-main {
+            width: 170px;
+            height: 200px;
+            background-size: 100% 100%;
+            .login-code {
+                width: 120px;
+            }
+        }
+        .download-qrcode {
+            width: 81px;
+            height: 81px;
+        }
+    }
+    .code_bottom_txt {
+        @include flex(center,
+        column);
+    }
+    .right_en {
+        position: absolute;
+        right: -30px;
+        width: 40px;
+        &.real_flag {
+            width: 29px;
+            right: -37px;
+            top: -20px;
+        }
+        &.chess_flag {
+            width: 25px;
+            right: -27px;
+            top: -20px;
+        }
+        &.esports_flag {
+            width: 36px;
+        }
+        &.lottery_flag {
+            right: -37px;
+            width: 37px;
+            top: -37px;
+        }
+        &.discount_flag {
+            width: 34px;
+            top: -40px;
+        }
+        &.perate_flag {
+            width: 100px;
+            top: -20px;
+            right: -40px;
+        }
+        &.electronic_flag {
+            position: absolute;
+            right: -34px;
+            width: 26px;
+            top: -20px;
+        }
+    }
+}

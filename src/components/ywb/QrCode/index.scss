@@ -1,0 +1,97 @@
+.code-container {
+    width: 140px;
+    position: relative;
+    color: $c-81;
+    top: -5px;
+    @include flex(space-between, column);
+    .code-top_text {
+        height: 60px;
+        // line-height: 22px;
+        font-size: 16px;
+        @include flex(center, column);
+        img{
+            width: 101px;
+        }
+        .returnWater-text {
+          font-size: 34px;
+          line-height: 40px;
+          font-weight: 300;
+          color: #D5D7E9;
+        }
+    }
+    .bottomText{
+        position: absolute;
+        bottom: -28px;
+    }
+    .code-main {
+        width: 110px;
+        height: 117px;
+        background-image: url('./img/code_wrapper.png');
+        background-size: 100% 100%;
+        @include flex(center);
+        .home-un-login {
+            width: 95px;
+        }
+        .un-login {
+            width: 75px;
+        }
+        .login-code {
+            width: 86px;
+        }
+        .mb15 {
+            margin-bottom: 5px;
+        }
+        &.login-code-main {
+            width: 88px;
+            height: 94px;
+            background-size: 100% 100%;
+            .login-code {
+                width: 68px;
+            }
+        }
+    }
+    .code_bottom_txt {
+        @include flex(center,
+        column);
+        letter-spacing: 1px;
+        margin-top: -7px;
+        color: #E8EDF9;
+    }
+    .right_en {
+        position: absolute;
+        right: -10px;
+        width: 40px;
+        top: -10px;
+        &.real_flag {
+            width: 27px;
+            right: 0px;
+            top: -12px;
+        }
+        &.electronic_flag{
+            width: 24px;
+        }
+        &.chess_flag {
+            width: 24px;
+            right: -5px;
+            top: -50px;
+        }
+        &.esports_flag {
+            width: 36px;
+        }
+        &.lottery_flag {
+            right: -6px;
+            width: 37px;
+            top: -42px;
+        }
+        &.discount_flag {
+            right: 0px;
+            width: 30px;
+            top: -40px;
+        }
+        &.perate_flag {
+            right: 4px;
+            width: 110px;
+            top: -35px;
+        }
+    }
+}

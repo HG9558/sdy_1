@@ -1,0 +1,93 @@
+.code-container {
+    width: 140px;
+    position: relative;
+    color: $c-ff4;
+    top: -5px;
+    @include flex(space-between, column);
+    .code-top_text {
+        margin-bottom: 28px;
+        width: 101px;
+        color: rgba(77, 97, 141, 1);
+        @include flex(center, column);
+        img {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+    &.side-bar-code {
+        .code-main {
+            background-image: none;
+        }
+    }
+    .bottom_un_login {
+        color: rgba(77, 97, 141, 1);
+        margin-top: 5px;
+    }
+    .code-main {
+        width: 55px;
+        height: 59px;
+        width: 110px;
+        height: 117px;
+        background-image: url('./img/code_wrapper.png');
+        background-size: 100% 100%;
+        @include flex(center);
+        .home-un-login {
+            width: 95px;
+        }
+        .un-login {
+            width: 68px;
+        }
+        .login-code {
+            width: 86px;
+        }
+        &.login-code-main {
+            width: 94px;
+            height: 94px;
+            background-size: 100% 100%;
+            .login-code {
+                width: 68px;
+            }
+        }
+        .download-qrcode {
+            width: 81px;
+            height: 81px;
+        }
+    }
+    .code_bottom_txt {
+        @include flex(center,
+        column);
+        color: $c-4d;
+        margin-top: -7px;
+    }
+    .right_en {
+        position: absolute;
+        right: -10px;
+        width: 40px;
+        &.real_flag {
+            width: 30px;
+            right: 0px;
+        }
+        &.chess_flag {
+            width: 25px;
+            right: -1px;
+        }
+        &.esports_flag {
+            width: 36px;
+        }
+        &.lottery_flag {
+            right: -6px;
+            width: 37px;
+            top: -42px;
+        }
+        &.discount_flag {
+            right: 0px;
+            width: 30px;
+            top: -40px;
+        }
+        &.perate_flag {
+            right: 4px;
+            width: 27px;
+            top: -40px;
+        }
+    }
+}

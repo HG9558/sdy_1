@@ -1,0 +1,88 @@
+.pointData{
+    position: relative;
+    min-height: 500px;
+    .head{
+        height: 80px;
+        background: #F6F1ED url('../img/point-head.png') no-repeat 60px center/43px 60px; 
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #999999;
+        padding: 15px 0 0 120px;
+        box-sizing: border-box;
+        margin: 20px 0;
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            color: #666666;
+        }
+    }
+    .list-group{
+        background: #F6F1ED;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding-bottom: 22px;
+        .list-group-head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px; 
+            color: #fff;
+            background: linear-gradient(90deg, #A58970 0%, #D9CCC1 53.02%, #A58970 100%);;
+            border-radius: 10px 10px 0px 0px;
+            padding: 0 90px;
+            span{
+                flex: 1;
+                text-align: center;
+                &:first-child{
+                    flex: 2;
+                    text-align: left;
+                }
+            }
+        }
+        .list-group-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px; 
+            color: #666666;
+            margin: 0 90px;
+            height: 60px;
+            border-bottom: 1px solid #CCCCCC;            
+            span{
+                flex: 1;
+                text-align: center;
+                &:first-child{
+                    flex: 2;
+                    text-align: left;
+                }
+            }
+            .team-logo{
+                width: 16px;                
+                vertical-align: middle;
+                margin: 0 10px;
+            }
+        }
+    }
+    .no-data{
+        text-align: center;
+        padding: 80px 0;
+        img{
+            width: 437px;
+        }
+        p{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 31px;
+            text-align: center;
+            color: #999999;
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,250 @@
+.match-comp {
+    //  background: rgba(34, 35, 40, 1);
+     color: #333333;
+     font-family: 'PingFang HK';
+     .tabs {
+         display: flex;
+         justify-content: space-around;
+         margin: 0 0 14px 7px;
+         .tab-item {
+             font-size: 14px;
+             padding: 0 10px;
+             height: 30px;
+             line-height: 30px;
+         }
+    }
+       .giftTab {
+           margin: 5px auto 0;
+           width: 140px;
+           height: 25px;
+           margin: 0 auto 15px;
+           display: flex;
+           border-radius: 12px;
+           overflow: hidden;
+
+           .tab-item {
+               width: 70px;
+               text-align: center;
+               line-height: 25px;
+               font-size: 12px;
+               // background-color: #3A3A3A;
+               cursor: pointer;
+           }
+       }
+
+       .dateTab {
+           display: flex;
+           justify-content: space-around;
+           width: 100%;
+           margin-left: 6px;
+           .tab-item {
+               width: 86px;
+               border-radius: 6px;
+           }
+       }
+
+       .tab-item {
+         border-radius: 6px;
+         transition: 0.2s;
+         text-align: center;
+         cursor: pointer;
+         background-color: #f2ede9;
+         color: #ab896a;
+         &.active {
+        position: relative;
+        color:  #ffffff;
+        background: #ab896a;
+        border-radius: 4px;
+        ;
+        }
+    }
+
+
+
+     .list-wrapper {
+         margin: 0 !important;
+         width: 311px;
+         height: 438px;
+         overflow-x: hidden;
+        .match-list {
+            .match-item {
+                background: #f2ede9;
+                // box-shadow: 0px 0px 10px rgba(18, 18, 18, 0.6);
+                border-radius: 6px;
+                margin-bottom: 10px;
+                padding-bottom: 1px;
+                font-size: 12px;
+                padding-left: 6px;
+                box-sizing: border-box;
+                cursor: pointer;
+                .playing{
+                    box-shadow: 0 0 0px 2px #AB896A;
+                    width: 267px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    box-sizing: border-box;
+                }
+                .date-title {
+                    height: 28px;
+                    line-height: 28px;
+                    box-sizing: border-box;
+                    .match-detail-show {
+                        float: right;
+                        margin-right: 20px;
+                    }
+                }
+                .match-name-time {
+                    background: #ffffff;
+                    // border-radius: 5px;
+                    // margin: 0 12px 10px 10px;
+                    padding: 8px 10px 10px;
+                    box-sizing: border-box;
+                    width: 268px;
+                    overflow: hidden;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    .leagueName {
+                        background: #ffffff;
+                        border-radius: 5px 5px 0px 0px;
+                        // height: 34px;
+                        float: left;
+                        span{
+                            display: inline-block;
+                            max-width: 120px;
+                            word-wrap: break-word;
+                        }
+                    }
+                    .match-time {
+                        margin-left: 5px;
+                        float: left;
+                    }
+                    .action {
+                        float: right;
+                        margin-right: 10px;
+                        // pointer-events: none;
+                        font-style: 13px;
+                        cursor: pointer;
+                        .room {
+                            background: url(../../img/live/icon-anchor-play.svg) no-repeat left center;
+                            &.play{
+                                background: url(../../img/live/icon-anchor-play.svg)  no-repeat center center/contain;
+                            }
+                        }
+                        .event {
+                            background: url(../../img/live/icon-event-notPlay.svg) no-repeat center center;
+                            &.play{
+                                background: url(../../img/live/icon-event-play.svg) no-repeat center center/contain;
+                            }
+                        }
+                        .icon {
+                            display: inline-block;
+                            width: 18px;
+                            height: 14px;
+                            margin-right: 5px;
+                            background-size: contain;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .no-date-title{
+                    margin-bottom: 10px;
+                }
+                .team-w {
+                    height: 59px;
+                    background: #f8f6f4;
+                    box-sizing: border-box;
+                    width: 268px;
+                    padding: 3px 0 3px;
+                    .team {
+                        font-style: 12px;
+                        height: 27px;
+                        padding-left: 10px;
+                        box-sizing: border-box;
+                        padding: 3px 0 3px 10px;
+                        .img-box {
+                            width: 21px;
+                            vertical-align: middle;
+                        }
+                        .team-name {
+                            margin-left: 10px;
+                        }
+                        .vs {
+                            float: right;
+                            margin-right: 18px;
+                            color: #D3C294;
+                        }
+                    }
+                }
+            }
+            .show {
+                // height: 234px;
+            }
+
+        }
+     }
+     .no-more {
+         text-align: center;
+         line-height: 60px;
+     }
+    }
+
+    .el-scrollbar:active>.el-scrollbar__bar,
+    .el-scrollbar:focus>.el-scrollbar__bar,
+    .el-scrollbar:hover>.el-scrollbar__bar {
+       opacity: 0 !important;
+    }
+    .gift-no-data {
+      position: relative;
+      width: 100%;
+      height: 438px;
+        img {
+            width: 100%;
+        }
+    }
+
+.multi-language {
+  .match-comp .tabs .tab-item {
+    white-space: nowrap;
+    font-size: 12px;
+  }
+  .match-comp .list-wrapper .match-list .match-item {
+    .match-name-time {
+      .leagueName span{
+        max-width: 240px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .action {
+        display: flex;
+        align-items: center;
+        .icon {
+          display: block;
+        }
+      }
+    }
+    .team-w .team {
+      .team-name {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 185px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .gift-no-data img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+  }
+}
+
+.language-ms {
+    .match-comp .tabs .tab-item {
+        padding: 0 5px;
+    }
+}

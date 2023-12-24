@@ -1,0 +1,100 @@
+.live-container {
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    // padding-bottom: 60px;
+    box-sizing: border-box;
+    background: url('../../img/gride_barckground_top.png') 214px 0px no-repeat, url("../../img/gride_barckground_bottom.png") 0px 180px no-repeat;
+    background-size: 987px 842px;
+    background-color: rgba(34, 35, 40, 0.8);
+    .live-header {
+        @include flex();
+        height: 104px;
+        .live-tips {
+            position: relative;
+            min-width: 219px;
+            background-size: 192px auto;
+            background-position-x: right;
+            margin-right: 70px;
+            z-index: 10;
+            background-image: url('../../img/tips_icon.png');
+            font-size: 24px;
+            color: #ceced3;
+            &::before {
+                position: absolute;
+                left: -10px;
+                top: 50%;
+                content: "";
+                width: 2px;
+                height: 18px;
+                background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+                border-radius: 2.43097px;
+                transform: matrix(-1, 0, 0, 1, 0, 0) translateY(-50%);
+            }
+        }
+    }
+    .live-tabs {
+        // padding: 28px 16px 28px 28px;
+        margin-left: -17px;
+        @include flex(flex-start);
+        background: url('../../img/tips_icon2.png') no-repeat;
+        width: 158px;
+        font-size: 12px;
+        background-size: 81px auto;
+        background-position-x: right;
+    }
+    .live-tab-item {
+        width: 120px;
+        // line-height: 48px;
+        font-size: 14px;
+        text-align: center;
+        transition: all 0.2s ease 0s;
+        color: $c-f;
+        cursor: pointer;
+        border-radius: 6px;
+        border: 1px solid #766645;
+        box-sizing: border-box;
+        @include flex(center);
+        position: relative;
+        z-index: 10;
+        margin-right: 20px;
+        .nav-text {
+            color: #766645;
+            margin-left: 8px;
+            width: 73px;
+            height: 36px;
+            // background-position-x: left;
+            // background-image: url('../../img/tips_icon2.png');
+            &::before {
+                position: absolute;
+                left: 28px;
+                top: 50%;
+                content: "";
+                width: 2px;
+                height: 18px;
+                background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+                border-radius: 2.43097px;
+                transform: matrix(-1, 0, 0, 1, 0, 0) translateY(-50%);
+            }
+        }
+        .nav-icon {
+            width: 0px;
+           
+        }
+        &.active {
+            // background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+            border-color: transparent;
+            .nav-text {
+                color: #CECED3;
+            }
+        }
+    }
+}
+.nav-text {
+    // background-color: brown;
+    margin-left: -94px;
+    font-size: 24px;
+    color: #ceced3;
+}

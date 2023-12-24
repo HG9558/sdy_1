@@ -1,0 +1,56 @@
+.message-wrapper {
+    min-height: 690px;
+    .nav-item-container {
+        @include flex();
+        padding-top: 28px;
+        .nav-item {
+            cursor: pointer;
+            .nav-item-content {
+                width: 230px;
+                height: 40px;
+                @include flex(center);
+                color: #505679;
+                .icon {
+                    transform: scale(0.5);
+                }
+                .vertical-line {
+                    margin-right: 8px;
+                    margin-bottom: 4px;
+                }
+            }
+            &.on {
+                position: relative;
+                .nav-item-content {
+                    color: #E49A73;
+                }
+                &:after {
+                    display: flex;
+                    content: "";
+                    width: 96px;
+                    height: 3px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 52%;
+                    transform: translateX(-50%);
+                    border-radius: 6px 6px 0 0;
+                    background: $c-81;
+                }
+            }
+        }
+    }
+    .main-container {
+        padding: 0px 20px;
+        box-sizing: border-box;
+        position: relative;
+        .no-data-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include flex(center, column);
+        }
+        .chat-container{
+            padding-bottom: 15px;
+        }
+    }
+}

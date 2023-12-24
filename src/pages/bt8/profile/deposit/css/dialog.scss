@@ -1,0 +1,56 @@
+.deposit-dialog {
+    .bog.el-dialog {
+        .el-dialog__body {
+            .dialog-wrapper {
+                padding: 0 24px;
+                @include flex(center, column, nowrap, flex-start);
+                .dialog-content {
+                    width: 100%;
+                    @include flex();
+                    margin-bottom: 20px;
+                    .title {
+                        color: $c-4d;
+                    }
+                    .text {
+                        color: $c-4d;
+                    }
+                    .required-text {
+                        margin-left: 12px;
+                        color: $c-r;
+                        font-size: 14px;
+                    }
+                    .copy {
+                        @include flex();
+                        .copy-img {
+                            width: 14px;
+                            margin-right: 8px;
+                        }
+                        .copy-text {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .setup {
+                    color: $c-3;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    div {
+                        margin-bottom: 10px;
+                        &.attention {
+                            color: $c-r;
+                        }
+                        .service {
+                            color: #38b63f;
+                        }
+                    }
+                }
+            }
+        }
+        .el-dialog__footer {
+            .el-button {
+                font-size: 16px;
+                border-radius: 34px;
+            }
+        }
+    }
+}

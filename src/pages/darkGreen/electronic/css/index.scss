@@ -1,0 +1,31 @@
+.electronic-box {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 124px;
+    @include common-bg;
+    .electronic-banner {
+        width: 100%;
+        height: 600px;
+        background: url("./img/banner.png") no-repeat 50%;
+        background-size: auto 100%;
+    }
+    .electronic-content {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+.multi-language {
+  .electronic-box .electronic-banner {
+    background: url("./img/banner_en.png") no-repeat center center;
+    background-size: auto 100%;
+  }
+}
+
+.language-vi {
+    .electronic-box .electronic-banner {
+        background: url("./img/banner_vi.png") no-repeat center center;
+        background-size: auto 100%;
+    }
+}

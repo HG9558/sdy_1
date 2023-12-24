@@ -1,0 +1,158 @@
+.cr-pay-container {
+    &.rm {
+        padding: 0px;
+        min-height: 490px;
+    }
+    .pay-type-container {
+        height: 113px;
+        background: $c-f;
+        border-radius: 10px;
+        padding-top: 16px;
+        @include flex(flex-start);
+        position: relative;
+        margin-bottom: 28px;
+        border: 0.5px solid #E6E8F3; 
+        box-shadow: 0px 4px 20px rgba(207, 212, 225, 0.89);
+        .py-type-list {
+            @include flex(center, column, nowrap, center);
+            margin: 12px;
+            cursor: pointer;
+            .txt {
+                color: $c-84;
+            }
+            &.on {
+                .txt {
+                    color: $c-3D9;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 32px;
+                    height: 3px;
+                    bottom: 0px;
+                    border-radius: 4px 4px 0 0;
+                    background-color: #61B2F9;
+                }
+            }
+            .circle-outer {
+                width: 55px;
+                height: 55px;
+                position: relative;
+                .circle-inner-top {
+                    white-space: nowrap;
+                    height: 20px;
+                    padding: 0 3px;
+                    line-height: 20px;
+                    border-radius: 2px;
+                    color: #fff;
+                    font-size: 12px;
+                    position: absolute;
+                    top: -12px;
+                    background: linear-gradient(to right, #9C080F 0%, #F81823 50%, #9C080F 100%);
+                }
+                .circle-inner {
+                    width: 47px;
+                    height: 47px;
+                    .list-img {
+                        width: 37px;
+                        &.logo_1 {
+                            width: 26px;
+                        }
+                        &.logo_3 {
+                            width: 35px;
+                        }
+                        &.logo_4 {
+                            width: 30px;
+                        }
+                        &.new_qrcode {
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select-pay-container {
+        &.rm-pay-container {
+            margin-top: 0px;
+            flex-wrap: wrap;
+        }
+        .select-pay-item {
+            &.rm-pay-item {
+                min-width: 195px;
+                margin-top: 15px;
+            }
+        }
+    }
+    .select-pay-form {
+        .notice {
+            margin-bottom: 18px;
+            color: $c-3D;
+        }
+        .rm-form {
+            /deep/ .el-form-item {
+                margin-bottom: 0px;
+            }
+        }
+        .select-card-container {
+            .select-item.rm-select-item {
+                &.on {
+                    background:linear-gradient(104.17deg, #53BEFD 2.27%, #0D77F2 100%), #2897FA;
+                    color:$c-f;
+                }
+            }
+        }
+        .select-form-container {
+            /deep/ .el-button {
+                &.rm-handle-btn {
+                    margin-left: 0px;
+                }
+            } 
+        }
+        .tip-text {
+            margin-top: 15px;
+            color: $c-3D;
+        }
+    }
+    .user-name-container {
+        @include flex(flex-start);
+        background: $c-f;
+        border-radius: 4px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        .name-input {
+            width: 193px;
+            height: 40px;
+            border: none;
+            margin: 0 10px;
+            .el-input__inner {}
+        }
+    }
+
+    .tip-text-o {
+        color: #cbba8f;
+    }
+    .tip-text-t {
+        color: #777984;
+    }
+}
+
+
+.qr-dialog {
+    /deep/.el-button {
+        margin: 0 20px;
+    }
+    /deep/.el-button--default {
+        background: linear-gradient(180deg, rgba(160, 159, 155, 0.3) 0%, rgba(80, 79, 78, 0.4) 12.5%, #8E8E8E 81.77%, #CBCBCB 100%);
+        opacity: 0.4;
+        border: none !important;
+        span {
+            color: #fff;
+        }
+    }
+    /deep/.el-button--primary {
+        background: linear-gradient(0deg, #97D6FC 0%, #3E80FF 13.54%, #61B2F9 81.77%, #96D6FB 100%) !important;
+        border: none !important;
+    }
+}

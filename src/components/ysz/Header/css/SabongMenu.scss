@@ -1,0 +1,43 @@
+.sport-item-outer {
+    flex-shrink: 0;
+    width: 33.3%;
+    @include flex(center);
+    color: $c-f; 
+}
+
+.sport-item {
+    position: relative;
+    width: 237px;
+    height: 228px;
+    cursor: pointer;
+    background-size: auto 100%;
+    background-repeat: no-repeat; 
+    @each $x in sabong_sabg{
+        &.#{$x} {
+            background-image: url('../img/menu/sabongMenu/' + $x + '.png');
+        }
+    } 
+}
+
+.icon-container {
+    left: 40%;
+    bottom: -3px;
+    position: absolute;
+}
+ 
+.game-info{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: #E1CA92;
+    border: 1px solid #E1CA92;
+    white-space: nowrap;
+    height: 20px;
+    border-radius: 15px 0 15px 0;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 10px;
+    font-size: 12px;
+
+}

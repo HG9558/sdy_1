@@ -1,0 +1,45 @@
+.mobile-tip {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.mobile-form.el-form {
+    /deep/ .el-form-item__content {
+        @include flex();
+        .el-form-item__error{
+            left: 95px;
+        }
+        .el-select {
+            .el-input {
+                width: 80px;
+                .el-input__inner {
+                    padding-left: 15px;
+                }
+            }
+        }
+        .mobile-phone {
+            .el-input__inner {
+                padding-left: 15px;
+            }
+        }
+        .smcode-input {
+            .el-input__inner {
+                padding-left: 70px;
+                width: 370px;
+            }
+            .profile-smcode {
+                &.el-button--success {
+                    width: 120px;
+                    height: 40px;
+                    background-color: $c-f !important;
+                    border: 1px solid #facd90;
+                    border-radius: 25px;
+                    &:hover {
+                        color: $ft-f6;
+                        border: 1px solid $ft-f6;
+                    }
+                }
+            }
+        }
+    }
+}

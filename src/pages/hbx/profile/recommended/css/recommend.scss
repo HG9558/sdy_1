@@ -1,0 +1,88 @@
+  .recommend-wrapper {
+      background-color: $bg-32;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      .amount-wrapper {
+          height: 160px;
+          border: 16px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 30px;
+          box-sizing: border-box;
+          .item {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .title {
+                  font-size: 16px;
+                  color: $c-cec;
+              }
+              .cumulativeAmount {
+                  font-size: 14px;
+                  color: $c-aa;
+              }
+              .amount {
+                  font-size: 24px;
+                  color: $c-e7;
+                  font-weight: 600;
+                  margin: 10px 0;
+              }
+              &:after {
+                  display: flex;
+                  content: "";
+                  width: 1px;
+                  height: 130px;
+                  background: $c-39;
+                  margin-left: 20px;
+              }
+          }
+          .btns {
+              color: #fff;
+              width: 19%;
+              font-size: 12px;
+              .top {
+                  display: flex;
+              }
+              .bottom {
+                  display: flex;
+              }
+              .btn {
+                  width: 80px;
+                  height: 36px;
+                  border: 1px solid $ft-f6;
+                  background-color: transparent;
+                  border-radius: 4px;
+                  text-align: center;
+                  font-weight: 600;
+                  &.top-btn {
+                      color: $ft-f6;
+                      &:nth-child(2) {
+                          margin-left: 10px;
+                      }
+                  }
+                  &.bottom-btn {
+                      background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+                      border-color: transparent;
+                      margin-top: 20px;
+                      color: $c-39;
+                      &:nth-child(2) {
+                          margin-left: 10px;
+                      }
+                  }
+              }
+          }
+      }
+      .daily-earnings {
+          margin-top: 24px;
+          height: 608px;
+          padding: 23px 46px 0;
+          .earnings-title {
+              display: flex;
+              justify-content: space-between;
+              color: $c-f;
+              margin-bottom: 20px;
+              cursor: pointer;
+          }
+      }
+  }

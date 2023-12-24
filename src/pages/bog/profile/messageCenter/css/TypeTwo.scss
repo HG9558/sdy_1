@@ -1,0 +1,66 @@
+.info-msg-wrap {
+    background: rgba(188, 169, 151, 0.15);
+    border-radius: 10px;
+    min-height: 440px;
+    padding: 23px 20px;
+    font-size: 14px;
+    .clear-div {
+        @include flex();
+        .clear-btn {
+            background-color: $c-81;
+            color: $c-f;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    }
+    .info-msg-inner {
+        @include flex();
+        margin-bottom: 20px;
+        cursor: pointer;
+        .text-content {
+            width: 590px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-right: 15px;
+            &.text-content-text-gray {
+                color: $c-1888;
+            }
+        }
+        .create-time {
+            &.text-content-text-gray {
+                color: $c-1888;
+            }
+        }
+    }
+}
+
+.message-dialog {
+    .el-dialog__body {
+        .unbing-time-div {
+            text-align: center;
+        }
+        .unbing-div {
+            margin: 20px 0 30px;
+        }
+        .unbing-btn-div {
+            width: 150px;
+            height: 38px;
+            border: 1px solid $c-81;
+            font-size: 18px;
+            background-color: $c-f;
+            color: $c-81;
+            border-radius: 14px;
+            margin: 0 auto;
+            &:hover {
+                background-color: $c-81 !important;
+                color: $c-f !important;
+            }
+        }
+    }
+}

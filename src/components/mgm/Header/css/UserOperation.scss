@@ -1,0 +1,212 @@
+.user-operation-container {
+    height: 100%;
+    @include flex(center);
+    .unlogin-container {
+        width: 152px;
+        height: 40px;
+        background-image: url('../img/login.png');
+        background-size: 100%;
+        border-radius: 8px;
+        @include flex(center);
+        .link-container {
+            cursor: pointer;
+            @include flex();
+            .login-ico {
+                width: 18px;
+            }
+            .url-desc-txt {
+                font-size: 15px;
+                font-weight: 600;
+                color: $c-f;
+            }
+        }
+        .line {
+            color: $c-f;
+            margin: 0 10px;
+        }
+    }
+    /* 登录样式 */
+    .login-container {
+        height: 100%;
+        @include flex(center);
+        width: auto;
+        padding-left: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        position: relative;
+        .user-profile-desc {
+            display: flex;
+            color: $c-81;
+            .img-box {
+                .userInfo-icon {
+                    width: 44px;
+                    border-radius: 100%;
+                    vertical-align: middle;
+                }
+                &.show-dotted {
+                    position: relative;
+                    &:after {
+                        content: "";
+                        width: 8px;
+                        height: 8px;
+                        background-color: red;
+                        position: absolute;
+                        top: 2px;
+                        right: 2px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .user-detail {
+                font-size: 14px;
+                display: flex;
+                @include flex(center,
+                column,
+                nowrap,
+                flex-start);
+                padding-left: 10px;
+                .user_detail_top {
+                    font-size: 12px;
+                    @include flex();
+                    .user-level {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 35px;
+                        height: 12px;
+                        position: relative;
+                        color: $c-f;
+                        background-image: url(../img/userOpteration/vip_level.png);
+                        background-size: 100% 100%;
+                        .user-level_num {
+                            position: absolute;
+                            right: 4px;
+                            top: 50%;
+                            font-size: 12px;
+                            transform: translateY(-50%) scale(0.75);
+                        }
+                    }
+                }
+                .userInfo-balance {
+                    font-weight: 900;
+                }
+            }
+        }
+        //- 用户下拉菜单
+        .user-drop-menu {
+            position: absolute;
+            opacity: 0;
+            top: 80px;
+            width: 172px;
+            color: $c-f;
+            height: auto;
+            background: linear-gradient(180.03deg, $bg-ab 1.57%, #D1B499 8.6%, #BFA58B 25.36%, #BDA287 54.53%, #CDB398 88.35%, #A98563 99.13%);
+            border-radius: 0px 0px 16px 16px;
+            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: -1;
+            &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: -14px;
+                left: 72px;
+                border-left: 14px solid transparent;
+                border-right: 14px solid transparent;
+                border-bottom: 14px solid $bg-ab;
+            }
+            &.on {
+                opacity: 1;
+                z-index: 999;
+                display: block;
+            }
+            .user-drop-menu_head {
+                height: 83px;
+                font-size: 14px;
+                color: $c-f;
+                padding: 0 13px;
+                @include flex();
+                .deposit-cls {
+                    @include flex(center,
+                    column);
+                    .deposit-cls_icon {
+                        width: 30px;
+                    }
+                    .font-active {
+                        color: $c-81;
+                    }
+                }
+            }
+            .user-drop-menu_content {
+                &:before,
+                &:after {
+                    content: "";
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: linear-gradient( 90deg, rgba(247, 234, 222, 0.5) 0%, $c-f 52.62%, rgba(240, 225, 211, 0.58) 100%);
+                    margin: 17px auto;
+                }
+                &:before {
+                    margin-top: 0px;
+                }
+                @include flex(center,
+                column);
+                font-size:14px;
+                .information-item {
+                    height: 35px;
+                    width: 100%;
+                    padding: 0 43px 0 44px;
+                    box-sizing: border-box;
+                    position: relative;
+                    @include flex(space-between,
+                    row,
+                    center);
+                    .information-item_img {
+                        width: 18px;
+                        margin-right: 11px;
+                    }
+                    &.active {
+                        background: rgba(252, 249, 247, 0.5);
+                        color: $c-81;
+                    }
+                    &:hover {
+                        .message-count {
+                            background-color: $c-81;
+                            .message-count_font {
+                                color: $c-f;
+                            }
+                        }
+                    }
+                    .message-count {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background: $c-f;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 25px;
+                        @include flex(center);
+                        .message-count_font {
+                            font-size: 12px;
+                            transform: scale(0.75);
+                            line-height: 15px;
+                            color: $c-81;
+                        }
+                    }
+                }
+            }
+            .user-drop-menu_footer {
+                text-align: center;
+                margin-bottom: 11px;
+                font-size: 16px;
+                color: $c-f;
+                font-weight: 600;
+                &:hover {
+                    color: $c-3;
+                }
+            }
+        }
+    }
+}

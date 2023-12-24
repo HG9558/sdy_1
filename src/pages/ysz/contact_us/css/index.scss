@@ -1,0 +1,264 @@
+.contact-us-box {
+    width: 100%;
+    min-height: 928px;
+    background: url("./img/contact_bg.png") no-repeat;
+    background-size: cover;
+    .contact-us-content {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        padding: 150px 30px 0 0;
+        @include flex();
+        .contact-us-content-inner_title {
+            font-size: 120px;
+            font-weight: 800;
+            color: transparent;
+            background: linear-gradient( 180deg, #e7d7a6, #dcbf80);
+            -webkit-background-clip: text;
+            margin: 0 0 44px 0;
+        }
+        .contact-us-content-inner_title_two {
+            font-size: 56px;
+            font-family: Adobe Heiti Std;
+            font-weight: 400;
+            color: transparent;
+            background: linear-gradient( 180deg, #e7d7a6, #dcbf80);
+            -webkit-background-clip: text;
+            margin-bottom: 78px;
+        }
+        .contact-us-content-inner_box {
+            display: flex;
+            justify-content: space-around;
+            font-size: 12px;
+            font-weight: 400;
+            color: $c-81;
+            .contact-item {
+                // width: 162px;
+                // min-height: 222px;
+                border-radius: 15px;
+                // margin-right: 28px;
+                background: rgba(84, 86, 102, .6);
+                border-radius: 15px;
+                box-sizing: border-box;
+                color: $c-f;
+                @include flex(none,
+                column);
+                padding: 10px;
+                .top-container {
+                    background-image: url("./img/item_icon.png");
+                    width: 148px;
+                    height: 121px;
+                    background-size: 100% 100%;
+                    @include flex(center,
+                    column);
+                    margin-bottom: 10px;
+                }
+                .img-container {
+                    width: 62px;
+                    height: 62px;
+                    margin: 4px;
+                    @include flex(center);
+                }
+                .contact-item_logo {
+                    width: 44px;
+                }
+                .contact-item_logo_title {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: $c-f;
+                    // margin-top: 8px;
+                }
+                .contact-item_logo_des {
+                    width: 140px;
+                    height: 16px;
+                    word-wrap: break-word;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: $c-f;
+                }
+                .copy-btn {
+                    background-size: cover;
+                    width: 140px;
+                    // height: 18px;
+                    line-height: 18px;
+                    text-align: left;
+                    box-sizing: border-box;
+                    position: relative;
+                    .copy-btn-text {
+                        color: #fff;
+                        float: left;
+                        width: 110px;
+                        word-break: break-all;
+                    }
+                    .copy-click {
+                        color: #E7D3A0;
+                        cursor: pointer;
+                        float: right;
+                    }
+                }
+            }
+        }
+        .contact-us-input-box {
+            background: rgba(40, 41, 47, 0.8);
+            backdrop-filter: blur(4px);
+            border-radius: 10px;
+            width: 500px;
+            padding: 40px 20px 0px 20px;
+            box-sizing: border-box;
+            margin-left: 40px;
+            .el-form {
+                /deep/ .el-input__inner {
+                    position: relative;
+                    height: 48px;
+                    color: #808293;
+                    padding-left: 20px;
+                    background: rgba(34, 35, 40, 0.8);
+                    border: 1px solid #545666;
+                    box-sizing: border-box;
+                    border-radius: 6px;
+                    &::-webkit-input-placeholder {
+                        color: #808293;
+                    }
+                }
+                /deep/ .el-form-item {
+                    margin-bottom: 26px;
+                }
+            }
+            .copy-btn {
+                margin: 30px 0 10px;
+                cursor: pointer;
+                background-image: url("./img/btn_bg.png");
+                color: #393A42;
+                background-size: 100% 100%;
+                width: 136px;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                box-sizing: border-box;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 15px;
+                    height: 16px;
+                    background: url("./img/icon-copy.png") no-repeat;
+                    background-size: 100% 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 20px;
+                }
+            }
+        }
+    }
+    .contact-us-input-box {
+        width: 500px;
+        background: rgba(0, 0, 0, .3);
+        padding: 40px 20px 3px 20px;
+        box-sizing: border-box;
+        border-radius: 16px;
+        margin-left: 40px;
+        .el-form {
+            /deep/ .el-input__inner {
+                position: relative;
+                height: 56px;
+                border-radius: 4px;
+                color: $c-c;
+                padding-left: 20px;
+                border: 0;
+            }
+            /deep/ .el-form-item {
+                margin-bottom: 26px;
+            }
+            /deep/ .el-form-item__content {
+                .resize-none {
+                    .el-textarea__inner {
+                        resize: none;
+                        font-size: 14px;
+                        color: #808293;
+                        height: 142px !important;
+                        background: #fff;
+                        box-shadow: none;
+                        font-family: inherit;
+                        background: rgba(34, 35, 40, 0.8);
+                        border: 1px solid #545666;
+                        box-sizing: border-box;
+                        border-radius: 6px;
+                    }
+                    textarea::-webkit-input-placeholder {
+                        color: #808293;
+                    }
+                }
+            }
+            /deep/ .el-input__icon {
+                color: $c-f;
+            }
+            .btn-class {
+                text-align: right;
+            }
+            .btn-pubilc {
+                width: 210px;
+                height: 40px;
+                font-size: 14px;
+                font-weight: 400;
+                color: #393A42;
+                background: $bg-3d;
+                display: block;
+                margin: 20px auto;
+                border: 0;
+                background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+                border-radius: 6px;
+            }
+        }
+        textarea::-webkit-input-placeholder {
+            color: $c-c;
+        }
+    }
+}
+
+/deep/ .el-input__icon {
+    color: $c-f;
+}
+
+.btn-class {
+    text-align: right;
+}
+
+.btn-pubilc {
+    width: 162px;
+    height: 56px;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: $ft-f6;
+    background: $bg-3d;
+    border-radius: 8px;
+    border: 0;
+}
+
+.dialog-result {
+    background-image: url("./img/copy_success.png");
+    background-size: 100% 100%;
+    width: 182px;
+    height: 123px;
+    border-radius: 8px;
+}
+
+/deep/ .el-dialog {
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+}
+
+/deep/ .el-dialog__header {
+    padding: 0;
+}
+
+/deep/ .el-dialog__body {
+    padding: 0;
+    height: 0;
+}

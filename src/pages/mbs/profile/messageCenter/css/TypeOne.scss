@@ -1,0 +1,149 @@
+.chat-container {
+    .info-chat-wrap {
+        width: 100%;
+        .info-chat-inner {
+            height: 500px;
+            background: $c-18815;
+            border-radius: 10px;
+            padding: 30px 15px 20px;
+            overflow: auto;
+            .chat-item {
+                .info-chat-time {
+                    text-align: center;
+                    color: $c-1888;
+                }
+                .info-chat-left {
+                    margin: 21px 0;
+                    @include flex(flex-start);
+                    .avator {
+                        display: inline-block;
+                        width: 44px;
+                        height: 44px;
+                        margin: 0 15px;
+                        vertical-align: top;
+                        margin-top: 5px;
+                    }
+                    .triangle {
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        border: 7px solid transparent;
+                        border-right-color: $c-18815;
+                        position: absolute;
+                        top: 9px;
+                        left: 45px;
+                    }
+                    .left-text {
+                        color: $c-81;
+                        display: inline-block;
+                        max-width: 401px;
+                        background-color: $c-18815;
+                        font-size: 14px;
+                        padding: 8px;
+                        border-radius: 5px;
+                        word-break: break-all;
+                    }
+                    .image-url {
+                        width: 250px;
+                        height: 80px;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                    .read {
+                        position: relative;
+                        right: -20px;
+                        top: 0px;
+                        color: rgb(200, 200, 200);
+                        display: inline-block
+                    }
+                }
+                .info-chat-right {
+                    position: relative;
+                    @include flex(flex-end);
+                    margin-bottom: 20px;
+                    .avator {
+                        display: inline-block;
+                        width: 44px;
+                        height: 44px;
+                        margin: 0 15px;
+                        vertical-align: top;
+                        margin-top: 5px;
+                    }
+                    .triangle {
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        border: 7px solid transparent;
+                        border-left-color: $c-1886;
+                        position: absolute;
+                        top: 16px;
+                        right: 60px;
+                    }
+                    .read {
+                        position: relative;
+                        left: -20px;
+                        top: 0px;
+                        color: rgb(200, 200, 200);
+                        display: inline-block
+                    }
+                    .right-text {
+                        display: inline-block;
+                        min-width: 50px;
+                        max-width: 300px;
+                        min-height: 25px;
+                        color: #fff;
+                        background-color: $c-1886;
+                        font-size: 14px;
+                        padding-right: 10px;
+                        padding-top: 10px;
+                        border-radius: 5px;
+                        text-align: left;
+                        padding-left: 10px;
+                        padding-bottom: 5px;
+                    }
+                    .image-url {
+                        width: 250px;
+                        height: 80px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            &::-webkit-scrollbar {
+                width: 20px;
+            }
+        }
+    }
+    .info-chat-div {
+        @include flex();
+        margin-top: 15px;
+        width: 100%;
+        .upload-demo {
+            /deep/ .el-upload-dragger {
+                width: 26px;
+                height: 26px;
+                .el-upload__text {
+                    .add-img {
+                        width: 25px;
+                    }
+                }
+            }
+        }
+        .send-input {
+            width: 789px;
+            /deep/ .el-input__inner {
+                width: 789px;
+            }
+        }
+        .send-btn {
+            width: 67px;
+            height: 35px;
+            background: $c-9f;
+            border-radius: 4px;
+            @include flex(center);
+            cursor: pointer;
+            .send-img {
+                width: 21px;
+            }
+        }
+    }
+}

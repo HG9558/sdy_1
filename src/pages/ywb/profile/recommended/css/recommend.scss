@@ -1,0 +1,190 @@
+.content-title {
+    font-size: 16px;
+    color: darkgoldenrod;
+    font-weight: 500;
+    padding: 4px 24px 0;
+    border-radius: 15px 15px 0 0;
+    box-sizing: border-box;
+    position: relative;
+
+    .content-title_inner {
+        cursor: pointer;
+        @include flex(center);
+        height: 72px;
+
+        .en-title {
+            width: 100%;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+
+            &.recommended {
+                width: 507px;
+                background: url('../../img/header/recommended.png') no-repeat center center;
+                background-size: contain;
+            }
+
+            .en-title-content {
+                position: absolute;
+                bottom: 5px;
+                display: flex;
+                align-items: center;
+                font-family: 'PingFang SC';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 42px;
+                text-align: center;
+                text-transform: capitalize;
+                background: linear-gradient(180deg, #fbbb98 0%, #e1956e 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+
+                span {
+                    margin: 0 10px;
+                }
+
+                i {
+                    display: block;
+                    transform: translateY(-50%);
+                    width: 100px;
+                    height: 2px;
+                    background: linear-gradient(90deg, rgba(255, 218, 198, 0.02) 0%, #e4976f 96.98%);
+
+                    &:first-child {
+                        left: -60%;
+                    }
+
+                    &:last-child {
+                        right: -60%;
+                        transform: matrix(-1, 0, 0, 1, 0, 0);
+                    }
+                }
+            }
+        }
+
+        .title {
+            position: absolute;
+            right: 20px;
+            color: #f3af8a;
+
+            &.on {
+                left: 20px;
+            }
+        }
+    }
+
+    .el-divider {
+        margin: 0;
+        background-color: #d5d7e9;
+    }
+}
+
+.recommend-wrapper {
+    //   border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #3B4165;
+
+    .amount-wrapper {
+        height: 160px;
+        border: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        box-sizing: border-box;
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .title {
+                font-size: 16px;
+                color: $ft-b;
+            }
+
+            .cumulativeAmount {
+                font-size: 14px;
+                font-weight: 600;
+                color: $c-3B;
+            }
+
+            .amount {
+                font-size: 24px;
+                color: #E49A73;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+
+            &:after {
+                display: flex;
+                content: "";
+                width: 1px;
+                height: 130px;
+                background: $bg-d;
+                margin-left: 20px;
+            }
+        }
+
+        .btns {
+            color: #fff;
+            width: 19%;
+            font-size: 12px;
+
+            .top {
+                display: flex;
+            }
+
+            .bottom {
+                display: flex;
+            }
+
+            .btn {
+                width: 80px;
+                height: 36px;
+                border: 1px solid $c-3B;
+                background-color: transparent;
+                border-radius: 4px;
+                text-align: center;
+                font-weight: 600;
+
+                &.top-btn {
+                    color: $c-f;
+                    background: #5A6596;
+
+                    &:nth-child(2) {
+                        margin-left: 10px;
+                    }
+                }
+
+                &.bottom-btn {
+                    background: linear-gradient(180deg, #FBBB98 0%, #E1956E 100%);
+                    border-color: transparent;
+                    margin-top: 20px;
+                    color: $c-3B;
+
+                    &:nth-child(2) {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .daily-earnings {
+        margin-top: 24px;
+        height: 608px;
+        padding: 23px 46px 0;
+
+        .earnings-title {
+            display: flex;
+            justify-content: space-between;
+            color: $c-3B;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+    }
+}

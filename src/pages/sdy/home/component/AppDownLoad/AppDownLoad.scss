@@ -1,0 +1,138 @@
+.app-down-load {
+    color: $c-a;
+    margin-top: 50px;
+    box-sizing: border-box;
+    .download-main {
+        height: 798px;
+        background: url('../../img/appdownbg.png') no-repeat center center/100% 100%;
+        position: relative;
+        .main-container {
+            height: 798px;
+            width: 1200px;
+            margin: 0 auto;
+            .main-title {
+                height: 86px;
+                position: relative;
+                @include flex();
+                border-bottom: 1px solid #393a42;
+                box-sizing: border-box;
+                padding: 0 20px;
+                color: #CECED3;
+                font-size: 14px;
+                .service-container {
+                    @include flex(center);
+                    .servicer-logo {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 8px;
+                    }
+                    .servicer-text {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .content {
+                @include flex();
+                background-image: url('../../img/down-load-bg.png');
+                background-size: 743px auto;
+                background-repeat: no-repeat;
+                background-position: 91px 54px;
+                .left {
+                    display: inline-block;
+                    width: 400px;
+                    position: relative;
+                    margin-left: 95px;
+                    .branch-title {
+                        font-weight: 600;
+                        font-size: 36px;
+                        line-height: 50px;
+                        letter-spacing: 2px;
+                        color: #fff;
+                        margin-bottom: 50px;
+                        .branch {
+                            color: #e2cc95;
+                        }
+                    }
+                    .slogan {
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #CECED3;
+                        min-width: 420px;
+                    }
+                    .qr-code-container {
+                        @include flex(center,
+                        column);
+                        align-items: flex-start;
+                        .qr-code-title {
+                            width: 212px;
+                            font-weight: 600;
+                            font-size: 18px;
+                            letter-spacing: 0.3px;
+                            color: #FFFFFF;
+                            margin: 24px 0 22px;
+                            position: relative;
+                            padding-left: 10px;
+                            &::before {
+                                background: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+                                width: 3px;
+                                height: 20px;
+                                content: "";
+                                transform: translateY(-50%);
+                                top: 50%;
+                                position: absolute;
+                                left: 0;
+                            }
+                        }
+                        .sm-code-container {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+                .right {
+                    .download-app-demo {
+                        width: 703px;
+                        height: 640px;
+                    }
+                }
+            }
+            .link-url-container {
+                @include flex(center);
+                position: relative;
+                box-sizing: border-box;
+                padding: 0 131px;
+                color: #808293;
+                font-size: 14px;
+                .operate-tip {
+                    flex-shrink: 0;
+                }
+                .href-list {
+                    margin-left: 20px;
+                    a {
+                        font-size: 14px;
+                        color: #808293;
+                        margin-left: 10px;
+                    }
+                }
+                &::after,
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 110px;
+                    height: 1px;
+                    background-color: #393a42;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &::after {
+                    right: 0;
+                    left: auto;
+                }
+            }
+        }
+    }
+    .home.un-login {
+        width: 120px !important;
+        height: 120px;
+    }
+}

@@ -1,0 +1,169 @@
+.allTeam{
+    position: relative;
+    min-height: 500px;
+}
+
+.calander{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .arrow-left, .arrow-right{
+        background: url('../img/arrow.png') no-repeat center / 14px 20px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    } 
+    .arrow-right{
+        transform: rotate(180deg);
+    }
+    .date-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-item{
+            background: #fff;
+            box-shadow: 0px 4px 18px rgba(207, 212, 225, 0.54);
+            border-radius: 6px;
+            height: 60px;
+            width: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #3D4957;
+            margin: 0 10px;
+            cursor: pointer;
+            &.on{
+                background: linear-gradient(104.17deg, #53BEFD 2.27%, #0D77F2 100%), #2897FA;
+                box-shadow: 0px 4px 18px rgba(207, 212, 225, 0.54);
+                color:#fff;
+            }
+        }
+    }
+    .date-picker{
+    cursor: pointer;        
+        width: 30px;
+        height: 30px;
+        margin: 0 20px 0 30px;
+        background: url('../img/icon-date.png') no-repeat center/100%;
+        overflow: hidden;
+        .el-date-editor{
+            opacity: 0;
+        }
+    }
+}
+
+.teamList{
+    .list-group{
+        padding: 20px 10px 10px;
+        margin-bottom: 20px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    .group-date{
+        color: #3D4957;
+        padding-left: 10px;
+    }
+    .group-content{
+        display: flex;
+        flex-wrap: wrap;
+        .group-item{
+            width: 360px;
+            padding-bottom: 12px;
+            background: #FFFFFF;
+            border: 0.5px solid #E6E8F3;
+            box-shadow: 0px 4px 14px rgba(207, 212, 225, 0.4);
+            border-radius: 4px;
+            font-size: 12px;
+            line-height: 17px; 
+            color: #3D4957;
+            text-align: center;
+            margin: 10px;
+            .group-item-inner{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 120px;
+                .group-left, .group-right{
+                    width: 100px;
+                    img{
+                        height: 21px;
+                    }
+                }                
+                .group-center{
+                    .group-time{
+                        height: 18px;
+                        background: url('../img/icon-time.png') no-repeat left top/14px;
+                        padding-left: 20px;
+                        color: #8491AA;
+                    }
+                    .group-score{
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 23px;
+                        text-align: center;
+                        color: #3D9AEC;
+                        margin: 6px 0 10px;
+                    }
+                    .group-status{
+                        width: 70px;
+                        height: 25px;
+                        border-radius: 13px;
+                        border: none;
+                        background: none;
+                        &.going{
+                            background: #3D9AEC;
+                            color: #fff;
+                        }
+                        &.notStart{
+                            border: 1px solid #3D9AEC;
+                            color: #3D9AEC;
+                        }
+                        &.end{
+                            background: #C4CEE1;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .btn-handle {
+                background: linear-gradient(0deg, #97D6FC 0%, #3E80FF 13.54%, #61B2F9 81.77%, #96D6FB 100%);
+                border-radius: 5px;
+                width: 340px;
+                height: 30px;
+                color: #fff;
+                border: 0;
+            }
+        }
+    }
+    
+}
+
+.no-data{
+    text-align: center;
+    padding: 80px 0;
+    img{
+        width: 437px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 31px;
+        text-align: center;
+        color: #8491AA;
+        margin: 30px 0 20px;
+    }
+    .btn-more{
+        background: linear-gradient(0deg, #97D6FC 0%, #3E80FF 13.54%, #61B2F9 81.77%, #96D6FB 100%);
+        border-radius: 6px;
+        width: 140px;
+        height: 30px;
+        color: #fff;
+        border: 0;
+    }
+}
+
+
+ 

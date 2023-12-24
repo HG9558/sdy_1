@@ -1,0 +1,84 @@
+.mobile-tip {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.mobile-form.el-form {
+    /deep/ .el-form-item__content {
+        @include flex();
+        .el-select {
+            .el-input {
+                width: 80px;
+                .el-input__inner {
+                    padding-left: 15px;
+                }
+            }
+            .mobile-drop {
+                left: 0px !important;
+                position: absolute!important;
+                top: 0px;
+            }
+        }
+        .mobile-phone {
+            .el-input__inner {
+                padding-left: 15px;
+            }
+        }
+        .smcode-input {
+            .el-input__inner {
+                padding-left: 70px;
+                width: calc(100% - 135px);
+            }
+            .el-input__clear{
+                left: -40px;
+                position: absolute;
+                bottom: -2px;
+            }
+            .profile-smcode {
+                &.el-button--success {
+                    width: 120px;
+                    height: 36px;
+                    font-size: 14px;
+                    color: #27553F;
+                    border-radius: 34px;
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+}
+
+.multi-language {
+    .mobile-form.el-form .el-form-item__content {
+        .smcode-input {
+            /deep/ {
+                .el-input__inner {
+                    padding-left: 135px;
+                    width: calc(100% - 145px);
+                }
+            }
+            .profile-smcode.el-button--success {
+                width: 130px;
+                white-space: normal;
+                word-wrap: break-word;
+                word-break: normal;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.language-vi {
+    .mobile-form.el-form .el-form-item__content {
+        .smcode-input {
+            /deep/ {
+                .el-input__inner {
+                    padding-left: 90px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,272 @@
+<template>
+  <div class="cr-pay-container">
+    <div v-if="!showLoading && !noData && crChannelList.length">
+      <div class="tip">选择充值通道</div>
+      <div class="select-pay-container">
+        <div class="select-pay-item" v-for="(item,index) in crChannelList" :key="index" @click="changeRechargeChannel(item,index)">
+          <img :src="item.icoUrl" class="logo" alt="">
+          <div class="pay-name">
+            <span class="text">{{item.label}}</span>
+            <span class="number">{{item.limitLabel}}</span>
+          </div>
+          <img v-if="selectIndex === index" src="../../img/deposit/new_checked.png" class="is-select" alt="">
+        </div>
+      </div>
+
+      <div class="select-pay-form">
+        <div class="tip">存款金额</div>
+        <div class="select-box">
+          <div class="select-card-container">
+            <div class="select-item" :class="{'active':currentMoneyIndex===index}" v-for="(item,index) in recommendList" :key="index" @click="changeSelectMoney(item,index)">{{item.value}}USDT</div>
+          </div>
+          <div class="select-form-container">
+            <el-input v-model.number="money" class="bog" type="number" :placeholder="feePlaceholder"></el-input>
+            <el-button class="handle-btn bog" @click="_cyPayDeposit" :loading="buttonLoading">立即存款</el-button>
+            <div :class="{'handle-btn':true,'remindActive' : isRemindIng}" @click="_onRemind">{{remindText}}</div>
+            <div class="handle-btn" @click="$router.push('/help_center')">存款教程</div>
+          </div>
+          <div class="select-info">
+            <div class="info-item tip-text">请使用您信任的第三方交易所钱包进行转账，本平台不收取任何手续费，最终充值金额以实际到账金额为准！</div>
+            <div class="info-item exchange-num">当前参考汇率： 1 USDT ≈ {{exchangeRate}} CNY</div>
+            <div class="info-item get-money">预计到账金额：{{userGetMoney}} 元</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pay-card-list-container">
+        <div class="card-title">可任意选择支持USDT支付的交易所及钱包，例如：</div>
+        <div class="card-list-wrapper">
+          <div class="card-list" v-for="(item,index) in crLogoList" :key="index">
+            <div class="circle-outer">
+              <div class="circle-inner">
+                <img class="card-logo" :src="item.picpcpath || item.picMbPath" alt="">
+              </div>
+            </div>
+            <div class="text">{{item.name}}</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <Loading :showLoading="showLoading" v-if="showLoading" />
+    <template v-else>
+      <div v-if="noData || !crChannelList.length"  class="box-no-deposit-rode">
+        <div class="rode-image">
+          <img src="../../img/deposit/nodepositrode.png" alt="" />
+        </div>
+        <div class="rode-text">充值通道维护中</div>
+      </div>
+    </template>
+    <global-dialog v-if="crChannelList.length" class="cr-dialog" :title="`${crChannelList[selectIndex].crName}(${crChannelList[selectIndex].category})`" :showDialog.sync="showDialog" :hasSelfFooter="false" cancelText="已完成充值" confirmText="充值问题需要协助" @confirmHandle="confirmHandle">
+      <div class="cr-pay-dialog">
+        <img class="qr-code" :src="`data:image/png;base64,${crPayInfo.qrCode}`" alt="">
+        <div>
+          <div class="cr-line">
+            <span class="cr-title">预计到账金额: </span>
+            <span class="cr-value">{{crPayInfo.depositAmountCNY}} CNY</span>
+          </div>
+          <div class="cr-line">
+            <span class="cr-title">支付金额：</span>
+            <span class="cr-value">{{crPayInfo.depositAmount}} USDT</span>
+          </div>
+          <div class="cr-line">
+            <span class="cr-title">钱包地址：</span>
+            <span class="cr-value">{{crPayInfo.walletAddress}}</span>
+          </div>
+        </div>
+
+        <el-button class="bog cr-button" type="primary" v-clipboard:copy="crPayInfo.walletAddress" v-clipboard:error="onCopyError" v-clipboard:success="onCopySuccess">点击复制钱包地址</el-button>
+        <div class="cr-title tip">请使用您的加密货币钱包或交易所平台进行支付</div>
+      </div>
+    </global-dialog>
+  </div>
+</template>
+
+<script>
+import { mapState, mapMutations } from "vuex"
+import { getRecommendList } from 'static_data/deposit_data';
+export default {
+  name: "CrPay",
+  props: {
+    componentName: String
+  },
+  watch: {
+    SToken: {
+      immediate: true,
+      handler (val) {
+        val && this._initCrypto()
+      }
+    },
+    money (val) {
+      this.currentMoneyIndex = this.recommendList.findIndex(item => item.value === val)
+    }
+  },
+  data () {
+    return {
+      exchangeRate: null,
+      crChannelList: [],
+      selectIndex: 0,
+      feePlaceholder: null,
+      currentMoneyIndex: -1,
+      money: null,
+      isRemindIng: false,
+      remindText: '催单',
+      crLogoList: [],
+      showLoading: true,
+      noData: false,
+      buttonLoading: false,
+      showDialog: false,
+      crPayInfo: {}
+    }
+  },
+  computed: {
+    ...mapState({
+      serUrl: state => state.user.serUrl
+    }),
+    recommendList () {
+      try {
+        let Min = Number(this.feePlaceholder.split("-")[0]);
+        const Max = 50000;
+        return getRecommendList(Min, Max)
+      } catch (error) {
+        return []
+      }
+    },
+    userGetMoney () {
+      let amount = (this.money * this.exchangeRate).toString();
+      const index = amount.indexOf(".");
+      if (index !== -1) {
+        amount = amount.slice(0, index + 3);
+      }
+      return amount;
+    }
+  },
+  methods: {
+    ...mapMutations('user', ['set_crLogo_list']),
+    //- 初始虚拟币
+    async _initCrypto () {
+      this.showLoading = true
+      try {
+        const [exchangeRes, crListRes] = await Promise.all([this.$http.getExchangeRate(), this.$http.getCrList()]);
+        if (exchangeRes.data.code || crListRes.data.code) {
+          this.messageTip({ message: exchangeRes.data.msg || crListRes.data.msg })
+          return
+        }
+        this.exchangeRate = exchangeRes.data.msg;
+        crListRes.data.crList && (this.crChannelList = crListRes.data.crList.map((v) => {
+          return {
+            ...v,
+            icoUrl: v.backBankImg,
+            label: v.showName,
+            limitLabel: `${v.minAmout}-无上限`,
+          };
+        }));
+        this.noData = !this.crChannelList.length;
+        this.feePlaceholder = this.crChannelList[this.selectIndex].limitLabel;
+        this.showLoading = false;
+      } catch (error) {
+        console.log(error)
+        this.showLoading = false;
+        this.noData = true;
+      }
+      this._getCrLog();
+    },
+    changeSelectMoney (item, index) {
+      this.currentMoneyIndex = index;
+      this.money = item.value;
+    },
+    //- 获取虚拟币显示图标
+    async _getCrLog () {
+      try {
+        const res = await this.$http.getCrLogo();
+        if (res.data.code) return this.messageTip({ message: res.data.msg })
+        this.crLogoList = res.data.data;
+      } catch (error) {
+        console.log(error)
+      }
+    },
+    async _onRemind () {
+      if (this.isRemindIng) {
+        this.messageTip({ message: '请稍后再试' });
+        return;
+      }
+      this.isRemindIng = true;
+      let wait = 10;
+      let time = setInterval(() => {
+        if (wait === 0) {
+          this.remindText = "催单";
+          this.isRemindIng = false;
+          clearInterval(time);
+          return
+        }
+        this.remindText = `催单(${wait})`;
+        wait--;
+      }, 1000);
+      const res = await this.$http.getRemind();
+      if (res.data.code) {
+        this.messageTip({ message: '请稍后再试' });
+        this.isRemindIng = false;
+        clearInterval(time);
+        wait = 10;
+      }
+    },
+    changeRechargeChannel (item, index) {
+      this.selectIndex = index;
+      this.feePlaceholder = item.limitLabel;
+      this.money = null;
+      this.currentMoneyIndex = -1;
+    },
+    confirmHandle () {
+      window.open(this.serUrl);
+    },
+    onCopyError () {
+      this.messageTip({ message: "复制失败！", type: "error" });
+    },
+    onCopySuccess () {
+      this.messageTip({ message: "复制成功！", type: "success" });
+    },
+    async _cyPayDeposit () {
+      if (this.money === 0) return
+      if (!this.money) {
+        this.messageTip({ message: '存款金额不能为空' })
+        return;
+      }
+      this.buttonLoading = true;
+      try {
+        const res = await this.$http.applyCrPay({
+          depositId: this.crChannelList[this.selectIndex].id,
+          fee: this.money,
+          exchangeRate: this.exchangeRate,
+        })
+        this.buttonLoading = false;
+        if (res.data.code) {
+          this.messageTip({
+            message: res.data.msg,
+            onClose: () => {
+              // this.$router.push({ path: "/profile" });
+            }
+          });
+          return
+        }
+        this.crPayInfo = res.data.info
+        this.showDialog = true;
+      } catch (error) {
+        this.buttonLoading = false;
+      }
+    }
+  },
+  deactivated () {
+    this.money = null;
+    this.currentMoneyIndex = -1;
+    this.selectIndex = 0;
+    this.feePlaceholder = this.crChannelList[this.selectIndex]?.limitLabel;
+    this.noData = false;
+    this.showLoading = false;
+  }
+}
+</script>
+
+<style scoped lang="scss">
+@import "../css/CrPay.scss";
+</style>

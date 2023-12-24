@@ -1,0 +1,102 @@
+  .discount-main {
+      @include flex(space-between, row, wrap, flex-start);
+      width: 980px;
+      background: linear-gradient(180deg, #EFF0F9 2.4%, #DFE5F3 100%);
+      box-shadow: 0px 2px 4px rgba(136, 136, 136, 0.3);
+      border-radius: 8px;
+      margin-left: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 500px;
+      align-content: flex-start;
+      .out-date {
+          .notice-mark {
+              filter: grayscale(100%);
+          }
+          &:last-child {
+              margin-bottom: 0px;
+          }
+      }
+      .discount-item-box {
+          width: 462px;
+          height: 220px;
+          margin-bottom: 20px;
+          cursor: pointer;
+          position: relative;
+          .discount-item-img {
+              width: 100%;
+              height: 100%;
+              border-radius: 20px;
+              box-shadow: 0px 2px 5px rgba(136, 136, 136, 0.3);
+          }
+          .mark {
+              width: 56px;
+              height: 56px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              box-sizing: border-box;
+              background: url("../img/mark1.png") no-repeat center center;
+              background-size: 100% 100%;
+              &.mark1 {
+                  background: url("../img/mark1.png") no-repeat center center;
+                  background-size: 100% 100%;
+              }
+              &.mark2 {
+                  background: url("../img/mark2.png") no-repeat center center;
+                  background-size: 100% 100%;
+              }
+              &.mark3 {
+                  background: url("../img/mark3.png") no-repeat center center;
+                  background-size: 100% 100%;
+              }
+              &.mark4 {
+                  background: url("../img/mark4.png") no-repeat center center;
+                  background-size: 100% 100%;
+              }
+              span {
+                  white-space: nowrap;
+                  font-size: 14px;
+                  color: #FFFFFF;
+                  transform: rotate(-45deg);
+                  display: block;
+              }
+          }
+          .notice-mark {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              padding-right: 12px;
+              height: 28px;
+              @include flex(flex-start);
+              font-size: 12px;
+              padding-left: 10px;
+              color: #fefefe;
+              background: linear-gradient(180deg, #809CC7 16.03%, #ACC0DF 97.72%);
+              border-radius: 16px 16px 16px 0px;
+              box-sizing: border-box;
+              border: 0.5px solid #ACC0DF;
+              .watch {
+                  margin-right: 4px;
+              }
+          }
+      }
+  }
+
+  .multi-language {
+      .discount-main .discount-item-box .mark {
+          span {
+              font-size: 12px;
+              transform: rotate(-45deg);
+          }
+          &.mark1 span{
+              transform: rotate(-45deg) translateX(-8px) scale(0.9);
+          }
+          &.mark2 span{
+              transform: rotate(-45deg) translateX(-4px) scale(0.9);
+          }
+          &.mark3 span{
+              transform: rotate(-45deg) translateX(-3px) scale(0.9);
+          }
+      }
+  }
