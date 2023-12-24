@@ -1,0 +1,843 @@
+body.template_2_003 {
+  --t1: #132743;
+  --t2: #fd8803;
+  --t3: #ffffff;
+  --t4: #414655;
+  --t5: linear-gradient(135deg, #ffb762 0%, #fd8803 100%);
+  --t6: linear-gradient(135deg, #33d6fc 0%, #127dfe 100%);
+  --t7: #505679;
+  /* =========头部============ */
+  --h_1: var(--t1);
+  --h_2: var(--t3);
+  --h_3: 0px 4px 8px rgba(50, 62, 99, 0.12);
+  --h_4: rgba(197, 197, 197, 0.26);
+  --h_5: var(--t2);
+  --h_6: var(--t2);
+  --h_7: var(--t7);
+  --h_8: var(--t3);
+  --h_9: var(--t3);
+  --h_10: var(--t3);
+  --h_11: var(--t4);
+  --h_12: var(--t7);
+  --h_13: var(--t1);
+  --h_14: var(--t3);
+  --h_u_1: var(--t1);
+  --h_u_2: red;
+  --h_u_3: var(--t1);
+  --h_u_4: linear-gradient(90deg, #ffb571 0%, #fd8803 100%);
+  --h_u_5: var(--t3);
+  --h_u_6: var(--t3);
+  --h_u_7: var(--t1);
+  --h_u_8: var(--t7);
+  --h_u_9: -webkit-linear-gradient(left, rgba(228, 231, 244, 0) -4%, #cdd3f1 50%, rgba(229, 232, 249, 0) 100%);
+  --h_u_10: #23a8ff;
+  --h_u_11: var(--t2);
+  --h_u_12: var(--t3);
+  --h_u_13: var(--t7);
+  --h_u_14: #3d4957;
+  --h_u_15: var(--t2);
+  --h_u_16: var(--t2);
+  --h_u_17: #c4c4c4;
+  --h_u_18: #808c9f;
+  --h_u_19: #7e6245;
+  --h_u_20: #7e6245;
+  --h_u_21: #808c9f;
+  --h_u_22: #ff2f2f;
+  --h_u_23: var(--t3);
+  --h_u_24: #ebecf3;
+  --h_u_25: var(--t7);
+  --h_u_26: var(--t3);
+  /*  =========个人中心我的钱包============  */
+  --u_w_1: var(--t4);
+  --u_w_2: #adb2c8;
+  --u_w_3: rgba(64, 68, 105, 0.1);
+  --u_w_4: var(--t3);
+  --u_w_5: 0px 4px 18px rgba(207, 212, 225, 0.54);
+  --u_w_6: var(--t4);
+  --u_w_7: var(--t1);
+  --u_w_8: #3d4957;
+  --u_w_9: #f6fbff;
+  --u_w_10: var(--t3);
+  --u_w_11: var(--t7);
+  --u_w_12: var(--t3);
+  --u_w_13: #e6e9f1;
+  --u_w_14: 0px 4px 14px rgba(207, 212, 225, 0.4);
+  --u_w_15: #3d4957;
+  --u_w_16: var(--t5);
+  --u_w_17: var(--t3);
+  --u_w_18: #b0b4c0;
+  --u_w_19: var(--t4);
+  --u_w_20: var(--t1);
+  --u_w_21: red;
+  /*  =========个人中心vip============  */
+  --u_v_1: var(--t3);
+  --u_v_2: #feffb3;
+  --u_v_3: #feffb3;
+  --u_v_4: #fe0106;
+  --u_v_5: #41465;
+  --u_v_6: 0px 4px 20px rgba(207, 212, 225, 0.89);
+  --u_v_7: var(--t4);
+  --u_v_8: #adb2c8;
+  --u_v_9: var(--t1);
+  --u_v_10: var(--t1);
+  --u_v_11: var(--t3);
+  --u_v_12: var(--t3);
+  --u_v_13: 0px 4px 14px rgba(207, 212, 225, 0.4);
+  --u_v_14: var(--t1);
+  --u_v_15: var(--t3);
+  --u_v_16: 0px 2.94516px 25.7701px rgba(115, 121, 134, 0.12);
+  --u_v_17: var(--t7);
+  --u_v_18: var(--t1);
+  --u_v_19: var(--t1);
+  --u_v_20: #505679;
+  --u_v_21: #ee2c20;
+  --u_v_22: inset 3px 3px 4px rgba(77, 110, 141, 0.15), inset -3px -3px 4px rgba(255, 255, 255, 0.25);
+  --u_v_23: linear-gradient(90deg, #ffd5a5 8.44%, rgba(255, 213, 166, 0) 100%);
+  --u_v_24: linear-gradient(90deg, #c1b8aa 0%, #e4ddd4 53.02%, #c1b7aa 100%);
+  --u_v_25: linear-gradient(0deg, #ffd5a6 0%, , #ffd5a5 100%);
+  --u_v_26: linear-gradient(135deg, #ffb762 100%, #fd8803 100%);
+  --u_v_27: var(--t3);
+  /*  =========个人中心vip详情============  */
+  --u_vd_1: var(--t1);
+  --u_vd_2: var(--t1);
+  --u_vd_3: rgba(246, 248, 254, 0.4);
+  --u_vd_4: 6px 8px 16px rgba(50, 62, 99, 0.1);
+  --u_vd_5: var(--t1);
+  --u_vd_6: var(--t1);
+  --u_vd_7: var(--t3);
+  --u_vd_8: 0px 4px 14px rgba(207, 212, 225, 0.4);
+  --u_vd_9: #989eac;
+  --u_vd_10: #5b5b5b;
+  --u_vd_11: #855400;
+  /*  =========个人中心资料============  */
+  --u_d_1: var(--t4);
+  --u_d_2: #23a8ff;
+  --u_d_3: #adb2c8;
+  --u_d_4: var(--t3);
+  --u_d_5: var(--t5);
+  --u_d_6: var(--t3);
+  --u_d_7: #ffc224;
+  --u_d_8: #ffc224;
+  /*  =========个人中心存款===========  */
+  --u_c_1: var(--t4);
+  --u_c_2: #23a8ff;
+  --u_c_3: var(--t7);
+  --u_c_4: #9a9daa;
+  --u_c_5: var(--t4);
+  --u_c_6: var(--t1);
+  --u_c_7: var(--t3);
+  --u_c_8: #f6fbff;
+  --u_c_9: 6px 8px 16px rgba(50, 62, 99, 0.1);
+  --u_c_10: #e4e9f0;
+  --u_c_11: var(--t4);
+  --u_c_12: #e6e8f3;
+  --u_c_13: 0px 4px 18px rgba(207, 212, 225, 0.54);
+  --u_c_14: var(--t6);
+  --u_c_15: var(--t3);
+  --u_c_16: #8491aa;
+  --u_c_17: var(--t7);
+  --u_c_18: #23a8ff;
+  --u_c_19: 0px 4px 14px rgba(207, 212, 225, 0.4);
+  --u_c_20: 0.5px solid #b8ddfd;
+  --u_c_21: #23a8ff;
+  --u_c_22: var(--t4);
+  --u_c_23: rgba(64, 68, 105, 0.1);
+  --u_c_24: #adb2c8;
+  --u_c_25: var(--t3);
+  --u_c_26: var(--t6);
+  --u_c_27: #3d4957;
+  --u_c_28: #23a8ff;
+  --u_c_29: var(--t4);
+  --u_c_30: #f90000;
+  --u_c_31: #38b63f;
+  --u_c_32: var(--t3);
+  --u_c_33: var(--t3);
+  /*  =========个人中心取款============  */
+  --u_m_1: #edf1fb;
+  --u_m_2: #23a8ff;
+  --u_m_3: var(--t7);
+  --u_m_4: var(--t3);
+  --u_m_5: var(--t4);
+  --u_m_6: 0px 4px 20px rgba(207, 212, 225, 0.89);
+  --u_m_7: var(--t6);
+  /*  =========个人中心意见反馈============  */
+  --u_f_1: var(--t1);
+  --u_f_2: var(--t3);
+  --u_f_3: #adb2c8;
+  --u_f_4: var(--t2);
+  --u_f_5: linear-gradient(135deg, #ffb762 100%, #fd8803 100%);
+  --u_f_6: var(--t3);
+  /*  =========个人中心消息中心============  */
+  --u_msg_1: #b0b4c0;
+  --u_msg_2: var(--t1);
+  --u_msg_3: var(--t3);
+  --u_msg_4: #adb2c8;
+  --u_msg_5: var(--t4);
+  --u_msg_6: var(--t3);
+  --u_msg_7: var(--t5);
+  --u_msg_8: #e2e4f2;
+  --u_msg_9: var(--t1);
+  --u_msg_10: var(--t3);
+  /* 个人中心晒单记录 */
+  --u_s_1: #2897fa;
+  --u_s_2: #f6fbff;
+  --u_s_3: var(--t4);
+  --u_s_4: rgba(255, 255, 255, 0.5);
+  --u_s_5: rgba(255, 255, 255, 0.1);
+  --u_s_6: rgba(255, 255, 255, 0.1);
+  --u_s_7: #adb2c8;
+  --u_s_8: var(--t4);
+  --u_s_9: #808293;
+  --u_s_10: #3d4957;
+  --u_s_11: var(--t3);
+  --u_s_12: #e6e9f1;
+  --u_s_13: var(--t3);
+  --u_s_14: var(--t5);
+  /*  =========个人中心我的优惠============  */
+  --u_cou_1: var(--t3);
+  --u_cou_2: var(--t1);
+  --u_cou_3: #adb2c8;
+  --u_cou_4: var(--t5);
+  --u_cou_5: #e6e9f1;
+  --u_cou_6: #3d4957;
+  --u_cou_7: #8491aa;
+  --u_cou_8: var(--t1);
+  --u_cou_9: #fff;
+  --u_cou_10: #e8ebfb;
+  --u_cou_11: var(--t7);
+  --u_cou_12: var(--t7);
+  --u_cou_13: var(--t3);
+  /*  =========个人中心投注记录============  */
+  --u_br_1: var(--t4);
+  --u_br_2: #adb2c8;
+  --u_br_3: #f6fbff;
+  --u_br_4: rgba(255, 167, 35, 0.05);
+  --u_br_5: #f90000;
+  --u_br_6: #37aa4a;
+  --u_br_7: var(--t5);
+  --u_br_8: var(--t7);
+  --u_br_9: #37aa4a;
+  --u_br_10: #23a8ff;
+  --u_br_11: var(--t3);
+  --u_br_12: #e6e9f1;
+  --u_br_13: #fffaf4;
+  --u_br_14: var(--t7);
+  --u_br_15: var(--t2);
+  --u_br_16: var(--t5);
+  --u_br_17: var(--t5);
+  --u_br_18: var(--t3);
+  --u_br_19: #adb2c8;
+  /*  =========个人中心好友推荐============  */
+  --u_friend_1: var(--t4);
+  --u_friend_2: var(--t2);
+  --u_friend_3: var(--t7);
+  --u_friend_4: var(--t1);
+  --u_friend_5: var(--t1);
+  --u_friend_6: var(--t3);
+  --u_friend_7: #e0ebfa;
+  --u_friend_8: var(--t4);
+  --u_friend_9: var(--t1);
+  --u_friend_10: var(--t3);
+  --u_friend_11: var(--t1);
+  --u_friend_12: #e6ecf6;
+  --u_friend_13: #505679;
+  --u_friend_14: var(--t1);
+  --u_friend_15: var(--t3);
+  --u_friend_16: #404469;
+  --u_friend_17: var(--t3);
+  --u_friend_18: var(--t3);
+  --u_friend_19: var(--t1);
+  --u_friend_20: var(--t1);
+  --u_friend_21: linear-gradient(135deg, #ffb762 100%, #fd8803 100%);
+  --u_friend_22: var(--t3);
+  --u_friend_23: var(--t3);
+  --u_friend_24: #e6e9f1;
+  --u_friend_25: var(--t6);
+  --u_friend_26: var(--t3);
+  --u_friend_27: linear-gradient(106.56deg, #f0ae2d 10.62%, #f0870e 92.55%);
+  --u_friend_28: #adb2c8;
+  --u_friend_29: #adb2c8;
+  --u_friend_30: var(--t4);
+  --u_friend_31: var(--t1);
+  --u_friend_32: #adb2c8;
+  --u_friend_33: var(--t2);
+  --u_friend_34: var(--t2);
+  --u_friend_35: var(--t7);
+  --u_friend_36: #404469;
+  --u_friend_40: #132743;
+  --u_friend_41: rgba(62, 66, 82, 0.2);
+  --u_friend_42: linear-gradient(135deg, #ffb762 0%, #fd8803 100%);
+  --u_friend_43: 0px 4px 14px rgba(207, 212, 225, 0.4);
+  --u_friend_44: #e0ebfa;
+  --u_friend_45: #414655;
+  --u_friend_46: #fd8803;
+  --u_friend_47: #414655;
+  --u_friend_48: #414655;
+  --u_friend_49: #fd8803;
+  --u_friend_50: #fd8803;
+  --u_friend_51: #505679;
+  --u_friend_52: #505679;
+  --u_friend_53: linear-gradient(135deg, #ffb762 0%, #fd8803 100%);
+  --u_friend_54: #fff;
+  --u_friend_55: #6a7391;
+  --u_friend_56: #505679;
+  --u_friend_57: linear-gradient(135deg, #ffb762 0%, #fd8803 100%);
+  --u_friend_58: #fff;
+  --u_friend_59: #fff;
+  --u_friend_60: #fff;
+  --u_friend_61: #414655;
+  /*  =========联系我们============  */
+  --cu_1: #505679;
+  --cu_2: #adb2c8;
+  --cu_3: #fcf9f7;
+  --cu_4: var(--t2);
+  --cu_5: var(--t3);
+  --cu_6: var(--t5);
+  --cu_7: var(--t2);
+  --cu_8: var(--t3);
+  --cu_9: inset 3px 3px 4px rgba(77, 110, 141, 0.15), inset -3px -3px 4px rgba(255, 255, 255, 0.25);
+  --cu_10: #cfd8ea;
+  --cu_11: var(--t3);
+  /*  =========用户登录注册============  */
+  --l_1: var(--t3);
+  --l_2: transparent;
+  --l_3: var(--t1);
+  --l_4: var(--t3);
+  --l_5: #adb2c8;
+  --l_6: var(--t2);
+  --l_7: var(--t2);
+  --l_8: 0 0 10px rgba(0, 0, 0, 0.3);
+  --l_9: rgba(92, 184, 92, 0.5);
+  --l_10: var(--t3);
+  --l_11: rgba(217, 83, 79, 0.5);
+  --l_12: linear-gradient(180deg, #33d6fc 0%, #127dfe 98.1%);
+  --l_13: #888888;
+  --l_14: #c4baa0;
+  --l_15: #dbf2ff;
+  --l_16: #ddd;
+  --l_17: #323232;
+  --l_18: #f3f5f9;
+  --l_19: #edf1fb;
+  --l_20: var(--t3);
+  --l_21: var(--t1);
+  --l_22: -webkit-linear-gradient(left, rgba(228, 231, 244, 0) -4%, #cdd3f1 50%, rgba(229, 232, 249, 0) 100%);
+  --l_23: var(--t3);
+  --l_24: var(--t1);
+  --l_25: var(--t2);
+  --l_26: #545666;
+  --l_27: #808293;
+  --l_28: #e6e9f1;
+  --l_29: var(--t7);
+  --l_30: var(--t5);
+  --l_31: var(--t5);
+  --l_32: var(--t5);
+  --l_33: var(--t5);
+  --l_34: var(--t7);
+  --l_35: var(--t2);
+  --l_36: var(--t1);
+  --l_37: #ffffff;
+  /*  =========优惠界面============  */
+  --d_1: #fafafa;
+  --d_2: #666666;
+  --d_3: var(--t2);
+  --d_4: var(--t3);
+  --d_5: 0px 2px 5px rgba(136, 136, 136, 0.3);
+  --d_6: var(--t5);
+  --d_7: #d9f8ff;
+  --d_8: 2px -2px 4px rgba(182, 155, 132, 0.19);
+  --d_9: #9c9c9c;
+  --d_10: var(--t6);
+  --d_11: var(--t3);
+  --d_12: #505679;
+  --d_13: var(--t3);
+  --d_14: rgba(246, 248, 254, 0.4);
+  /* APP下载界面 */
+  --a_1: #f6fbff;
+  --a_2: #505679;
+  --a_3: #b0b4c0;
+  --a_4: #505679;
+  --a_5: var(--t1);
+  --a_6: #54626c;
+  --a_7: #505679;
+  /* 游戏界面 */
+  --g_1: #505679;
+  --g_2: #adb2c8;
+  --g_3: var(--t3);
+  --g_4: var(--t4);
+  --g_5: #d3d9f0;
+  --g_6: var(--t3);
+  --g_7: linear-gradient(180deg, rgba(34, 34, 34, 0) 51.73%, rgba(34, 34, 34, 0.75) 79.23%);
+  --g_8: var(--t3);
+  --g_9: #393a42;
+  --g_10: #d3d9f0;
+  --g_11: #9a9daa;
+  --g_12: var(--t6);
+  --g_13: #e2e4f2;
+  --g_14: 0px 1px 6px rgba(132, 132, 132, 0.2);
+  --g_15: var(--t3);
+  --g_16: var(--t3);
+  --g_17: #505679;
+  --g_18: var(--t3);
+  /* 论坛界面 */
+  --lt_1: var(--t3);
+  --lt_2: 6px 8px 16px rgba(50, 62, 99, 0.1);
+  --lt_3: var(--t7);
+  --lt_4: var(--t5);
+  --lt_5: var(--t3);
+  --lt_6: var(--t1);
+  --lt_7: var(--t3);
+  --lt_8: red;
+  --lt_9: var(--t4);
+  --lt_10: #f6fbff;
+  --lt_11: #d3d9f0;
+  --lt_12: #e2e4f2;
+  --lt_13: var(--t6);
+  --lt_14: var(--t3);
+  --lt_15: var(--t4);
+  --lt_16: var(--t2);
+  --lt_17: #3d4957;
+  --lt_18: var(--t2);
+  --lt_19: #cfd8ea;
+  --lt_20: var(--t7);
+  --lt_21: #a09699;
+  --lt_22: #8491aa;
+  --lt_23: #f6fbff;
+  --lt_24: #adb2c8;
+  --lt_25: #878ea6;
+  --lt_26: var(--t3);
+  --lt_27: #132743;
+  /* 游戏帮助 */
+  --hp_1: rgba(246, 248, 254, 0.4);
+  --hp_2: 6px 8px 16px rgb(50 62 99 / 10%);
+  --hp_3: #666;
+  --hp_4: var(--t2);
+  --hp_5: rgba(64, 68, 105, 0.1);
+  --hp_6: #505679;
+  --hp_7: var(--t3);
+  --hp_8: var(--t1);
+  --hp_9: #505679;
+  --hp_10: var(--t3);
+  --hp_11: 0px 4px 18px rgba(207, 212, 225, 0.54);
+  /*  =========个人中心公共头部============  */
+  --u_h_1: rgba(246, 248, 254, 0.4);
+  --u_h_2: #404469;
+  --u_h_3: #dee3ee;
+  --u_h_4: var(--t2);
+  --u_h_5: #f6f8fe;
+  --u_h_6: linear-gradient(269.91deg, rgba(115, 186, 253, 0.2) 0.08%, #64a9eb 99.91%);
+  --u_h_7: var(--t1);
+  --u_h_8: linear-gradient(292.64deg, #ffe5cb 0%, #de9b5e 100%);
+  --u_h_9: 0px 3px 6px rgb(22 28 39 / 12%);
+  --u_h_10: #834915;
+  --u_h_11: var(--t2);
+  --u_h_12: #f8d4b2;
+  --u_h_13: var(--t1);
+  --u_h_14: linear-gradient(90deg, #f4f9ff 100%, #ffffff 100%);
+  --u_h_15: var(--t1);
+  --u_h_16: var(--t2);
+  --u_h_17: var(--t3);
+  --u_h_18: #000000;
+  /*  =========首页面============  */
+  --home_1: var(--t3);
+  --home_2: transparent;
+  --home_3: rgba(246, 248, 254, 0.4);
+  --home_4: 0px 4px 35px rgba(115, 121, 134, 0.12);
+  --home_5: var(--t2);
+  --home_6: var(--t1);
+  --home_7: var(--t1);
+  --home_8: var(--t3);
+  --home_9: 0px 2px 5px rgb(188 169 151 / 30%);
+  --home_10: var(--t4);
+  --home_11: var(--t7);
+  --home_12: #393a42;
+  --home_13: #545666;
+  --home_14: #f6fbff;
+  --home_15: var(--t4);
+  --home_16: var(--t2);
+  --home_17: var(--t3);
+  --home_18: #606266;
+  --home_19: #bbb;
+  --home_20: var(--t7);
+  --home_21: var(--t5);
+  --home_22: linear-gradient(
+    269.91deg,
+    #64a9eb 0.08%,
+    rgba(115, 186, 253, 0.2) 99.91%,
+    rgba(115, 186, 253, 0.2) 99.91%
+  );
+  --home_23: 6px 8px 16px rgb(50 62 99 / 10%);
+  --home_24: #f0f2ff;
+  --home_25: 0px 4px 8px rgba(50, 62, 99, 0.12);
+  --home_26: rgba(12, 17, 31, 0.6);
+  --home_27: var(--t1);
+  --home_28: 4px 4px 8px rgba(0, 0, 0, 0.16), -4px -4px 4px rgba(255, 255, 255, 0.16);
+  --home_29: var(--t3);
+  --home_30: var(--t2);
+  --home_31: var(--t1);
+  --home_32: #404469;
+  --home_33: 0px 4px 8px rgb(50 62 99 / 30%);
+  --home_34: var(--t1);
+  --home_35: var(--t5);
+  --home_36: 0px 4px 8px rgb(50 62 99 / 12%);
+  --home_37: var(--t3);
+  --home_38: var(--t1);
+  --home_39: var(--t3);
+  --home_40: #e2e4f5;
+  --home_41: var(--t7);
+  --home_42: #404469;
+  --home_43: #b0b4c0;
+  --home_44: var(--t1);
+  --home_45: var(--t1);
+  --home_46: var(--t1);
+  --home_47: var(--t3);
+  --home_48: var(--t2);
+  --home_50: linear-gradient(111.25deg, #f0f0f0 7.33%, #949292 34%);
+  --home_51: linear-gradient(135deg, #ffb762 0%, #fd8803 100%);
+  /*  ==========公共===========  */
+  --m_1: #edf1fb; //- 皮肤背景色
+  --m_2: var(--t1);
+  --m_3: #595b65;
+  --m_4: linear-gradient(90deg, rgba(67, 69, 82, 0), rgb(67, 69, 82, 0.4), rgba(67, 69, 82, 0));
+  --m_5: #505679;
+  --m_6: var(--t1);
+  --m_7: var(--t3);
+  --m_8: #061427;
+  --m_9: rgba(33, 38, 61, 0.2);
+  --m_10: #878ea6;
+  --m_11: var(--t3);
+  --m_12: #878ea6;
+  --m_13: #505679;
+  --m_14: var(--t3);
+  --m_15: var(--t3);
+  --m_16: var(--t3);
+  --m_17: var(--t3);
+  --m_18: var(--t3);
+  --m_19: var(--t3);
+  --m_20: var(--t3);
+  --m_21: var(--t3);
+  --m_22: var(--t3);
+  --m_23: var(--t3);
+  --m_24: var(--t3);
+  --m_25: var(--t3);
+  --m_26: var(--t3);
+  /*  ==========合营===========  */
+  --p_1: #fcf9f7;
+  --p_2: var(--t2);
+  --p_3: var(--t3);
+  --p_4: #505679;
+  --p_5: var(--t2);
+  --p_6: var(--t1);
+  --p_7: var(--t3);
+  --p_8: var(--t1);
+  --p_9: var(--t2);
+  --p_10: #b0b4c0;
+  --p_11: linear-gradient(135.44deg, rgba(57, 58, 66, 0), rgba(97, 98, 96, 0.5), rgba(57, 58, 66, 0));
+  --p_12: var(--t3);
+  --p_16: var(--t3);
+  /*  =====================  */
+  --dialog_1: var(--t1);
+  --dialog_2: var(--t3);
+  --dialog_3: #505679;
+  --dialog_4: var(--t7);
+  --dialog_5: var(--t5);
+  --dialog_6: var(--t3);
+  --dialog_7: var(--t4);
+  --dialog_8: rgba(246, 248, 254, 0.8);
+  //- 优惠
+  --sponsor_1: var(--t7);
+  --sponsor_2: var(--t1);
+  --sponsor_3: #ccd3e6;
+  --sponsor_4: var(--t3);
+  --sponsor_5: var(--t1);
+  --sponsor_6: var(--t7);
+  --sponsor_7: var(--t3);
+  --sponsor_8: var(--t7);
+  --sponsor_9: var(--t3);
+  --sponsor_10: #323232;
+  --sponsor_11: var(--t7);
+  --sponsor_12: var(--t1);
+  /* usdt */
+  --usdtS_1: #f5f5f5;
+  --usdtS_2: #f5f5f5;
+  --usdtS_3: 0px 4px 4px rgba(135, 73, 0, 0.06);
+  --usdtS_4: 333333;
+  --usdtS_5: #fff;
+  --usdtS_6: #e78a46;
+  --usdtS_7: 0px 4px 4px rgba(135, 73, 0, 0.06);
+  --usdtS_8: #333;
+  --usdtS_9: #e9e9e9;
+  --usdtS_10: 0px 1px 0px #ffffff;
+  --usdtS_11: linear-gradient(0deg, #e9e9e9, #e9e9e9), #f5f5f5;
+  --usdtS_12: #fff;
+  --usdtS_13: rgba(255, 255, 255, 0.86);
+  --usdtS_14: #333;
+  --usdtS_15: #333;
+  --usdtS_16: #fe7045;
+  --usdtS_17: #333;
+  --usdtS_18: #e78a46;
+  --usdtS_19: #666;
+  --usdtS_20: #ccc;
+  --usdtS_21: #e78a46;
+  /* usdt */
+  --usdtS_1: #f5f5f5;
+  --usdtS_2: #f5f5f5;
+  --usdtS_3: 0px 4px 4px rgba(135, 73, 0, 0.06);
+  --usdtS_4: 333333;
+  --usdtS_5: #fff;
+  --usdtS_6: #e78a46;
+  --usdtS_7: 0px 4px 4px rgba(135, 73, 0, 0.06);
+  --usdtS_8: #333;
+  --usdtS_9: #e9e9e9;
+  --usdtS_10: 0px 1px 0px #ffffff;
+  --usdtS_11: linear-gradient(0deg, #e9e9e9, #e9e9e9), #f5f5f5;
+  --usdtS_12: #fff;
+  --usdtS_13: rgba(255, 255, 255, 0.86);
+  --usdtS_14: #333;
+  --usdtS_15: #333;
+  --usdtS_16: #fe7045;
+  --usdtS_17: #333;
+  --usdtS_18: #e78a46;
+  --usdtS_19: #666;
+  --usdtS_20: #ccc;
+  --usdtS_21: #e78a46;
+  --bt_1: #e78a46;
+  --bt_2: #fff;
+  /*
+    =============
+    !-3号皮肤私有样式开始
+    ==============
+     */
+  @mixin dialog_filter() {
+    background: rgba(246, 248, 254, 0.8) !important;
+    box-shadow: 0px 4px 35px rgba(115, 121, 134, 0.12);
+    backdrop-filter: blur(7px);
+  }
+  @media (max-width: 1920px) {
+    .main-router {
+      background-size: 1920px auto !important;
+    }
+  }
+  .main-router {
+    @include bg_img('003', 'base/main_bg.jpg');
+    background-size: 100% auto;
+    background-position: center -120px;
+    background-repeat: no-repeat;
+    &.all,
+    &.contact_us {
+      background-image: none;
+    }
+    &.bg_2 {
+      background-image: v-bind(bg_1);
+    }
+    &.bg_3 {
+      background-image: v-bind(bg_3);
+    }
+    &.sponsor {
+      background-image: none;
+    }
+    &.electronic,
+    &.electronic-selectList,
+    &.poker,
+    &.poker-selectList,
+    &.lottery,
+    &.lottery-selectList,
+    &.fish,
+    &.fish-selectList,
+    &.discount {
+      background-position: center 620px;
+    }
+  }
+  //- 三号皮肤
+  .el-dialog {
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    &.first-enter,
+    &.discount,
+    &.home_notice_dialog {
+      .el-dialog__body {
+        background-color: transparent !important;
+      }
+    }
+    &.update_dialog {
+      .el-dialog__body {
+        padding: 0;
+      }
+    }
+    .el-dialog__body {
+      .dialog-content-container {
+        padding-bottom: 0;
+        .dialog-content {
+          padding-bottom: 80px;
+          border: 3px solid var(--t3);
+          @include dialog_filter();
+          border-radius: 0 0 10px 10px;
+          border-top: none;
+        }
+      }
+    }
+    .el-dialog__footer {
+      border-top: none;
+      @include dialog_filter();
+    }
+    &.self-dialog-body {
+      .el-dialog__body {
+        background: transparent !important;
+      }
+    }
+    &.coupons-wrap,
+    &.message-dialog,
+    &.rule-wrapper {
+      .el-dialog__body {
+        border: 5px solid var(--t3);
+        border-top: none;
+        @include dialog_filter();
+      }
+    }
+    &.message-dialog {
+      .el-dialog__body {
+        padding-bottom: 20px;
+      }
+    }
+    &.add_card {
+      .el-dialog__body {
+        border: 3px solid var(--t3);
+        box-shadow: 0px 4px 35px rgba(115, 121, 134, 0.12);
+        backdrop-filter: blur(7px);
+      }
+    }
+  }
+  .home_notice_dialog {
+    @include dialog_filter();
+    .el-dialog__body {
+      background-color: transparent !important;
+      border-left: 2px solid var(--t3);
+      border-right: 2px solid var(--t3);
+    }
+    .el-dialog__footer {
+      background: none !important;
+      backdrop-filter: blur(0px);
+      border: 2px solid var(--t3);
+      border-top: none;
+    }
+  }
+  .first-enter_dialog {
+    .notice_dialog_main {
+      .first_enter_detail_btn {
+        border: none;
+        border-radius: 10px !important;
+      }
+      .el-tabs__header {
+        position: absolute;
+        left: 0;
+      }
+      .el-tabs__content {
+        padding-left: 230px !important;
+        border: 3px solid var(--t3);
+        border-left: none;
+        @include dialog_filter();
+      }
+    }
+  }
+  .header_component {
+    box-shadow: none;
+    &:after {
+      content: '';
+      position: absolute;
+      @include bg_img('003', 'base/header_line.jpg');
+      width: 100%;
+      height: 10px;
+      background-size: 100%;
+      top: 90px;
+    }
+    .header-menu-container {
+      &:after {
+        box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+  .user-operation-container {
+    .bell_masker_section {
+      border: none !important;
+      filter: drop-shadow(2px 6px 11px rgba(0, 0, 0, 0.25)) !important;
+      &::before {
+        border-bottom-color: #d8dcde !important;
+      }
+    }
+    .user-drop-menu_content {
+      .information-item {
+        &:hover {
+          background: #fdfaf4;
+          color: var(--t2);
+        }
+      }
+    }
+  }
+  .number_txt {
+    &.theme_003 {
+      top: 20% !important;
+    }
+  }
+  .sponsor_main .part_four .desc-container {
+    background-image: none !important;
+  }
+  .discount-content {
+    .el-tabs__content {
+      box-shadow: 0px 4px 35px rgba(115, 121, 134, 0.12);
+      backdrop-filter: blur(7px);
+      border-radius: 10px;
+    }
+    .el-tabs__header {
+      background: rgba(246, 248, 254, 0.4) !important;
+      backdrop-filter: blur(10px) !important;
+      box-shadow: 0px 4px 35px rgba(115, 121, 134, 0.12) !important;
+      border-radius: 10px !important;
+      .el-tabs--left .el-tabs__nav-scroll {
+        height: auto !important;
+      }
+    }
+  }
+  .el-progress-bar__innerText {
+    .empty-progress {
+      color: #061427;
+    }
+  }
+  .sport-banner-container .sport_banner_item {
+    .status-tag {
+      background: linear-gradient(135deg, #ffb762 0%, #fd8803 100%);
+      &.maintain {
+        background: linear-gradient(111.25deg, #f0f0f0 7.33%, #949292 34%);
+      }
+    }
+  }
+  .hot-game-container .hot_game_main {
+    .status-tag {
+      background: linear-gradient(135deg, #ffb762 0%, #fd8803 100%);
+      &.maintain {
+        background: linear-gradient(111.25deg, #f0f0f0 7.33%, #949292 34%);
+      }
+    }
+    .small_container .small_item {
+      &:nth-child(1) .status-tag {
+        top: 25px;
+        right: 30px;
+      }
+      &:nth-child(2) .status-tag {
+        top: 14px;
+        right: 31px;
+      }
+      &:nth-child(3) .status-tag {
+        top: 5px;
+        right: 24px;
+      }
+    }
+    .sport_container {
+      .status-tag {
+        top: 1px;
+        right: 1px;
+      }
+    }
+  }
+  .game_name.rollingBall {
+    background: rgba(70, 37, 103, 0.45);
+  }
+}

@@ -1,0 +1,1212 @@
+body.template_2_008 {
+    --t1: #ffffff;
+    --t2: #CECED3;
+    --t3: #E7D3A0; 
+    --t4:  linear-gradient(135deg, #E7D7A6 0%, #DCBF80 96.98%);
+    --t5: #414655;
+    --t6: 6px 8px 16px rgba(50, 62, 99, 0.1); 
+    --t7: #393A42;
+    --t8: #9A9DAA;
+    /* =========头部============ */
+    --h_1: var(--t2);
+    --h_2: #323338E5;
+    --h_3: 0px 4px 8px rgba(50, 62, 99, 0.12);
+    --h_4: #393A4273;
+    --h_5: var(--t4);
+    --h_6: var(--t4);
+    --h_7: var(--t1);
+    --h_8: var(--t1);
+    --h_9: var(--t1);
+    --h_10: var(--t1);
+    --h_11: var(--t1);
+    --h_12: var(--t8);
+    --h_13: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);
+    --h_14: var(--t7);
+    --h_u_1: var(--t2);
+    --h_u_2: red;
+    --h_u_3: var(--t2);
+    --h_u_4: var(--t3);
+    --h_u_5: var(--t7);
+    --h_u_6: #545666;
+    --h_u_7: #545666;
+    --h_u_8: var(--t2);
+    --h_u_9: linear-gradient(90deg, rgba(188, 169, 151, 0) 0%, #BCA997 49.6%, rgba(188, 169, 151, 0) 99.62%);
+    --h_u_10: var(--t3);
+    --h_u_11: var(--t3);
+    --h_u_12: var(--t1);
+    --h_u_13: var(--t2);
+    --h_u_14: var(--t3);
+    --h_u_15: var(--t2);
+    --h_u_16: var(--t3);
+    --h_u_17: #C4C4C4;
+    --h_u_18: var(--t8);
+    --h_u_19: var(--t3);
+    --h_u_20: var(--t3);
+    --h_u_21: var(--t8);
+    --h_u_22: #FF2F2F;
+    --h_u_23: var(--t1);
+    --h_u_24: var(--t8);
+    --h_u_25: var(--t8);
+    --h_u_26: #545666;
+    /*  =========个人中心我的钱包============  */
+    --u_w_1: var(--t1);
+    --u_w_2: #7d7d7d;
+    --u_w_3: rgba(64, 68, 105, 0.1);
+    --u_w_4: var(--t3);
+    --u_w_5: unset;
+    --u_w_6: var(--t1);
+    --u_w_7: var(--t4);
+    --u_w_8: var(--t7);
+    --u_w_9: var(--t7); 
+    --u_w_10: var(--t4);
+    --u_w_11: var(--t3);
+    --u_w_12: linear-gradient(309.01deg, #E9D7C1 -1.44%, #C0A98D 44.92%, #E9D7C1 70.97%, #C0A98D 109.64%);
+    --u_w_13: #545666;
+    --u_w_14: 1px 0px 1px  rgba(207, 212, 225, 0.4);
+    --u_w_15: #fff;
+    --u_w_16: var(--t4);
+    --u_w_17: var(--t7);
+    --u_w_18: #767676;
+    --u_w_19: var(--t1);
+    --u_w_20: var(--t3);
+    --u_w_21: red;
+    --u_w_22: var(--t8);
+    /*  =========个人中心vip============  */
+    --u_v_1: var(--t1);
+    --u_v_2: #feffb3;
+    --u_v_3: #feffb3;
+    --u_v_4: #fe0106;
+    --u_v_5: var(--t1);
+    --u_v_6: 0px 4px 20px rgba(207, 212, 225, 0.89);
+    --u_v_7: var(--t5);
+    --u_v_8: #7d7d7d;
+    --u_v_9: var(--t1);
+    --u_v_10: var(--t4);
+    --u_v_11: var(--t7);
+    --u_v_12: var(--t7);
+    --u_v_13: 1px 0px 1px  rgba(207, 212, 225, 0.4);
+    --u_v_14: #fff;
+    --u_v_15: #28292FCC;
+    --u_v_16: 0px 2.94516px 25.7701px rgba(115, 121, 134, 0.12);
+    --u_v_17: var(--t3);
+    --u_v_18: var(--t1);
+    --u_v_19: #EA4E3D;
+    --u_v_20: var(--t1);
+    --u_v_21: var(--t4);
+    --u_v_22: inset 3px 3px 4px rgba(77, 110, 141, 0.15), inset -3px -3px 4px rgba(255, 255, 255, 0.25);
+    --u_v_23: linear-gradient(90deg, #E3C291 8.44%, rgba(227, 194, 145, 0) 100%);
+    --u_v_24: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);
+    --u_v_25: linear-gradient(180deg, #E4E7F4 0%, #CDD3F1 50%, #E4E7F4 100%);
+    --u_v_26: var(--t4);
+    --u_v_27: #393A42;
+    /*  =========个人中心vip详情============  */
+    --u_vd_1: #fff;
+    --u_vd_2: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);
+    --u_vd_3: #28292FCC;
+    --u_vd_4: var(--t6);
+    --u_vd_5: linear-gradient(90deg, #E4E7F4 0%, #CDD3F1 100%, #E5E8F9 0%);
+    --u_vd_6: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);
+    --u_vd_7: var(--t7);
+    --u_vd_8: 1px 0px 1px  rgba(207, 212, 225, 0.4);
+    --u_vd_9: #989eac;
+    --u_vd_10: #5B5B5B;
+    --u_vd_11: #855400;
+    --u_vd_12: #9A9DAA;
+    /*  =========个人中心资料============  */
+    --u_d_1: var(--t8);
+    --u_d_2: var(--t3);
+    --u_d_3: #7d7d7d;
+    --u_d_4: var(--t1);
+    --u_d_5: var(--t4);
+    --u_d_6: var(--t7);
+    --u_d_7: #D9E0EC;
+    --u_d_8: #FFC224;
+    /*  =========个人中心存款===========  */
+    --u_c_1: var(--t1);
+    --u_c_2: var(--t3);
+    --u_c_3: var(--t8);
+    --u_c_4: var(--t8);
+    --u_c_5: var(--t1);
+    --u_c_6: var(--t4);
+    --u_c_7: #767676;
+    --u_c_8: var(--t7);
+    --u_c_9: var(--t6);
+    --u_c_10: #e4e9f0;
+    --u_c_11: var(--t1);
+    --u_c_12: var(--t8);
+    --u_c_13: unset;
+    --u_c_14: var(--t4);
+    --u_c_15: #222222;
+    --u_c_16: var(--t8);
+    --u_c_17: var(--t2);
+    --u_c_18: var(--t3);
+    --u_c_19: 1px 0px 1px  rgba(207, 212, 225, 0.4);
+    --u_c_20: 0.5px solid #545666;
+    --u_c_21: var(--t3);
+    --u_c_22: var(--t1);
+    --u_c_23: #555;
+    --u_c_24: var(--t8);
+    --u_c_25: var(--t7);
+    --u_c_26: var(--t4);
+    --u_c_27: var(--t1);
+    --u_c_28: var(--t3);
+    --u_c_29: var(--t1);
+    --u_c_30: #F90000;
+    --u_c_31: #38b63f;
+    --u_c_32: var(--t1);
+    --u_c_33: #767676; 
+    /*  =========个人中心取款============  */
+    --u_m_1: var(--t7);
+    --u_m_2: var(--t3);
+    --u_m_3: var(--t2);
+    --u_m_4: var(--t7);
+    --u_m_5: var(--t8);
+    --u_m_6: unset;
+    --u_m_7: var(--t1);
+    /*  =========个人中心意见反馈============  */
+    --u_f_1: var(--t1);
+    --u_f_2: var(--t7);
+    --u_f_3: var(--t8);
+    --u_f_4: var(--t3);
+    --u_f_5: var(--t4);
+    --u_f_6: #222328CC;
+    /*  =========个人中心消息中心============  */
+    --u_msg_1: #7d7d7d;
+    --u_msg_2: var(--t3);
+    --u_msg_3: var(--t7);
+    --u_msg_4: #7d7d7d;
+    --u_msg_5: var(--t1);
+    --u_msg_6: var(--t7);
+    --u_msg_7: var(--t4);
+    --u_msg_8: #545666;
+    --u_msg_9: var(--t2);
+    --u_msg_10: var(--t7);
+    /* 个人中心晒单记录 */
+    --u_s_1: #2897FA;
+    --u_s_2: var(--t7);
+    --u_s_3: var(--t1);
+    --u_s_4: rgba(255, 255, 255, .5);
+    --u_s_5: rgba(255, 255, 255, .1);
+    --u_s_6: rgba(255, 255, 255, .1);
+    --u_s_7: #7d7d7d;
+    --u_s_8: var(--t5);
+    --u_s_9: #808293;
+    --u_s_10: #fff;
+    --u_s_11: #7d7d7d;
+    --u_s_12: #7d7d7d;
+    --u_s_13: var(--t1);
+    --u_s_14: var(--t4);
+    /*  =========个人中心我的优惠============  */
+    --u_cou_1: var(--t7);
+    --u_cou_2: var(--t3);
+    --u_cou_3: var(--t8);
+    --u_cou_4: var(--t4);
+    --u_cou_5: #545666;
+    --u_cou_6: #fff;
+    --u_cou_7: var(--t8);
+    --u_cou_8: var(--t3);
+    --u_cou_9: var(--t7);
+    --u_cou_10: #545666;
+    --u_cou_11: var(--t2);
+    --u_cou_12: #767676;
+    --u_cou_13: var(0,0,0, 0);
+    --u_cou_14: var(--t3);
+    /*  =========个人中心投注记录============  */
+    --u_br_1: var(--t1);
+    --u_br_2: #7d7d7d;
+    --u_br_3: var(--t7);
+    --u_br_4: none;
+    --u_br_5: #F90000;
+    --u_br_6: #37AA4A;
+    --u_br_7: var(--t4);
+    --u_br_8: var(--t2);
+    --u_br_9: #37AA4A;
+    --u_br_10: var(--t3);
+    --u_br_11: #767676;
+    --u_br_12: var(--t7);
+    --u_br_13: #ebf7ff;
+    --u_br_14: var(--t2);
+    --u_br_15: var(--t3);
+    --u_br_16: var(--t4);
+    --u_br_17: var(--t4);
+    --u_br_18: var(--t1);
+    --u_br_19: #7d7d7d;
+    /*  =========个人中心好友推荐============  */
+    --u_friend_1: #CECED3;
+    --u_friend_2: var(--t3);
+    --u_friend_3: #AA905A;
+    --u_friend_4: var(--t8);
+    --u_friend_5: var(--t8);
+    --u_friend_6: var(--t7);
+    --u_friend_7: var(--t9);
+    --u_friend_8: var(--t1);
+    --u_friend_9: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%); 
+    --u_friend_10: var(--t7);
+    --u_friend_11: #fff;
+    --u_friend_12: #545666;
+    --u_friend_13: var(--t8);
+    --u_friend_14: var(--t4);
+    --u_friend_15: var(--t7);
+    --u_friend_16: #404469;
+    --u_friend_17: var(--t7);
+    --u_friend_18: none;
+    --u_friend_19: var(--t1);
+    --u_friend_20: #fff;
+    --u_friend_21: var(--t4);
+    --u_friend_22: #767676;
+    --u_friend_23: var(--t7);
+    --u_friend_24: var(--t8);
+    --u_friend_25: var(--t4);
+    --u_friend_26: var(--t7);
+    --u_friend_27: #767676;
+    --u_friend_28: #7d7d7d;
+    --u_friend_29: #7d7d7d;
+    --u_friend_30: var(--t1);
+    --u_friend_31: #fff;
+    --u_friend_32: var(--t8);
+    --u_friend_33: var(--t3);
+    --u_friend_34: var(--t3);
+    --u_friend_35: var(--t2);
+    --u_friend_36: #404469;
+    --u_friend_40: #fff;
+    --u_friend_41: rgba(62, 66, 82, 0.2);
+    --u_friend_42: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);
+    --u_friend_43: unset;
+    --u_friend_44: none;
+    --u_friend_45: #fff;
+    --u_friend_46: #E7D3A0;
+    --u_friend_47: #fff;
+    --u_friend_48: #fff;
+    --u_friend_49: #E7D3A0;
+    --u_friend_50: #E7D3A0;
+    --u_friend_51: #767676;
+    --u_friend_52: #fff;
+    --u_friend_53: var(--t4);
+    --u_friend_54: var(--t7);
+    --u_friend_55: #fff;
+    --u_friend_56: #767676;
+    --u_friend_57: var(--t4);
+    --u_friend_58: #fff;
+    --u_friend_59: var(--t7);
+    --u_friend_60: #43444E;
+    --u_friend_61: #CECED3;
+    /*  =========联系我们============  */
+    --cu_1: var(--t2);
+    --cu_2: #7d7d7d;
+    --cu_3: #FCF9F7;
+    --cu_4: #61D5F9;
+    --cu_5: var(--t1);
+    --cu_6: var(--t4);
+    --cu_7: var(--t3);
+    --cu_8: var(--t1);
+    --cu_9: inset 3px 3px 4px rgba(77, 110, 141, 0.15), inset -3px -3px 4px rgba(255, 255, 255, 0.25);
+    --cu_10: #CFD8EA;
+    --cu_11: var(--t7);
+    /*  =========用户登录注册============  */
+    --l_1: #222328CC;
+    --l_2: #545666;
+    --l_3: var(--t4);
+    --l_4: var(--t7);
+    --l_5: var(--t3);
+    --l_6: var(--t3);
+    --l_7: var(--t2);
+    --l_8: 0 0 10px rgba(0, 0, 0, 0.3);
+    --l_9: rgba(92, 184, 92, 0.5);
+    --l_10: var(--t1);
+    --l_11: rgba(217, 83, 79, 0.5);
+    --l_12: linear-gradient(135deg, #E7D7A6 0%, #DCBF80 96.98%);
+    --l_13: #888888;
+    --l_14: #c4baa0;
+    --l_15: #DBF2FF;
+    --l_16: #ddd;
+    --l_17: #323232;
+    --l_18: #F3F5F9;
+    --l_19: #131517;
+    --l_20: #28292FCC;
+    --l_21: var(--t1);
+    --l_22: -webkit-linear-gradient(left, rgba(228, 231, 244, 0) -4%, #CDD3F1 50%, rgba(229, 232, 249, 0) 100%);
+    --l_23: var(--t7);
+    --l_24: var(--t4);
+    --l_25: var(--t3);
+    --l_26: #545666;
+    --l_27: #808293;
+    --l_28: #545666;
+    --l_29: var(--t1);
+    --l_30: var(--t4);
+    --l_31: var(--t4);
+    --l_32: var(--t3);
+    --l_33: var(--t4);
+    --l_34: var(--t2);
+    --l_35: var(--t3);
+    --l_36: var(--t4);
+    --l_37: #ffffff;
+    //*  =========优惠界面============  */
+    --d_1: #28292FE5;
+    --d_2: var(--t2);
+    --d_3: var(--t1);
+    --d_4: var(--t1);
+    --d_5: 0px 2px 5px rgba(136, 136, 136, 0.3);
+    --d_6: linear-gradient(135.44deg, #E7D7A6 0.76%, #DCBF80 97%);
+    --d_7: #B69B8430;
+    --d_8: 2px -2px 4px rgba(182, 155, 132, 0.19);
+    --d_9: #9c9c9c;
+    --d_10: var(--t4);
+    --d_11: var(--t1);
+    --d_12: var(--t2);
+    --d_13: var(--t1);
+    --d_14: #FAFAFA;
+    /* APP下载界面 */
+    --a_1: var(--t7);
+    --a_2: #54626C;
+    --a_3: #8897B8;
+    --a_4: var(--t2);
+    --a_5: var(--t5);
+    --a_6: #54626C;
+    --a_7: #505679;
+    /* 游戏界面 */
+    --g_1: var(--t3);
+    --g_2: var(--t3);
+    --g_3: var(--t1);
+    --g_4: var(--t1);
+    --g_5: #D3D9F0;
+    --g_6: var(--t3);
+    --g_7: linear-gradient(180deg, rgba(34, 34, 34, 0) 51.73%, rgba(34, 34, 34, 0.75) 79.23%);
+    --g_8: #222328;
+    --g_9: var(--t7);
+    --g_10: #D3D9F0;
+    --g_11: var(--t8);
+    --g_12: var(--t4);
+    --g_13: #E2E4F2;
+    --g_14: 0px 1px 6px rgba(132, 132, 132, 0.2);
+    --g_15: #222328;
+    --g_16: var(--t1);
+    --g_17: var(--t3);
+    --g_18: var(--t1);
+    /* 论坛界面 */
+    --lt_1: #28292F;
+    --lt_2: var(--t6);
+    --lt_3: var(--t2);
+    --lt_4: var(--t4);
+    --lt_5: var(--t1);
+    --lt_6: #fff;
+    --lt_7: #28292FCC;
+    --lt_8: red;
+    --lt_9: var(--t8);
+    --lt_10: var(--t7);
+    --lt_11: #D3D9F0;
+    --lt_12: #E2E4F2;
+    --lt_13: var(--t4);
+    --lt_14: #28292FCC;
+    --lt_15: var(--t8);
+    --lt_16: var(--t3);
+    --lt_17: #fff;
+    --lt_18: var(--t3);
+    --lt_19: #CFD8EA;
+    --lt_20: var(--t2);
+    --lt_21: #A09699;
+    --lt_22: var(--t8);
+    --lt_23: var(--t7);
+    --lt_24: #7d7d7d;
+    --lt_25: #878EA6;
+    --lt_26: var(--t7);
+    --lt_27: var(--t4);
+    /* 游戏帮助 */
+    --hp_1: #28292FE5;
+    --hp_2: 6px 8px 16px rgb(50 62 99 / 10%);
+    --hp_3: var(--t2);
+    --hp_4: var(--t1);
+    --hp_5: rgba(225, 225, 225, 0.1);
+    --hp_6: var(--t1);
+    --hp_7: #393A42;
+    --hp_8: var(--t1);
+    --hp_9: var(--t2);
+    --hp_10: var(--t3);
+    --hp_11: unset;
+    /*  =========个人中心公共头部============  */
+    --u_h_1: #28292FCC;
+    --u_h_2: var(--t1);
+    --u_h_3: rgba(65, 70, 85, 0.1);
+    --u_h_4: var(--t3);
+    --u_h_5: #28292FE5;
+    --u_h_6: linear-gradient(135deg, rgba(87, 87, 91, 0.9) 0%, rgba(40, 41, 47, 0.9) 100%); 
+    --u_h_7: rgba(#fff, 0.8);
+    --u_h_8: linear-gradient(292.64deg, #FFE5CB 0%, #DE9B5E 100%);
+    --u_h_9: 0px 3px 6px rgb(22 28 39 / 12%);
+    --u_h_10: #834915;
+    --u_h_11: #596AA4;
+    --u_h_12: #F8D4B2;
+    --u_h_13: var(--t1);
+    --u_h_14: #393A42;
+    --u_h_15: var(--t8);
+    --u_h_16: var(--t1);
+    --u_h_17: var(--t1);
+    --u_h_18: var(--t1);
+    --u_h_19: var(--t6);
+    --u_h_20: var(--t6);
+    /*  =========首页面============  */
+    --home_1: var(--t1);
+    --home_2: #28292FCC;
+    --home_3: linear-gradient(180deg, #393A42 0%, rgba(220, 199, 154, 0.15) 100%);
+    --home_4: 5.33333px 7.11111px 14.2222px rgba(50, 62, 99, 0.1);
+    --home_5: var(--t3);
+    --home_6: #7d7d7d;
+    --home_7: var(--t8);
+    --home_8: var(--t7);
+    --home_9:  0px 2px 5px 0px rgba(188, 169, 151, 0.30) inset;
+    --home_10: var(--t1);
+    --home_11: var(--t2);
+    --home_12: var(--t7);
+    --home_13: #545666;
+    --home_14: #393A42;
+    --home_15: var(--t1);
+    --home_16: var(--t3);
+    --home_17: var(--t5);
+    --home_18: #606266;
+    --home_19: #bbb;
+    --home_20: var(--t2);
+    --home_21: var(--t4);
+    --home_22: linear-gradient(180deg, #FFFFFF 0%, #F8F9FF 27.95%, #EEF0FF 82.12%, #FFFFFF 100%);
+    --home_23: var(--t6);
+    --home_24: rgba(255, 255, 255, 0.15);
+    --home_25: 0px 4px 8px rgb(50 62 99 / 12%);
+    --home_26: var(--t1);
+    --home_27: var(--t4);
+    --home_28: 4px 4px 8px rgb(156 173 227 / 51%), -4px -4px 4px rgb(255 255 255 / 50%);
+    --home_29: var(--t7);
+    --home_30: var(--t3);
+    --home_31: var(--t8);
+    --home_32: #fff;
+    --home_33: 0px 4px 8px rgb(50 62 99 / 30%);
+    --home_34: var(--t1);
+    --home_35: var(--t4);
+    --home_36: 0px 14px 8px rgb(50 62 99 / 12%);
+    --home_37: var(--t7);
+    --home_38: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);
+    --home_39: #545666;
+    --home_40: #22232880;
+    --home_41: var(--t2);
+    --home_42: var(--t1);
+    --home_43: var(--t8);
+    --home_44: var(--t1);
+    --home_45: var(--t8);
+    --home_46: var(--t1);
+    --home_47: var(--t1);
+    --home_48: var(--t4);
+    --home_50: linear-gradient(111.25deg, #f0f0f0 7.33%, #949292 34%);
+    --home_51: linear-gradient(306.46deg, #009df5 68.37%, #1fecf9 92.92%);
+    /*  ==========公共===========  */
+    --m_1: #131517; //- 皮肤背景色
+    --m_2: #B1B7CA;
+    --m_3: #595B65;
+    --m_4: linear-gradient(90deg, rgba(232, 244, 250, 0), rgb(204, 210, 213), rgba(232, 244, 250, 0));
+    --m_5: var(--t1);
+    --m_6: var(--t4);
+    --m_7: var(--t1);
+    --m_8: #222328;
+    --m_9: rgba(33, 38, 61, 0.2);
+    --m_10: rgba(255, 255, 255, 0.60);
+    --m_11: var(--t1);
+    --m_12: #878EA6;
+    //-
+    --m_13: var(--t2);
+    --m_14: var(--t1);
+    --m_15: var(--t1);
+    --m_16: var(--t1);
+    --m_17: var(--t1);
+    --m_18: var(--t1);
+    --m_19: var(--t1);
+    --m_20: var(--t1);
+    --m_21: var(--t1);
+    --m_22: var(--t1);
+    --m_23: var(--t1);
+    --m_24: var(--t1);
+    --m_25: var(--t1);
+    --m_26: var(--t1);
+    /*  ==========合营===========  */
+    --p_1: #323338E5;
+    --p_2: #323338E5;
+    --p_3: var(--t1);
+    --p_4: var(--t2);
+    --p_5: var(--t3);
+    --p_6: var(--t1);
+    --p_7: #28292FCC;
+    --p_8: var(--t2);
+    --p_9: var(--t3);
+    --p_10: #767676;
+    --p_11: linear-gradient(135.44deg, rgba(57, 58, 66, 0), rgba(97, 98, 96, 0.5), rgba(57, 58, 66, 0));
+    --p_12: var(--t7);
+    --p_13: var(--t3);
+    --p_14: var(--t2);
+    --p_15: var(--t2);
+    --p_16: var(--t1);
+    /*  =====================  */
+    --dialog_1: #4D4F5E;
+    --dialog_2: var(--t1);
+    --dialog_3: #767676;
+    --dialog_4: var(--t2);
+    --dialog_5: var(--t4);
+    --dialog_6: var(--t7);
+    --dialog_7: var(--t8);
+    --dialog_8: #393A42E5; 
+    //- 优惠
+    --sponsor_1: var(--t2);
+    --sponsor_2: var(--t3);
+    --sponsor_3: #ccd3e6;
+    --sponsor_4: var(--t1);
+    --sponsor_5: var(--t4);
+    --sponsor_6: var(--t2);
+    --sponsor_7: var(--t1);
+    --sponsor_8: var(--t8);
+    --sponsor_9: var(--t1);
+    --sponsor_10: #fff;
+    --sponsor_11: var(--t2);
+    --sponsor_12: var(--t8);
+    /* usdt */
+    --usdtS_1: #F5F5F5;
+    --usdtS_2: #F5F5F5;
+    --usdtS_3: 0px 4px 4px rgba(135, 73, 0, 0.06);
+    --usdtS_4: 333333;
+    --usdtS_5: #fff;
+    --usdtS_6: #E78A46;
+    --usdtS_7: 0px 4px 4px rgba(135, 73, 0, 0.06);
+    --usdtS_8: #333;
+    --usdtS_9: #E9E9E9;
+    --usdtS_10: 0px 1px 0px #FFFFFF;
+    --usdtS_11: linear-gradient(0deg, #E9E9E9, #E9E9E9), #F5F5F5;
+    --usdtS_12: #fff;
+    --usdtS_13: rgba(255, 255, 255, 0.86);
+    --usdtS_14: #333;
+    --usdtS_15: #333;
+    --usdtS_16: #fe7045;
+    --usdtS_17: #333;
+    --usdtS_18: #e78a46;
+    --usdtS_19: #666;
+    --usdtS_20: #ccc;
+    --usdtS_21: #E78A46;
+    --el-color-primary: var(--t3) !important; 
+    --el-border-color-light: #545666; 
+    .user-operation-container {
+        .bell_masker_section {
+            border: none !important;
+            filter: drop-shadow(2px 6px 11px rgba(0, 0, 0, 0.25)); 
+        }
+    }
+    .notice_dialog_main {
+        .el-tabs {
+            background: var(--home_14);
+        }
+        .el-tabs__content {
+            background-color:#4c4d54;
+        }
+    }
+    .Home{
+        .bet_table_main{
+            color:#fff;
+        }
+        .sport_banner_item{
+            width: 660px;
+            height: 280px;
+            margin-bottom: -20px;
+            .sport-banner_btn{
+                box-shadow: none;
+                bottom: 60px;
+                .arrow{
+                    display: none;
+                }
+            }
+        }
+        .plat_box{
+            .plat_box_item{
+                .game_name{
+                    color: #fff !important;
+                }
+                &::before{
+                    position: absolute;
+                    top: 15px;
+                    right: 25px;
+                    content: "";
+                    display: block;
+                    width: 37px;
+                    height: 37px;
+                    background: rgba(50, 51, 52, 0.6);
+                    border-radius: 100%;
+                  }
+                  &:hover{
+                    &::before{
+                      background: var(--t4);
+                    }
+                    &::after{
+                        filter: brightness(0.1);
+                        opacity: 0.9;
+                    }
+                  } 
+                  &::after{ 
+                    position: absolute;
+                    top: 26px;
+                    right: 36px;
+                    content: "";
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    @include bg_img('008','home/icon-heart.png');
+                    background-size: 100% auto; 
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+                .game_icon_container{
+                    left: 9px;
+                    right: unset !important;
+                    .try_icon::after, .wh_icon:after{
+                        transform: unset !important;
+                    }
+                }
+            }
+        }
+        // .home-tabs{
+        //     .list-item{
+        //         span{
+        //             color: var(--t8) !important;
+        //         }
+        //     }
+        // }
+        .hot_game_main{
+            .status-tag{
+                top: 8px;
+                right: 15px;
+            }
+            .sport_container{
+                width: 770px;
+                height: 495px;
+                margin-left: -20px; 
+                .txt_slogan{
+                    margin-bottom: 20px;
+                    color: var(--t8);
+                }
+            }
+            .small_container {
+                .small_item { 
+                &:first-child {
+                    width: 545px !important;
+                    height: 260px !important;
+                    top: 0 !important;
+                    left: 0 !important; 
+                    border-radius: 10px;                    
+                }
+                &:nth-child(2) {
+                    bottom: -30px !important;
+                    left: 0 !important;
+                    width: 280px !important;
+                    height: 245px !important;
+                }
+                .txt {
+                    bottom: 40px !important;
+                    left: 30px !important;                    
+                }
+                &:nth-child(3) {
+                    bottom: -30px !important;
+                    right: -15px !important;
+                    width: 280px !important;
+                    height: 245px !important;
+                }
+                .small_item_btn {
+                    position: absolute;
+                    right: 20px;
+                    bottom: 15px;
+                    background: #D93341;
+                    color: #fff;
+                    @include flex(center);
+                    font-size: 14px;
+                    padding: 5px 12px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+                }
+            }
+        }
+        .servicer-container{
+            .servicer_item{
+              .circle-png{
+                width: 100px !important;
+              }
+              .circle-container{  
+                top: 22px !important;
+                left: 24px !important;
+                .el-progress-circle{
+                  svg{
+                    // width: 110px;
+                    overflow: unset;
+                  }
+                }
+                .el-progress-circle__path{
+                  stroke:  var(--t3);  
+                   stroke-width: 6px;
+                }
+                      
+              }
+              .circle-container_1{
+                display: none !important;
+              }
+            }
+            
+          }
+    }
+    .footer_icon_container img{
+        filter: grayscale(0.5)
+    }
+    .header_menu_body{
+        .enter-game {
+            transform: translate(7px, -3px);
+            font-weight: 600 !important;
+            font-size: 12px !important;
+            color: #393A42 !important;
+        }
+        .esport-content {
+            .desc-txt{
+                // left: 58px !important;
+            }
+            .enter-game {
+              transform: translate(-3px, 0px); 
+            }
+        }
+        .return-num{
+            color: #E7D3A0;
+            letter-spacing: 2px;
+        }
+        .top_title_txt{
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        } 
+        .sport-menu-item{
+            .sport-menu_enter-btn{
+                color: var(--t7);
+                font-weight: 600;
+                font-size: 12px;
+                bottom: 70px;
+                left: 35px;
+            } 
+            .en.zh{
+                color: #9A9DAA;
+            }
+            .zh{
+                color: var(--t7);
+            }
+        }
+    }
+    .special-wrapper{
+        @include bg_img('008','base/special_bg.png');        
+        background-size:  100% auto;
+        .special-txt_sentence{
+            color: var(--t8) !important;
+        }
+        .special-entry{
+            color: #393A42 !important;
+        }
+        .special-btns-item{
+            .title{
+                color:  #878EA6 !important;
+                &.on{
+                    color:  var(--t3) !important;
+                }
+            }
+        }        
+    }
+    .discount-wrapper {
+        @include bg_img('008','discount/discount_bg.png');                
+        background-repeat: no-repeat;
+        background-position:left 600px;
+        background-size:  100% auto;
+        .notice-mark{
+            color: #393A42 !important;
+        } 
+    }
+    .login_reg_layout .layout_center_main{
+        backdrop-filter:unset;
+    }
+    .main-router:not(.Home), .login_reg_layout {
+        @include bg_img('008','base/special_bg.png');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+    .register-new-account{
+        .line, .no-login{
+            color: var(--t8) !important;
+        }
+    }
+    .partner-bg{
+        .partner-first-line-three{
+            color: var(--t3) !important;
+        }
+        .partner-first-line-four, .partner-right-box_title_2, .item-title, .item-title2, .item-name{
+            color: var(--t8) !important;
+        }    
+    }
+    .discount-content{
+        .cat-name{
+            margin-top: 6px;
+        }
+    }
+    .sponsor{
+        .sponsor_main{
+            .part_two_title{
+                padding-top: 23px;
+            }
+            .part_two_main{
+                margin-top: 15px;
+            }
+            .part_two_desc{
+                margin-top: 50px;
+            }
+            .part_four{
+                padding-top: 25px;
+            }
+        }
+    }
+    
+    .user-drop-menu_content{
+        .information-item{
+            &.active{
+                background-color: #393A42;
+                span{
+                    color: var(--t3)
+                }
+            }
+        }
+    }
+
+    .profile-container {
+        .sidebar_wallet_container{
+            .txt-wrap{
+                color: #393A42;
+            }
+        }
+    }
+
+    .provider-box{
+        .bind-btn{
+            background: var(--t4);
+            color: var(--t7)
+        }
+        .class-box .class-lv .text{
+            color: #6BB7EE;
+        }
+        
+    } 
+    .personal-data{
+        .profile-title{
+            color: var(--t1)    
+        }
+        .real-info-description{
+            .el-input__inner{
+                color: #fff !important;
+            }
+
+        }
+        .el-button{
+            span{
+                color:var(--t7)
+            }
+        }
+    }
+    .coupons-wrap-three{
+        .first-btn{
+            border-color: var(--t3) !important;
+            color: var(--t3) !important;
+        }
+        .el-icon{
+            color: var(--t3) !important;
+        }
+    }
+    .exclusive-vip{
+        .top-div .date-span{
+            color: #fff;
+        }
+        .data_box_desc{
+            color: var(--t1)
+        }
+        .vip-title{
+            color: var(--t7)
+        }
+        .el-input__wrapper{
+            background: #222328CC;
+            box-shadow: none !important;
+        }
+        .gift-container .gift-list img{
+            width: 250px;
+            bottom: 0px;
+        }
+    }
+    .vipinfo{
+        .vip_table.vip-info{
+            background-color: #28292FCC;
+        } 
+    }
+    .un-return-watter-container{
+        .watter-title{
+            color:#fff;
+        }
+    }
+    .betting-record-wrapper{
+        .date-btn.active{
+            box-shadow: unset !important;
+            color: var(--t7) !important;
+        }
+        .el-table__header-wrapper .el-table__header thead tr{
+            background: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);  
+            .el-table__cell{
+                background: unset !important;
+                background-color: unset !important;
+                color: var(--t7) !important;
+            }
+        }
+    }
+    .transaction-wrapper{
+        .active-span{
+            color: var(--t3) !important;
+        }
+        .date-div{
+            .el-button{
+                color: var(--t7) !important;
+            }
+        }
+        .date-box{
+            .btn-active{
+                color: var(--t7) !important;
+            }
+            .date-btn button{
+                border: 0 !important;
+            }
+        }
+    }
+    .btn.rule-btn{
+        background: #767676 !important;
+    }
+    .recommend-wrapper{
+        .reset-btn{
+            color: #fff !important;
+        }
+        .el-input__wrapper{
+            background-color: unset !important;
+            box-shadow: unset;
+        }
+        .el-input__inner{
+            color: #fff !important;
+        }
+        .date-btn{
+            box-shadow: unset !important;
+        }
+        .table-container td{
+            color: #fff;        
+        }
+        .statistics-time .date-box .btn{
+            box-shadow: unset;
+            background: #767676;
+        }
+        .record-list-item{
+            color: #fff !important;
+        }
+    }
+
+    .center-wallet-container{
+        .game-wallet-container{
+            .game-z-z .toggle-money{
+                background: var(--t8)
+            } 
+        }       
+        .totoal-money, .money-amonut-container span{
+            color: var(--t3);
+        } 
+        .text{
+            color: var(--t1);
+            div:nth-child(2){
+                color: var(--t3)
+            }
+        }
+        .toggle-money.on{
+            color: var(--t7) !important;
+        }
+        .game-transfers{
+            .transfer-on{
+                border-color: #666 !important;
+                color: #666 !important;
+            }
+            .transfer-out{
+                background: var(--t3) !important;
+            }
+        }
+    }
+    .content-title .wallet-num{
+        color: var(--t8) !important;
+    }
+    .bankcard-manage .bank-card-list-container .bank-card-list{
+        background: var(--u_w_12)
+    }
+    .withdrawal-wrapper{
+        .fee-submit{
+            background: var(--t4) !important;
+        }
+        .warning-box{
+            width: 340px;
+            padding: 15px 0;
+            .warning{
+                display: none;
+            }
+            &::before{
+                display: block;
+                content: '';
+                width: 18px;
+                height: 18px;
+                @include bg_img('008', 'profile/withdrawal_warning.png');
+                background-size: 18px;
+            }
+        }
+    }
+    .select-pay-item{
+            color: #fff;
+        &.active{
+            background: linear-gradient(180deg, #FDF4C5 0%, #BFB190 100%) !important;
+            color: var(--t7);
+            .text{
+                color: var(--t7) !important;
+            }
+        }
+    } 
+    .input-money .el-input__wrapper, .name-input .el-input__wrapper{
+        background-color: #222328CC;
+        box-shadow: unset;
+        .el-input__inner{
+            color: var(--t8)
+        }
+    }
+    .el-dialog__body{
+        .setup_title{
+            color: var(--t1)
+        }
+    }
+    .cr-pay-container{
+        .select-pay-form{
+            .select-card-container{
+                .select-item:hover, .select-item.active, .handle-btn{
+                    color: var(--t7) !important;
+                }
+            }
+        }
+        .handle-btn{
+            color: var(--t7) !important;
+        }
+    } 
+    .wrapper .type-one .type-one-title{
+        color: var(--t1)
+    }
+    .withdrawal_form_container{
+        .money-notice .money-notice-text .money-notice{
+            color: var(--t8)
+        }
+        
+    } 
+    .bankcard-manage{
+        .bank-disabled{
+            color: var(--t7) !important;
+        }
+        .bank-label{
+            color: var(--t7) !important;
+        }
+    }
+    .add-bank-card-dialog .tab-container .tab-main .money-type{
+        color: var(--t1)
+    }
+    .help-content{
+        .wrapper-title{
+            background:none !important;
+            margin-top: 20px;
+        }
+    }
+    .transaction-type-items, .betting-record-wrapper{
+        .top-div{
+            .el-input__inner, .el-input__suffix .el-icon{
+                color:#fff !important;
+            }
+        }
+        .bottom-div-inner{
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            padding: 18px;            
+            .el-table{
+                .el-table__header-wrapper .el-table__header thead tr{
+                    background: linear-gradient(90deg, #D9B47D 0%, #FBE7C4 53.02%, #D9B47D 100%);  
+                    .el-table__cell{
+                        background: unset !important;
+                        background-color: unset !important;
+                        color: var(--t7) !important;
+                        border: none;
+                    }
+                    th:last-child  {
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                    th:first-child {
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                    }
+                } 
+                .el-table__body{
+                    color:#fff;  
+                    tr{
+                        border-radius: 10px;
+                        overflow: hidden;
+                        margin-top: 5px;
+                        td:last-child  {
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                        }
+                        td:first-child {
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                        }
+                        &:hover .el-table__cell{
+                            opacity: 0.9;
+                            background-color: inherit;
+                        }
+                        .el-table__expanded-cell{
+                            border-radius: 10px;
+                            border: 1px solid #E7D3A0;
+                            background: rgba(231, 211, 160, 0.05);
+                            .expend-container_row{
+                                display: flex;
+                                padding: 5px 0 5px 15px;
+                                &>div{
+                                    width: 300px;
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                    tr:nth-child(even){
+                        background: #545666;                        
+                    }
+                    tr:nth-child(odd){
+                        background: rgba(34, 35, 40, 0.50); 
+                    }
+                    .el-icon{
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        .pagination-container{
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+    .betting-record-wrapper{
+        .bottom-div-inner{
+            padding-top: 0;
+        }
+    }
+    .el-table__inner-wrapper::before{
+        display: none;
+    }
+    .unbing-dialog .el-dialog__body .notice_dialog_main .el-tabs .el-tabs__header .el-tabs__item{
+        // color: var(--t8);
+    }
+}

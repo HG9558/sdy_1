@@ -1,0 +1,3 @@
+[submodule "src/assets/wsdy-fastsub"]
+	path = src/assets/wsdy-fastsub
+	url = ssh://git@gitlab.wsdy.net:10022/wsdy/wsdy-fastsub.git
