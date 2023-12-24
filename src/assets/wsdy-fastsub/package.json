@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "tinify": "node ./tinify.js",
+        "runFileName": "node generateFilename.js"
+    },
+    "dependencies": {
+        "glob": "^10.2.2",
+        "md5": "^2.3.0",
+        "tinify": "^1.7.1"
+    }
+}

@@ -1,0 +1,74 @@
+.recommend-wrapper-table {
+    padding: 20px;
+    box-sizing: border-box;
+    background: var(--u_friend_17);
+    border-radius: 10px;
+    .table-container {
+        width: 100%;
+        thead {
+            background: var(--u_friend_9);
+            border-radius: 10px 10px 0px 0px;
+            th {
+                background: transparent;
+                height: 47px;
+                text-align: center;
+                color: var(--u_friend_10);
+                font-weight: 600;
+                font-size: 16px;
+                &:first-child {
+                    border-top-left-radius: 10px;
+                }
+                &:last-child {
+                    border-top-right-radius: 10px;
+                }
+            }
+        }
+        td {
+            background: var(--u_friend_18);
+            color: #3d4957;
+            font-size: 14px;
+            text-align: center;
+            height: 47px;
+            border-bottom: 1px solid var(--u_friend_12);
+            &:first-child {
+                cursor: pointer;
+            }
+            &.no-border {
+                padding: 30px;
+                border-radius: 0 0 10px 10px;
+                border: 0;
+            }
+        }
+    }
+    .common-page {
+        margin-top: 20px;
+    }
+}
+
+//- 2号模板差异
+.recommend-wrapper-table {
+    &.template_2_002 {
+        .table-container {
+            tr {
+                td {
+                    color: #fff;
+                }
+                &:last-child {
+                    td {
+                        &:first-child {
+                            border-bottom-left-radius: 10px;
+                        }
+                        &:last-child {
+                            border-bottom-right-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.template_2_003 {
+        .table-container {
+            box-shadow: 0px 4px 14px rgba(207, 212, 225, 0.4);
+        }
+    }
+}

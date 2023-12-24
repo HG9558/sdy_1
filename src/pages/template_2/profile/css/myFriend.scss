@@ -1,0 +1,127 @@
+.my-friend-wrapper {
+    width: 100%;
+    .content {
+        padding-top: 10px;
+        margin: 0 20px;
+        .search-myfriend {
+            .el-form-item {
+                display: flex;
+                flex-direction: column;
+                justify-self: flex-start;
+                align-items: flex-start;
+                &.btns-wrapper {
+                    margin-bottom: 0px;
+                }
+                &:deep(.el-form-item__content) {
+                    width: 300px;
+                    margin-left: 0px !important;
+                    input::-webkit-input-placeholder {
+                        color: var(--u_friend_30);
+                    }
+                    .el-input__wrapper {
+                        height: 40px;
+                        border-radius: 8px;
+                    }
+                    .friend-account {
+                        .el-input__wrapper {
+                            padding-left: 11px;
+                            border: 1px solid var(--u_friend_29);
+                            height: 40px;
+                            border-radius: 8px;
+                            input::-webkit-input-placeholder {
+                                color: var(--u_friend_28);
+                            }
+                        }
+                    }
+                    .el-input__inner .el-range-input {
+                        color: var(--u_friend_30);
+                    }
+                    .friend-account {
+                        width: 240px;
+                        .el-input__wrapper {
+                            .el-input__inner {
+                                border-radius: 0px;
+                            }
+                        }
+                    }
+                    .btn {
+                        width: 134px;
+                        height: 40px;
+                        border-radius: 4px;
+                        font-weight: normal;
+                        margin-bottom: 20px;
+                    }
+                    .search-btn {
+                        background: var(--u_friend_25);
+                        border-radius: 8px;
+                        border-color: transparent;
+                        color: var(--u_friend_26);
+                        font-weight: 600;
+                        border: none;
+                    }
+                    .reset-btn {
+                        background: var(--u_friend_27);
+                        border-radius: 8px;
+                        border-color: transparent;
+                        color: var(--u_friend_26);
+                    }
+                }
+            }
+        }
+    }
+    &:deep() {
+        .friend-picker {
+            border: 1px solid var(--u_friend_29);
+        }
+    }
+}
+
+//- 2号模板差异
+.my-friend-wrapper {
+    &.template_2_002 {
+        .search-myfriend {
+            &:deep(.el-form-item) {
+                .el-form-item__label {
+                    color: #fff;
+                }
+                .el-form-item__content {
+                    .el-date-editor {
+                        background: #161e2b;
+                        border: 1px solid transparent;
+                        .el-range-separator {
+                            color: #fff;
+                        }
+                        &:hover {
+                            box-shadow: none;
+                        }
+                    }
+                    .el-input__wrapper {
+                        background: #161e2b;
+                        .el-input__inner {
+                            color: #fff;
+                            &::-webkit-input-placeholder {
+                                color: #878ea6 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.template_2_003 {
+        .search-myfriend {
+            &:deep(.el-form-item) {
+                .el-form-item__content {
+                    .el-input__wrapper {
+                        border: 1px solid #e6e9f1;
+                    }
+                    .friend-account {
+                        .el-input__wrapper {
+                            border: 1px solid #e6e9f1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

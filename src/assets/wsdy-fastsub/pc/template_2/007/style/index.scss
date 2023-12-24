@@ -1,0 +1,1398 @@
+body.template_2_007 {
+  --t1: #ffffff;
+  --t2: #5a5d67;
+  --t3: #d93341;
+  --t4: #d93341;
+  --t5: #6a7391;
+  --t6: 6px 8px 16px rgba(50, 62, 99, 0.1);
+  --t7: #f6fbff;
+  /* ========渐变： 按钮/背景颜色 ======= */
+  --bg_1: linear-gradient(135deg, #ff8994 0%, #d93341 100%);
+  /* =========头部============ */
+  --h_1: #6a7391;
+  --h_2: #ffffff;
+  --h_3: 0px 4px 8px rgba(50, 62, 99, 0.12);
+  --h_4: rgba(255, 255, 255, 0.26);
+  --h_5: #1e1d27;
+  --h_6: var(--t4);
+  --h_7: #27273f;
+  --h_8: var(--t1);
+  --h_9: var(--t1);
+  --h_10: var(--t1);
+  --h_11: #414655;
+  --h_12: #6a7391;
+  --h_13: var(--t3);
+  --h_14: var(--t1);
+  --h_u_1: var(--t2);
+  --h_u_2: red;
+  --h_u_3: #878ea6;
+  --h_u_4: var(--t3);
+  --h_u_5: var(--t1);
+  --h_u_6: #eff0f5;
+  --h_u_7: var(--t3);
+  --h_u_8: var(--t2);
+  --h_u_9: #dedfe7;
+  --h_u_10: var(--t3);
+  --h_u_11: var(--t3);
+  --h_u_12: var(--t1);
+  --h_u_13: #878ea6;
+  --h_u_14: #3d4957;
+  --h_u_15: var(--t2);
+  --h_u_16: var(--t3);
+  --h_u_17: #c4c4c4;
+  --h_u_18: var(--t2);
+  --h_u_19: var(--t3);
+  --h_u_20: var(--t3);
+  --h_u_21: var(--t2);
+  --h_u_22: #ff2f2f;
+  --h_u_23: var(--t1);
+  --h_u_24: #ebecf3;
+  --h_u_25: var(--t2);
+  --h_u_26: var(--t1);
+  /*  =========个人中心我的钱包============  */
+  --u_w_1: #5a5d67;
+  --u_w_2: #adb2c8;
+  --u_w_3: rgba(64, 68, 105, 0.1);
+  --u_w_4: var(--t1);
+  --u_w_5: 0px 4px 18px rgba(207, 212, 225, 0.54);
+  --u_w_6: var(--t5);
+  --u_w_7: var(--t4);
+  --u_w_8: #878ea6;
+  --u_w_9: #f9f9f9;
+  --u_w_10: var(--t1);
+  --u_w_11: #6a7391;
+  --u_w_12: var(--t1);
+  --u_w_13: #e5e5e5;
+  --u_w_14: 0px 4px 14px rgba(207, 212, 225, 0.4);
+  --u_w_15: #3d4957;
+  --u_w_16: var(--t4);
+  --u_w_17: #fff;
+  --u_w_18: #adb2c8;
+  --u_w_19: var(--t5);
+  --u_w_20: var(--t3);
+  --u_w_21: red;
+  /*  =========个人中心vip============  */
+  --u_v_1: var(--t1);
+  --u_v_2: #feffb3;
+  --u_v_3: #feffb3;
+  --u_v_4: #fe0106;
+  --u_v_5: var(--t1);
+  --u_v_6: 0px 4px 20px rgba(207, 212, 225, 0.89);
+  --u_v_7: var(--t5);
+  --u_v_8: #adb2c8;
+  --u_v_9: #1e1d27;
+  --u_v_10: var(--t4);
+  --u_v_11: var(--t1);
+  --u_v_12: #eeeff3;
+  --u_v_13: none;
+  --u_v_14: #3d4957;
+  --u_v_15: rgba(246, 248, 254, 0.4);
+  --u_v_16: 0px 2.94516px 25.7701px rgba(115, 121, 134, 0.12);
+  --u_v_17: #6a7391;
+  --u_v_18: #404469;
+  --u_v_19: #ea4e3d;
+  --u_v_20: #878ea6;
+  --u_v_21: #ee2c20;
+  --u_v_22: none;
+  --u_v_23: linear-gradient(90deg, #d93341 8.44%, rgba(108, 93, 212, 0) 100%);
+  --u_v_24: linear-gradient(90deg, #ff6572 0%, #ffcdd1 53.02%, #ff6572 100%);
+  --u_v_25: linear-gradient(180deg, #e4e7f4 0%, #cdd3f1 50%, #e4e7f4 100%);
+  --u_v_26: var(--t4);
+  --u_v_27: #ffffff;
+  /*  =========个人中心vip详情============  */
+  --u_vd_1: #5a5d67;
+  --u_vd_2: #d93341;
+  --u_vd_3: #f2f3f6;
+  --u_vd_4: 0px 0px 10px #dadce8;
+  --u_vd_5: linear-gradient(90deg, #e4e7f4 0%, #cdd3f1 100%, #e5e8f9 0%);
+  --u_vd_6: #d93341;
+  --u_vd_7: #ffffff;
+  --u_vd_8: 0px 0px 4px #f2f3f6;
+  --u_vd_9: #989eac;
+  --u_vd_10: #5b5b5b;
+  --u_vd_11: #855400;
+  /*  =========个人中心资料============  */
+  --u_d_1: var(--t5);
+  --u_d_2: var(--t3);
+  --u_d_3: #adb2c8;
+  --u_d_4: var(--t1);
+  --u_d_5: var(--t4);
+  --u_d_6: #f9f9f9;
+  --u_d_7: #d9e0ec;
+  --u_d_8: #ffc224;
+  /*  =========个人中心存款===========  */
+  --u_c_1: #27273f;
+  --u_c_2: var(--t3);
+  --u_c_3: #878ea6;
+  --u_c_4: #9a9daa;
+  --u_c_5: var(--t5);
+  --u_c_6: var(--t4);
+  --u_c_7: var(--t1);
+  --u_c_8: #eeeff3;
+  --u_c_9: none;
+  --u_c_10: #e4e9f0;
+  --u_c_11: #5a5d67;
+  --u_c_12: #e6e8f3;
+  --u_c_13: 0px 4px 18px rgba(207, 212, 225, 0.54);
+  --u_c_14: var(--bg_1);
+  --u_c_15: #ffffff;
+  --u_c_16: #8491aa;
+  --u_c_17: #5a5d67;
+  --u_c_18: var(--t3);
+  --u_c_19: 0px 4px 14px rgba(207, 212, 225, 0.4);
+  --u_c_20: 0.5px solid #b8ddfd;
+  --u_c_21: var(--t3);
+  --u_c_22: #27273f;
+  --u_c_23: rgba(64, 68, 105, 0.1);
+  --u_c_24: #878ea6;
+  --u_c_25: var(--t1);
+  --u_c_26: var(--bg_1);
+  --u_c_27: #3d4957;
+  --u_c_28: #d93341;
+  --u_c_29: #5a5d67;
+  --u_c_30: #f90000;
+  --u_c_31: #38b63f;
+  --u_c_32: var(--t1);
+  --u_c_33: var(--t1);
+  /*  =========个人中心取款============  */
+  --u_m_1: #f9f9f9;
+  --u_m_2: var(--t4);
+  --u_m_3: var(--t2);
+  --u_m_4: var(--t1);
+  --u_m_5: var(--t5);
+  --u_m_6: 0px 4px 20px rgba(207, 212, 225, 0.89);
+  --u_m_7: var(--t4);
+  /*  =========个人中心意见反馈============  */
+  --u_f_1: var(--t5);
+  --u_f_2: var(--t7);
+  --u_f_3: #adb2c8;
+  --u_f_4: var(--t4);
+  --u_f_5: var(--t4);
+  --u_f_6: var(--t1);
+  /*  =========个人中心消息中心============  */
+  --u_msg_1: #5a5d67;
+  --u_msg_2: var(--t3);
+  --u_msg_3: #eeeff3;
+  --u_msg_4: #adb2c8;
+  --u_msg_5: var(--t5);
+  --u_msg_6: #fff;
+  --u_msg_7: var(--bg_1);
+  --u_msg_8: #e2e4f2;
+  --u_msg_9: var(--t2);
+  --u_msg_10: var(--t1);
+  /* 个人中心晒单记录 */
+  --u_s_1: #2897fa;
+  --u_s_2: #f9f9f9;
+  --u_s_3: var(--t5);
+  --u_s_4: rgba(255, 255, 255, 0.5);
+  --u_s_5: rgba(255, 255, 255, 0.1);
+  --u_s_6: rgba(255, 255, 255, 0.1);
+  --u_s_7: #adb2c8;
+  --u_s_8: var(--t5);
+  --u_s_9: #808293;
+  --u_s_10: #3d4957;
+  --u_s_11: var(--t1);
+  --u_s_12: #adb2c8;
+  --u_s_13: var(--t1);
+  --u_s_14: var(--t4);
+  /*  =========个人中心我的优惠============  */
+  --u_cou_1: var(--t7);
+  --u_cou_2: var(--t5);
+  --u_cou_3: #5a5d67;
+  --u_cou_4: var(--bg_1);
+  --u_cou_5: #eff0f5;
+  --u_cou_6: #3d4957;
+  --u_cou_7: #8491aa;
+  --u_cou_8: var(--t4);
+  --u_cou_9: transparent;
+  --u_cou_10: #e8ebfb;
+  --u_cou_11: var(--t2);
+  --u_cou_12: #5970c1;
+  --u_cou_13: var(--t1);
+  --u_cou_14: var(--t4);
+  /*  =========个人中心投注记录============  */
+  --u_br_1: #414655;
+  --u_br_2: #adb2c8;
+  --u_br_3: #f9f9f9;
+  --u_br_4: #6a7391;
+  --u_br_5: #f90000;
+  --u_br_6: #37aa4a;
+  --u_br_7: #d93341;
+  --u_br_8: var(--t2);
+  --u_br_9: #37aa4a;
+  --u_br_10: var(--t3);
+  --u_br_11: var(--t1);
+  --u_br_12: #adb2c8;
+  --u_br_13: #f9f9f9;
+  --u_br_14: var(--t2);
+  --u_br_15: var(--t3);
+  --u_br_16: linear-gradient(104.17deg, #53befd 2.27%, #0d77f2 100%), #2897fa;
+  --u_br_17: linear-gradient(104.17deg, #53befd 2.27%, #0d77f2 100%), #2897fa;
+  --u_br_18: var(--t1);
+  --u_br_19: #adb2c8;
+  /*  =========个人中心好友推荐============  */
+  --u_friend_1: #5a5d67;
+  --u_friend_2: var(--t4);
+  --u_friend_3: #878ea6;
+  --u_friend_4: var(--t3);
+  --u_friend_5: var(--t3);
+  --u_friend_6: var(--t1);
+  --u_friend_7: #e0ebfa;
+  --u_friend_8: var(--t5);
+  --u_friend_9: var(--t5);
+  --u_friend_10: var(--t1);
+  --u_friend_11: #3d4957;
+  --u_friend_12: #e6ecf6;
+  --u_friend_13: #8491aa;
+  --u_friend_14: #8491aa;
+  --u_friend_15: #f9f9f9;
+  --u_friend_16: #404469;
+  --u_friend_17: transparent;
+  --u_friend_18: var(--t1);
+  --u_friend_19: var(--t5);
+  --u_friend_20: #3d4957;
+  --u_friend_21: var(--t4);
+  --u_friend_22: var(--t1);
+  --u_friend_23: var(--t1);
+  --u_friend_24: #adb2c8;
+  --u_friend_25: var(--bg_1);
+  --u_friend_26: var(--t1);
+  --u_friend_27: linear-gradient(106.56deg, #f0ae2d 10.62%, #f0870e 92.55%);
+  --u_friend_28: #adb2c8;
+  --u_friend_29: #adb2c8;
+  --u_friend_30: var(--t5);
+  --u_friend_31: #3d4957;
+  --u_friend_32: #adb2c8;
+  --u_friend_33: var(--t3);
+  --u_friend_34: var(--t4);
+  --u_friend_35: var(--t2);
+  --u_friend_36: #404469;
+  --u_friend_40: #878ea6;
+  --u_friend_41: rgba(62, 66, 82, 0.2);
+  --u_friend_42: var(--t5);
+  --u_friend_43: none;
+  --u_friend_44: #ececf0;
+  --u_friend_45: #414655;
+  --u_friend_46: #d93341;
+  --u_friend_47: #414655;
+  --u_friend_48: #414655;
+  --u_friend_49: #d93341;
+  --u_friend_50: #d93341;
+  --u_friend_51: #5970c1;
+  --u_friend_52: var(--t5);
+  --u_friend_53: var(--bg_1);
+  --u_friend_54: #fff;
+  --u_friend_55: #6a7391;
+  --u_friend_56: #5970c1;
+  --u_friend_57: var(--bg_1);
+  --u_friend_58: #fff;
+  --u_friend_59: #fff;
+  --u_friend_60: #fff;
+  --u_friend_61: #5a5d67;
+  /*  =========联系我们============  */
+  --cu_1: #6a7391;
+  --cu_2: #adb2c8;
+  --cu_3: #fcf9f7;
+  --cu_4: #61d5f9;
+  --cu_5: var(--t1);
+  --cu_6: var(--t4);
+  --cu_7: var(--t3);
+  --cu_8: var(--t1);
+  --cu_9: none;
+  --cu_10: #cfd8ea;
+  --cu_11: #fff;
+  /*  =========用户登录注册============  */
+  --l_1: var(--t1);
+  --l_2: #adb2c8;
+  --l_3: var(--bg_1);
+  --l_4: var(--t1);
+  --l_5: #adb2c8;
+  --l_6: var(--t3);
+  --l_7: #6a7391;
+  --l_8: 0 0 10px rgba(0, 0, 0, 0.3);
+  --l_9: rgba(92, 184, 92, 0.5);
+  --l_10: var(--t1);
+  --l_11: rgba(217, 83, 79, 0.5);
+  --l_12: linear-gradient(90deg, #d93341 0%, #4639a0 97%);
+  --l_13: #888888;
+  --l_14: #c4baa0;
+  --l_15: #e7e5f4;
+  --l_16: #ddd;
+  --l_17: #323232;
+  --l_18: #f3f5f9;
+  --l_19: #f0f2ff;
+  --l_20: var(--t1);
+  --l_21: var(--t4);
+  --l_22: -webkit-linear-gradient(left, rgba(228, 231, 244, 0) -4%, #cdd3f1 50%, rgba(229, 232, 249, 0) 100%);
+  --l_23: #ffffff;
+  --l_24: var(--l_3);
+  --l_25: var(--t3);
+  --l_26: #545666;
+  --l_27: #808293;
+  --l_28: #adb2c8;
+  --l_29: #5970c1;
+  --l_30: var(--l_3);
+  --l_31: var(--t4);
+  --l_32: var(--t3);
+  --l_33: var(--l_3);
+  --l_34: var(--t2);
+  --l_35: var(--t3);
+  --l_36: var(--t4);
+  --l_37: #fff;
+  //*  =========优惠界面============  */
+  --d_1: #f2f3f7;
+  --d_2: var(--t2);
+  --d_3: var(--t3);
+  --d_4: #f2f3f6;
+  --d_5: 0px 2px 5px rgba(136, 136, 136, 0.3);
+  --d_6: var(--t4);
+  --d_7: transparent;
+  --d_8: 2px -2px 4px rgba(182, 155, 132, 0.19);
+  --d_9: #9c9c9c;
+  --d_10: var(--bg_1);
+  --d_11: var(--t1);
+  --d_12: var(--t2);
+  --d_13: var(--t1);
+  --d_14: #f2f3f6;
+  /* APP下载界面 */
+  --a_1: var(--t7);
+  --a_2: #878ea6;
+  --a_3: #8897b8;
+  --a_4: #878ea6;
+  --a_5: #5a5d67;
+  --a_6: #54626c;
+  --a_7: #505679;
+  /* 游戏界面 */
+  --g_1: #27273f;
+  --g_2: #adb2c8;
+  --g_3: var(--t1);
+  --g_4: var(--t5);
+  --g_5: #d3d9f0;
+  --g_6: #d93341;
+  --g_7: linear-gradient(180deg, rgba(34, 34, 34, 0) 51.73%, rgba(34, 34, 34, 0.75) 79.23%);
+  --g_8: var(--t1);
+  --g_9: #393a42;
+  --g_10: #d3d9f0;
+  --g_11: #9a9daa;
+  --g_12: var(--t4);
+  --g_13: #e2e4f2;
+  --g_14: 0px 1px 6px rgba(132, 132, 132, 0.2);
+  --g_15: var(--t1);
+  --g_16: var(--t1);
+  --g_17: var(--t4);
+  --g_18: var(--t1);
+  /* 论坛界面 */
+  --lt_1: var(--t1);
+  --lt_2: var(--t6);
+  --lt_3: var(--t2);
+  --lt_4: var(--t4);
+  --lt_5: var(--t1);
+  --lt_6: #3d4957;
+  --lt_7: #f2f3f6;
+  --lt_8: red;
+  --lt_9: #878ea6;
+  --lt_10: #fff;
+  --lt_11: #d3d9f0;
+  --lt_12: #e2e4f2;
+  --lt_13: var(--t4);
+  --lt_14: var(--t1);
+  --lt_15: var(--t5);
+  --lt_16: var(--t3);
+  --lt_17: #3d4957;
+  --lt_18: #61b2f9;
+  --lt_19: #cfd8ea;
+  --lt_20: var(--t2);
+  --lt_21: #a09699;
+  --lt_22: #8491aa;
+  --lt_23: var(--t7);
+  --lt_24: #adb2c8;
+  --lt_25: #878ea6;
+  --lt_26: var(--t1);
+  --lt_27: #d93341;
+  /* 游戏帮助 */
+  --hp_1: #f2f3f6;
+  --hp_2: 0px 0px 10px #dadce8;
+  --hp_3: var(--t2);
+  --hp_4: var(--t3);
+  --hp_5: rgba(64, 68, 105, 0.1);
+  --hp_6: #404469;
+  --hp_7: #f9f9f9;
+  --hp_8: #404469;
+  --hp_9: #878ea6;
+  --hp_10: #d93341;
+  --hp_11: 0px 4px 18px rgba(207, 212, 225, 0.54);
+  /*  =========个人中心公共头部============  */
+  --u_h_1: #f7f8fa;
+  --u_h_2: #27273f;
+  --u_h_3: rgba(65, 70, 85, 0.1);
+  --u_h_4: #d93341;
+  --u_h_5: #fafafa;
+  --u_h_6: #2e2e4a;
+  --u_h_7: var(--t1);
+  --u_h_8: linear-gradient(292.64deg, #ddbe82 0%, #f8dfb0 35.73%, #e2ab69 100%);
+  --u_h_9: 0px 3px 6px rgb(22 28 39 / 12%);
+  --u_h_10: #834915;
+  --u_h_11: #596aa4;
+  --u_h_12: #f8d4b2;
+  --u_h_13: var(--t1);
+  --u_h_14: #aa682c;
+  --u_h_15: #6a7391;
+  --u_h_16: var(--t3);
+  --u_h_17: var(--t1);
+  --u_h_18: var(--t1);
+  --u_h_19: 0px 0px 10px #dadce8;
+  --u_h_20: var(--t6);
+  /*  =========首页面============  */
+  --home_1: var(--t1);
+  --home_2: #f1f2f8;
+  --home_3: var(--t1);
+  --home_4: none;
+  --home_5: var(--t3);
+  --home_6: #adb2c8;
+  --home_7: var(--t5);
+  --home_8: var(--t1);
+  --home_9: 0px 2px 5px rgba(188, 169, 151, 0.3);
+  --home_10: var(--t5);
+  --home_11: var(--t2);
+  --home_12: #393a42;
+  --home_13: #545666;
+  --home_14: #fff;
+  --home_15: var(--t5);
+  --home_16: var(--t3);
+  --home_17: var(--t1);
+  --home_18: #606266;
+  --home_19: #bbb;
+  --home_20: var(--t2);
+  --home_21: var(--t4);
+  --home_22: linear-gradient(180deg, #ffffff 0%, #f8f9ff 27.95%, #eef0ff 82.12%, #ffffff 100%);
+  --home_23: var(--t6);
+  --home_24: #fff;
+  --home_25: 0px 4px 8px rgb(50 62 99 / 12%);
+  --home_26: rgba(12, 17, 31, 0.6);
+  --home_27: var(--bg_1);
+  --home_28: none;
+  --home_29: var(--t1);
+  --home_30: #1e1d27;
+  --home_31: #414655;
+  --home_32: #27273f;
+  --home_33: none;
+  --home_34: #132743;
+  --home_35: var(--bg_1);
+  --home_36: 0px 4px 8px rgb(50 62 99 / 12%);
+  --home_37: var(--t1);
+  --home_38: #6a7391;
+  --home_39: var(--t1);
+  --home_40: #f8f8fb;
+  --home_41: var(--t2);
+  --home_42: #404469;
+  --home_43: #b0b4c0;
+  --home_44: #1e1d27;
+  --home_45: #1e1d27;
+  --home_46: #414655;
+  --home_47: var(--t1);
+  --home_48: var(--t4);
+  --home_50: #878ea6;
+  --home_51: var(--t4);
+  /*  ==========公共===========  */
+  --m_1: #dcdee4;
+  --m_2: #5a5d67;
+  --m_3: #595b65;
+  --m_4: linear-gradient(90deg, rgba(232, 244, 250, 0), rgb(204, 210, 213), rgba(232, 244, 250, 0));
+  --m_5: #27273f;
+  --m_6: #d93341;
+  --m_7: var(--t1);
+  --m_8: #212332;
+  --m_9: rgba(33, 38, 61, 0.2);
+  --m_10: #878ea6;
+  --m_11: var(--t1);
+  --m_12: #c2c2cb;
+  --m_13: var(--t2);
+  --m_14: var(--t1);
+  --m_15: var(--t1);
+  --m_16: var(--t1);
+  --m_17: var(--t1);
+  --m_18: var(--t1);
+  --m_19: var(--t1);
+  --m_20: var(--t1);
+  --m_21: var(--t1);
+  --m_22: var(--t1);
+  --m_23: var(--t1);
+  --m_24: var(--t1);
+  --m_25: var(--t1);
+  --m_26: var(--t1);
+  /*  ==========合营===========  */
+  --p_1: #ffffff;
+  --p_2: #61d5f9;
+  --p_3: #e5e5e5;
+  --p_4: #878ea6;
+  --p_5: var(--t4);
+  --p_6: #414655;
+  --p_7: var(--t1);
+  --p_8: #6a7391;
+  --p_9: var(--t3);
+  --p_10: #becae2;
+  --p_11: linear-gradient(135.44deg, rgba(57, 58, 66, 0), rgba(97, 98, 96, 0.5), rgba(57, 58, 66, 0));
+  --p_12: var(--t1);
+  --p_13: #414655;
+  --p_14: #6a7391;
+  --p_15: var(--t2);
+  --p_16: #fff;
+  /*  =====================  */
+  --dialog_1: var(--bg_1);
+  --dialog_2: var(--t1);
+  --dialog_3: #5970c1;
+  --dialog_4: var(--t2);
+  --dialog_5: var(--bg_1);
+  --dialog_6: var(--t1);
+  --dialog_7: var(--t5);
+  --dialog_8: var(--t1);
+  //- 优惠
+  --sponsor_1: var(--t2);
+  --sponsor_2: #ff9ba4;
+  --sponsor_3: #ccd3e6;
+  --sponsor_4: var(--t1);
+  --sponsor_5: var(--t4);
+  --sponsor_6: var(--t2);
+  --sponsor_7: var(--t1);
+  --sponsor_8: var(--t2);
+  --sponsor_9: var(--t1);
+  --sponsor_10: #323232;
+  --sponsor_11: var(--t2);
+  --sponsor_12: #4ba1e0;
+  --el-color-primary: #c2c2cb;
+  --el-color-primary-light-5: transparent;
+  --el-text-color-primary: #5a5d67;
+  --el-color-primary-light-3: #d93341;
+  --el-color-danger: #f90000;
+  /* usdt */
+  --usdtS_1: #f5f5f5;
+  --usdtS_2: #f5f5f5;
+  --usdtS_3: 0px 4px 4px rgba(135, 73, 0, 0.06);
+  --usdtS_4: 333333;
+  --usdtS_5: #fff;
+  --usdtS_6: #e78a46;
+  --usdtS_7: 0px 4px 4px rgba(135, 73, 0, 0.06);
+  --usdtS_8: #333;
+  --usdtS_9: #e9e9e9;
+  --usdtS_10: 0px 1px 0px #ffffff;
+  --usdtS_11: linear-gradient(0deg, #e9e9e9, #e9e9e9), #f5f5f5;
+  --usdtS_12: #fff;
+  --usdtS_13: rgba(255, 255, 255, 0.86);
+  --usdtS_14: #333;
+  --usdtS_15: #333;
+  --usdtS_16: #fe7045;
+  --usdtS_17: #333;
+  --usdtS_18: #e78a46;
+  --usdtS_19: #666;
+  --usdtS_20: #ccc;
+  --usdtS_21: #e78a46;
+  .user-operation-container {
+    .bell_masker_section {
+      border: none !important;
+      filter: drop-shadow(2px 6px 11px rgba(0, 0, 0, 0.25));
+      &::before {
+        border-bottom-color: #d8dcde !important;
+      }
+    }
+  }
+  .list_wrapper_item {
+    &.on,
+    &:hover {
+      background: none !important;
+      color: #d93341 !important;
+      text-fill-color: #d93341 !important;
+      -webkit-text-fill-color: #d93341 !important;
+      span {
+        color: #d93341 !important;
+        background: none;
+      }
+    }
+    // &.on::after{
+    //   background-image: none !important;
+    //   background-color: #D93341;
+    //   width: 40px !important;
+    //   height: 4px !important;
+    //   border-radius: 10px 10px 0px 0px;
+    // }
+  }
+  .return-num {
+    color: var(--t4);
+  }
+  .sport-menu_enter-btn {
+    @include bg_img('007', 'base/h_btn.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    left: 10px !important;
+    padding: 4px 13px;
+  }
+  .chess-context {
+    &.zh,
+    &.zh_tw {
+      .desc-txt {
+        top: -10px !important;
+      }
+    }
+    .enter-game {
+      bottom: 7px !important;
+    }
+  }
+  .esport-content {
+    .enter-game {
+      top: 14px !important;
+    }
+  }
+  .fish-context {
+    .bg-img {
+      width: auto !important;
+    }
+  }
+  .home_page {
+    // padding-top: 30px;
+  }
+  .header_drop {
+    .el-dropdown-menu__item {
+      padding: 5px 32px 5px 22px;
+    }
+    .el-dropdown-menu__item:not(.is-disabled):focus {
+      background: #fff0f1;
+      color: #d93341;
+    }
+  }
+  .banner-container {
+    overflow: hidden;
+  }
+  .home_banner_controller_container {
+    .item-list:not(.on) {
+      border: 1px solid #eaeaf0 !important;
+    }
+    .item-list.on {
+      background: linear-gradient(270.08deg, #d93341 0.07%, #8d7cf9 52.39%, #c99bed 97.61%);
+      box-shadow: 6px 8px 16px rgba(50, 62, 99, 0.1);
+      border: 1px solid #ff764c !important;
+      .txt {
+        color: #fff !important;
+      }
+    }
+  }
+  .sport_banner_item {
+    // padding-top: 20px !important;
+    padding-left: 55px !important;
+  }
+  .sport-banner-container {
+    .sport_banner_item {
+      background-color: #f8fcff;
+      border-radius: 10px;
+      .sport-banner_btn {
+        font-size: 16px;
+        .arrow {
+          width: 14px !important;
+        }
+      }
+    }
+  }
+  .game-tab-container {
+    .el-tabs__header {
+      margin-bottom: 40px;
+    }
+    .plat_box_item {
+      height: auto !important;
+      max-width: 216px !important;
+      filter: drop-shadow(0px 0px 10px #c4c7d6);
+      .game_name {
+        bottom: 40px !important;
+        width: auto !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        padding: 3px 20px !important;
+        white-space: nowrap;
+        border-radius: 5px;
+        max-width: 100%;
+      }
+      &::before {
+        position: absolute;
+        top: 15px;
+        right: 28px;
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: rgba(173, 178, 200, 0.5);
+        border-radius: 100%;
+      }
+      &:hover {
+        &::before {
+          background: var(--bg_1);
+        }
+      }
+      &::after {
+        position: absolute;
+        top: 29px;
+        right: 39px;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 16px;
+        @include bg_img('007', 'home/icon-heart.png');
+        background-size: 100% auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+    .game_icon_container {
+      right: auto !important;
+      left: 10px;
+      top: 6px !important;
+      .try_icon::after {
+        border-radius: 0 10px 0 10px !important;
+      }
+    }
+  }
+  .sport_container {
+    filter: drop-shadow(0px 0px 10px #c4c7d6);
+    padding: 0 154px 10px 24px !important;
+    position: relative;
+    .txt_top {
+      margin-bottom: 5px !important;
+    }
+    .game_btn {
+      position: absolute;
+      right: 30px;
+      bottom: 22px;
+      border-radius: 20px !important;
+    }
+    .txt_slogan {
+      // font-size: 12px !important;
+      color: #5a5d67 !important;
+      margin: 5px 0;
+    }
+    &.vi {
+      .txt_slogan {
+        line-height: 1.1;
+      }
+    }
+  }
+  .small_container {
+    margin-left: 20px;
+    .small_item {
+      filter: drop-shadow(0px 0px 10px #c4c7d6);
+      &:first-child {
+        width: 522px !important;
+        height: 228px !important;
+        top: 0 !important;
+        left: 0 !important;
+        background-color: #fff;
+        border-radius: 10px;
+        .txt {
+          bottom: 15px !important;
+          left: 20px !important;
+        }
+      }
+      &:nth-child(2) {
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 251px !important;
+        height: 214px !important;
+      }
+      .txt {
+        bottom: 10px !important;
+        left: 20px !important;
+      }
+      &:nth-child(3) {
+        bottom: 0 !important;
+        right: 0 !important;
+        width: 251px !important;
+        height: 214px !important;
+      }
+      .small_item_btn {
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
+        background: #d93341;
+        color: #fff;
+        @include flex(center);
+        font-size: 14px;
+        padding: 5px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    }
+  }
+  .bet-table-container .bet_table_main {
+    border-spacing: 0 8px;
+    border-collapse: separate;
+    thead {
+      border-collapse: collapse;
+    }
+    tbody tr td {
+      padding: 0;
+      height: 48px;
+      margin-top: 8px;
+    }
+  }
+  .number_txt {
+    top: 24% !important;
+    span:first-child {
+      font-weight: normal;
+      background-image: linear-gradient(to bottom, var(--t2), var(--t4) 50%);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    span:last-child {
+      margin-top: 6px;
+    }
+  }
+  .information-item {
+    &:first-child {
+      margin-top: 0 !important;
+    }
+    &.active {
+      background: #fff0f1;
+      span {
+        color: var(--t4);
+      }
+    }
+    span {
+      color: #6a7391;
+    }
+  }
+  .bell_masker_section {
+    &:after {
+      border-bottom: 14px solid #fff !important;
+    }
+  }
+  .register-new-account {
+    color: #adb2c8;
+  }
+  .forget_box {
+    .forget_title {
+      background: transparent;
+      color: #1e1d27 !important;
+    }
+    .el-form-item__content {
+      button:not(.change-btn) {
+        color: #6a7391;
+      }
+    }
+    .stpe-three,
+    .mes-code-btn {
+      color: #fff !important;
+    }
+  }
+  .verifybox-top {
+    height: 40px;
+    line-height: 40px;
+  }
+  .special-txt_sentence {
+    color: var(--t5) !important;
+  }
+  .discount-content {
+    .el-tabs__header {
+      box-shadow: 6px 8px 16px rgba(50, 62, 99, 0.1);
+    }
+  }
+  .main-router.discount {
+    background: #eff0f5;
+  }
+  .icon-catName {
+    .icon {
+      width: 48px !important;
+      height: 48px !important;
+    }
+  }
+  .cat-name {
+    margin-top: 8px;
+  }
+  .circle-bg {
+    .hy-logo {
+      padding: 5px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+  }
+  .partner_agent_btn {
+    img {
+      width: 100%;
+    }
+    .btn_txt {
+      left: 50% !important;
+      top: 50% !important;
+    }
+  }
+  .partner-first-line-two {
+    width: 86px !important;
+    height: 86px !important;
+  }
+  .notice_dialog_main {
+    .el-tabs__content {
+      background: #f2f3f6;
+    }
+  }
+  .login-btn {
+    --el-button-hover-bg-color: var(--l_3);
+  }
+  .forum-item-wrapper {
+    box-shadow: 0px 0px 10px #dadce8;
+  }
+  .classify-tag {
+    span {
+      background: #d93341 !important;
+      border-radius: 0 10px 0 10px;
+    }
+  }
+  .forum_list_item {
+    .user-name {
+      font-size: 16px;
+    }
+  }
+  .download_qr_code {
+    width: 190px !important;
+    height: 210px !important;
+    img {
+      height: 115px !important;
+      width: 115px !important;
+      margin-top: 5px !important;
+    }
+  }
+  .sidebar_wallet_container {
+    border-radius: 0px 0px 10px 10px;
+    & > div:last-child {
+      .txt-wrap {
+        color: #414655;
+      }
+    }
+    .link-item {
+      justify-content: center !important;
+    }
+  }
+  .profile-nav {
+    .txt-wrap {
+      font-weight: normal !important;
+    }
+  }
+  .data-box {
+    margin: 20px;
+  }
+  .bind-btn {
+    font-weight: 500;
+  }
+  .line-row {
+    .el-progress-bar__outer {
+      background: #e2e4f2;
+      .el-progress-bar__inner {
+        background: #d93341;
+      }
+    }
+  }
+  .data_box_desc {
+    color: #fff;
+  }
+  .box-title.vip-title {
+    color: #fff;
+  }
+  .fs-0-7 {
+    color: #878ea6;
+  }
+  .exclusive-vip {
+    .data-box:nth-of-type(2) {
+      margin-bottom: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .data-box:nth-of-type(3) {
+      margin-top: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+  .vipinfo-inner {
+    .vipinfo-inner-level {
+      border-bottom: 1px solid #f9f9f9;
+    }
+  }
+  .gift-list {
+    span:nth-child(2) {
+      color: #878ea6;
+    }
+    img {
+      bottom: auto;
+      top: 0;
+    }
+  }
+  .vip_table.vip-info {
+    background: #f2f3f6;
+    box-shadow: 0px 16px 10px #dadce8;
+  }
+  .vip_main_bg {
+    .content_title {
+      box-shadow: 0px 0px 10px #dadce8;
+    }
+    .slider_container {
+      box-shadow: 0px 16px 10px #dadce8;
+    }
+  }
+  .view-content.normal-bg {
+    box-shadow: none;
+  }
+  .un-return-watter-container {
+    box-shadow: 0px 0px 10px #dadce8;
+  }
+  .money-amonut-container {
+    span {
+      color: #5a5d67;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+  .lock-container {
+    .text {
+      div:first-child {
+        color: #5a5d67;
+      }
+    }
+  }
+  .game-wallet-container {
+    .tip-text {
+      color: #878ea6 !important;
+    }
+    .collapse_item {
+      box-shadow: none !important;
+      border: 1px solid #c2c2cb;
+    }
+    .collapse-toggle {
+      color: #878ea6;
+    }
+  }
+  .wallet-num {
+    color: #878ea6 !important;
+  }
+  .bank-cardNo {
+    color: #878ea6;
+  }
+  .bank-unbind {
+    background: #d93341;
+    border: 1px solid #e5e5e5;
+    color: #fff;
+  }
+  .filter-content {
+    .date-div {
+      .inquire {
+        background: #d93341;
+      }
+    }
+    .btn-active {
+      background: #d93341;
+    }
+  }
+  .bottom-div-inner {
+    .cell {
+      color: #fff;
+      text-align: center;
+    }
+    .el-table__body {
+      border-spacing: 0 5px;
+    }
+    tbody {
+      .cell {
+        color: #414655;
+      }
+    }
+  }
+  .expanded_row,
+  .el-table__expanded-cell {
+    background: #f9f9f9;
+  }
+  .head-left-bottom {
+    background-color: #fff;
+    .plat-name {
+      color: #5a5d67 !important;
+    }
+  }
+  .el-date-editor {
+    background-color: transparent;
+  }
+  .el-range-input {
+    // background-color: #fff;
+  }
+  .view-content {
+    .main-container {
+      margin: 0 20px;
+    }
+  }
+  .feedback-wrap {
+    padding: 20px;
+    margin-top: 20px;
+    background: #f9f9f9;
+  }
+  .coupons-wrapper {
+    margin: 0 20px;
+    background: #f9f9f9 !important;
+    .coupons-wrap {
+      box-shadow: none;
+    }
+  }
+  .coupons-inner {
+    div {
+      color: #5a5d67 !important;
+      &.active-bg {
+        color: #d93341 !important;
+      }
+    }
+  }
+  .coupons-wrap .first-btn {
+    border: 1px solid #c2c2cb !important;
+  }
+  .recommend-wrapper {
+    .amount-wrapper {
+      margin: 20px;
+      background: #f9f9f9;
+    }
+  }
+  .daily-earnings {
+    margin: 40px 20px 0;
+  }
+  .recommend-wrapper-table {
+    padding: 0;
+  }
+  .btn.friend_bottom_btn {
+    border-color: transparent !important;
+    background: #d93341 !important;
+  }
+  .my-friend-wrapper {
+    padding: 0px 40px 20px;
+  }
+  .el-date-editor--daterange {
+    background-color: transparent;
+  }
+  .statistics-time {
+    .date-box {
+      .btn {
+        border: 1px solid #c2c2cb;
+        height: auto !important;
+      }
+    }
+  }
+  .friend-account,
+  .statistics-time {
+    background: #f9f9f9 !important;
+    margin: 0 20px;
+    width: auto !important;
+  }
+  .betting-table {
+    .el-table__header {
+      tr {
+        background-color: #6a7391;
+      }
+    }
+  }
+  .circle-inner {
+    background-color: #fff;
+    border: none !important;
+  }
+  .cr-pay-container .pay-type-container .py-type-list .circle-outer .circle-inner .list-img.logo_3 {
+    width: 26px;
+  }
+  .select-pay-item {
+    padding: 3px 10px !important;
+  }
+  .input-money {
+    border: 1px solid #c2c2cb;
+    border-radius: 5px;
+  }
+  .pay-card-list-container {
+    border-radius: 10px !important;
+  }
+  .setup_title {
+    color: #5a5d67;
+  }
+  .box {
+    margin: 20px;
+    background: #f9f9f9;
+  }
+  .withdrawal-wrapper {
+    margin: 0 20px;
+  }
+  .withdrawal_tab-container {
+    margin: 0 20px;
+    .tab-list.on {
+      .text {
+        color: #d93341;
+      }
+      &:after {
+        background: #d93341;
+      }
+    }
+  }
+  .money-form {
+    border: 1px solid #c2c2cb;
+    border-radius: 8px;
+  }
+  .date-btn {
+    &:not(.active) {
+      color: #5a5d67 !important;
+    }
+    button:not(.btn-active) {
+      color: #5a5d67 !important;
+    }
+  }
+  .money-type {
+    border: 1px solid #c2c2cb;
+    border-radius: 4px;
+    &.on {
+      color: #fff !important;
+    }
+  }
+  .add-bank-card-btn,
+  .add-bank-button {
+    color: #fff !important;
+  }
+  .discount-content {
+    .el-tabs__content {
+      box-shadow: 0px 0px 10px #dadce8;
+    }
+  }
+  .sconed-btn {
+    color: #fff !important;
+  }
+  .copy-click {
+    color: #d93341 !important;
+  }
+  .contact_us_img_container {
+    border: 6px solid #e5e5e5;
+  }
+  .contact-us-input-box {
+    background: #f7f8fa;
+    box-shadow: 6px 8px 16px rgba(50, 62, 99, 0.1);
+    .el-input__wrapper {
+      border: 0.5px solid #cfd8ea;
+      box-shadow: inset 3px 3px 4px rgba(77, 110, 141, 0.15), inset -3px -3px 4px rgba(255, 255, 255, 0.25) !important;
+      .el-input__inner {
+        background-color: unset !important;
+      }
+    }
+  }
+  .item_more {
+    .game_name {
+      font-size: 12px !important;
+    }
+  }
+  .no-page-container .notice-container {
+    .level-one,
+    .level-two {
+      color: var(--u_friend_55) !important;
+    }
+    .return-home {
+      background: var(--bg_1);
+    }
+  }
+  .main-router.Home {
+    @include bg_img('007', 'home/bg_1.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .main-router.partner {
+    .copy-btn-text {
+      font-weight: normal;
+    }
+    .partner-first-line-four {
+      font-size: 14px !important;
+    }
+    .two-item {
+      color: var(--p_8);
+    }
+  }
+  .main-router.partner,
+  .profile-baseInfo {
+    @include bg_img('007', 'base/bg_user.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .profile-container {
+    .view-content {
+      border-top: 10px solid #2e2e4a;
+      .content_title {
+        height: 62px;
+      }
+    }
+  }
+  .servicer-container {
+    .servicer_item {
+      .circle-png {
+        width: 100px !important;
+      }
+      .circle-container {
+        transform: rotate(0deg) !important;
+        top: 6px !important;
+        left: 8px !important;
+        .el-progress-circle {
+          svg {
+            width: 110px;
+            overflow: unset;
+          }
+        }
+        .el-progress-circle__path {
+          stroke: #d93341;
+          stroke-width: 12px;
+        }
+      }
+      .circle-container_1 {
+        display: none !important;
+      }
+    }
+  }
+  .header_component {
+    .user-drop-menu {
+      border-left: 0 !important;
+      border-right: 0 !important;
+      border-bottom-width: 2px !important;
+    }
+  }
+  .warning-box {
+    padding: 20px 0;
+  }
+  .main-router.physical {
+    .special-btns-item {
+      .icon {
+        height: 85px !important;
+        width: auto !important;
+      }
+    }
+  }
+  .main-router.physical,
+  .main-router.real,
+  .main-router.e_sport {
+    @include bg_img('007', 'special/bg_special.png');
+    background-size: 100% auto;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  .home-tabs .el-tabs__header .el-tabs__nav-wrap .el-tabs__nav .el-tabs__item.is-active .list-item span {
+    color: var(--t4) !important;
+  }
+
+  .sponsor .video_title {
+    display: none;
+  }
+
+  .sport-banner-container .sport_banner_item {
+    .status-tag {
+      background: linear-gradient(135deg, #ff8994 0%, #d93341 100%);
+      &.maintain {
+        background: linear-gradient(111.25deg, #f0f0f0 7.33%, #949292 34%);
+      }
+    }
+  }
+  .hot-game-container .hot_game_main {
+    .status-tag {
+      background: linear-gradient(135deg, #ff8994 0%, #d93341 100%);
+      &.maintain {
+        background: linear-gradient(111.25deg, #f0f0f0 7.33%, #949292 34%);
+      }
+    }
+    .sport_container {
+      .status-tag {
+        top: 0;
+        right: 1px;
+      }
+    }
+  }
+}

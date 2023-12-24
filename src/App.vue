@@ -1,146 +1,126 @@
 <template>
-  <div class="main-container" :class="['language-' + language, 'app-sign-' + appSign, { 'multi-language': !isZhLanguage }]">
-    <Header v-show="!this.$route.meta.signInPage"/>
-    <router-view/>
-    <main-side-bar></main-side-bar>
-    <Footer v-show="!this.$route.meta.signInPage"/>
-    <iframe style="display: none" ref="iframe" :src="frameUrl"/>
-  </div>
+  <el-config-provider :locale="currentElLanguage">
+    <div :class="['main-container']">
+      <Header></Header>
+      <div :class="['main-router', site, style2Class, route.name]">
+        <router-view />
+      </div>
+      <SideBar></SideBar>
+      <Footer></Footer>
+      <iframe style="display: none" ref="iframe" :src="frameUrl" />
+    </div>
+  </el-config-provider>
 </template>
 
-<script>
-  import Header from "commonComponent/Header";
-  import Footer from "commonComponent/Footer";
-  import {mapGetters, mapMutations, mapActions, mapState} from "vuex";
-  import MainSideBar from 'commonComponent/MainSideBar';
-  // import TIMInit from './mixins/TIMInit.js';
-  import FingerprintJS from '@fingerprintjs/fingerprintjs-pro'
+<script setup lang="ts">
+import Header from 'header/Header.vue';
+import SideBar from 'sideBar/sideBar.vue';
+import Footer from 'footer/Footer.vue';
+import { RouterView, useRoute } from 'vue-router';
+import { api } from './api';
+import useElementLanguage from '@/hook/useElementLanguage';
+// import { useEnvState, useGlobalState, useNormalState, useUserState } from '@/stores';
+import { preLoadImg, useSite } from '@/hook/usePath';
 
-  const { VUE_APP_APP_CODE } = process.env
+const iframe = ref<HTMLIFrameElement>();
+const frameUrl: string = 'https://download.injiepor.com/dr/index.html';
+const mainState = useNormalState();
+const userState = useUserState();
+const { currentElLanguage } = useElementLanguage();
+const route = useRoute();
+const globalState = useGlobalState();
+const site = useSite();
+const envState = useEnvState();
 
-  export default {
-    components: {Header, Footer, MainSideBar},
-    // mixins: [TIMInit],
-    created() {
-      const { href } = window.location
-      if (['dcs', 'pre'].includes(VUE_APP_APP_CODE) || href.includes('au77rc.com')) {
-        this.addMeta('robots', 'noindex')
-      }
-      this._initData();
-      this.set_req_queue([]);
-      const cnzzurl = ({
-        bog: 'https://s9.cnzz.com/z_stat.php?id=1280584500&web_id=1280584500',
-        bt8: 'https://s9.cnzz.com/z_stat.php?id=1280658461&web_id=1280658461',
-      })[process.env.VUE_APP_APP_TEMPLATE]
-      if (cnzzurl) {
-        window._czc = window._czc || []
-        const scr = document.createElement('script')
-        scr.src = cnzzurl // cnzz 统计链接
-        document.body.appendChild(scr)
-      }
+onBeforeMount(() => {
+  document.body.classList.add(`${sessionStorage.VITE_TEMPLATE}_${sessionStorage.VITE_THEME}`);
+  if (import.meta.env.MODE !== 'skin') envState.setEnvConfig();
+  saveLan();
+});
 
-    },
-    watch: {
-      $route(currentRoute) {
-        const liveChatDiv = document.getElementById("chat-widget-container");
-        if (currentRoute.path === "/login" && liveChatDiv) {
-          liveChatDiv.style.display = "none";
-        }
-        if (currentRoute.path !== "/login" && liveChatDiv) {
-          liveChatDiv.style.display = "block";
-        }
-      },
-    },
-    computed: {
-      ...mapGetters('global', ['isZhLanguage']),
-      ...mapState('global', ['language', 'equipmentId']),
-      ...mapState('normal', ['SToken']),
-      appSign() {
-        const { VUE_APP_APP_SIGN } = process.env
-        return VUE_APP_APP_SIGN
-      },
-    },
-    data() {
-      return {
-        iframeWin: "",
-        frameUrl: "https://download.injiepor.com/dr/index.html",
-        routeName: this.$route.name,
-      };
-    },
-    mounted() {
-      this.iframeWin = this.$refs.iframe.contentWindow;
-      // window.addEventListener("message", this.getIframeKey);
-      window.addEventListener("click", this.motomoClick);
-      if (!this.isZhLanguage) {
-        document.body.classList.add('multi-language-body')
-      }
-      if (!this.equipmentId) {
-        this.getUuid()
-      }
-    },
-    beforeDestroy() {
-      // window.removeEventListener("message", this.getIframeKey);
-      Window.removeEventListener('click', this.motomoClick)
-    },
-    methods: {
-      ...mapMutations('global', [
-        'set_equipment',
-        'set_req_queue',
-      ]),
-      ...mapMutations('user', ['set_server_data']),
-      ...mapMutations('normal', [
-        "set_site_token",
-      ]),
-      ...mapActions('global', ['getMobileAreaCodes', 'getIsNeedVfySecurity']),
-      addMeta(name, content) {
-        const meta = document.createElement('meta')
-        meta.name = name
-        meta.content = content
-        document.getElementsByTagName('head')[0].appendChild(meta)
-      },
-      async _initData() {
-        if (!this.SToken) {
-          const tokenResponse = await this.$http.getSiteCode({url: process.env.VUE_APP_DEFAULT_DOMAIN});
-          if (tokenResponse.data.SToken) {
-            this.set_site_token(tokenResponse.data.SToken);
-          }
-        }
 
-        this.getMobileAreaCodes()
-        this.getIsNeedVfySecurity()
+//- 微前端使用
+const saveLan = () => {
+  try {
+    const mapData = {
+      zh: 1,
+      en: 2,
+      zh_tw: 3,
+      vi: 4,
+      ms: 5,
+    };
+    localStorage.language &&
+      localStorage.setItem('lang', mapData[localStorage.language as keyof typeof mapData].toString());
+  } catch (e) {
+    console.log('54行打印：============:', e);
+  }
+};
 
-        const charResponse = await this.$http.getServicerUrl({terminal: 0});
-        if (charResponse.data.code) return;
-        this.set_server_data(charResponse.data.data);
-      },
-      motomoClick() {
-      },
-      sendMessage() {
-        const {frameUrl} = this;
-        this.iframeWin.postMessage(JSON.stringify({type: "GET", key: "onlyKey"}), frameUrl);
-      },
-      getIframeKey({data}) {
-        if (data === "success") {
-          this.sendMessage()
-        } else {
-          data && typeof data === "string" && (this.set_equipment(data));
-        }
-      },
-      getUuid() {
-        const fpPromise = FingerprintJS.load({ token: '0GVHq06imZGPYjlCEbiE' })
-        this.getVisitorId(fpPromise)
-      },
-      async getVisitorId(fpPromise) {
-        const fp = await fpPromise
-        const result = await fp.get()
-        // eslint-disable-next-line
-        console.log('getVisitorId-result===', result)
-        if (result && result.visitorId) {
-          this.set_equipment(result.visitorId)
-        } else {
-          this.set_equipment(new Date().getTime())
-        }
-      },
-    },
-  };
+onMounted(async () => {
+  _initData();
+  window.addEventListener('message', getIframeKey);
+  loadImages();
+  //- 在线注册
+  const res = await api.common.getIsNeedVfySecurity();
+  globalState.$patch(state => {
+    state.isNeedVfySms = res.isNeedSms;
+    state.isNeedVfyEMail = res.isNeedMail;
+    state.isNeedGoogle = res.isNeedGoogle;
+  });
+  if (res.code) return;
+});
+
+// 预加载图片处理
+const images = ref([] as string[]);
+// const loadedImages = ref([] as HTMLImageElement[]);
+// let isIdle = true;
+
+const loadImages = async () => {
+  try {
+    const jsonData = await import(
+      `./assets/wsdy-fastsub/pc/${envState.vite_template}/${envState.vite_theme}/${envState.vite_theme}.json`
+    );
+    images.value = jsonData.default[envState.vite_theme];
+    // scheduleLoadImages(images.value);
+    preLoadImg(images.value);
+  } catch (error) {}
+};
+
+const getZalo = async () => {
+  const res = (await api.user.getZalo()) as any;
+  if (res && res.code === 0) {
+    globalState.set_isZaloOpen(res.isOpen);
+  }
+};
+
+const _initData = async () => {
+  let getMobileAreaCodes = await api.common.getMobileAreaCodes();
+  if (getMobileAreaCodes.code !== 0) return;
+  mainState.setMobileAreaCodes(getMobileAreaCodes.mobileAreaCodes);
+
+  const charResponse = await api.common.getServicerUrl({ terminal: 0 });
+  if (charResponse.code !== 0) return;
+  userState.setSerUrl(charResponse.data);
+  getZalo();
+};
+
+const getIframeKey = (_: MessageEvent) => {
+  if (_.data === 'success') sendMessage();
+  else _.data && typeof _.data === 'string' && globalState.setEquipmentId(_.data);
+};
+
+const sendMessage = () => {
+  iframe.value?.contentWindow?.postMessage(JSON.stringify({ type: 'GET', key: 'onlyKey' }), frameUrl);
+};
+
+const style2Class = computed(() => {
+  return route.meta.bg ?? '';
+});
 </script>
+
+<style lang="scss" scoped>
+.main-router {
+  background-color: var(--m_1);
+  min-height: calc(100vh - 420px);
+}
+</style>

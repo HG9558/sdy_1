@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/ico" href="/ico/<{VITE_CURRENT_SITE}>/<{VITE_THEME}>_logo_2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="never" name="referrer">   
+    <title>
+        <{VITE_APP_TITLE}>
+    </title>
+    <script>
+        const url = '<{VITE_SITE_CODE}>' === 'dcs' ?  'https://download.99yipintao.com/' : 'https://download.faststaticpro.com/';
+
+        document.querySelector('[rel="icon"]').href = url  +'<{VITE_APP_CODE}>' +  '/pc/ico/<{VITE_CURRENT_SITE}>/<{VITE_THEME}>_logo_2.png';
+        if (!sessionStorage.getItem('VITE_THEME')) sessionStorage.setItem('VITE_THEME', '<{VITE_THEME}>')
+        if (!sessionStorage.getItem('VITE_TEMPLATE')) sessionStorage.setItem('VITE_TEMPLATE', '<{VITE_TEMPLATE}>')
+        if (!sessionStorage.getItem('VITE_CURRENT_SITE')) sessionStorage.setItem('VITE_CURRENT_SITE', '<{VITE_CURRENT_SITE}>')
+        if (!sessionStorage.getItem('VITE_IS_AUTO_CONFIG')) sessionStorage.setItem('VITE_IS_AUTO_CONFIG', '<{VITE_IS_AUTO_CONFIG}>')
+        if (!sessionStorage.getItem('VITE_APP_APP_API_URL')) sessionStorage.setItem('VITE_APP_APP_API_URL', '<{VITE_APP_APP_API_URL}>')
+        if (!sessionStorage.getItem('VITE_SITE_CODE')) sessionStorage.setItem('VITE_SITE_CODE', '<{VITE_SITE_CODE}>')
+    </script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <div class="logo_info">
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+
+    
+    <script>
+        if (sessionStorage.getItem('ENVSTATE')) {
+          const url = '<{VITE_SITE_CODE}>' === 'dcs' ?  'https://download.99yipintao.com/' : 'https://download.faststaticpro.com/';
+            try {
+                let {
+                    vite_language: l,
+                    vite_language_list: arr,
+                    vite_current_site: site,
+                    vite_theme: theme,
+                    vite_app_code:code,
+                } = JSON.parse(sessionStorage.getItem('ENVSTATE')).envConfig;
+                l = l || '<{VITE_LANGUAGE}>'
+
+                const list = arr.find(_ => _.languageType === l);
+                document.title = list.languageList[site];
+                const iconLink = document.querySelector('[rel="icon"]');
+                iconLink.href = `${url}${code}/pc/ico/${site}/${theme}_logo_2.png`;
+            } catch (error) {
+                console.log('41行打印：============:', error)
+            }
+        }
+    </script>
+</body>
+
+</html>

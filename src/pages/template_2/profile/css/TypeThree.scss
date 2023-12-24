@@ -1,0 +1,84 @@
+.info-msg-wrap {
+    padding: 23px 20px;
+    max-height: 652px;
+    .info-msg-inner {
+        margin-bottom: 20px;
+        height: 40px;
+        @include flex();
+        cursor: pointer;
+        font-size: 14px;
+        .text-content {
+            color: var(--u_msg_5);
+            width: 590px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-right: 15px;
+        }
+        .create-time {
+            color: var(--u_msg_5);
+        }
+    }
+    .message-dialog {
+        .message-dialog-content {
+            padding: 20px 20px 0;
+            .unbing-div-center {
+                color: var(--u_msg_5);
+                text-align: center;
+            }
+            .unbing-div-content {
+                margin: 15px 0;
+                color: var(--u_msg_9);
+                font-size: 16px;
+                max-height: 260px;
+                overflow-y: auto;
+                text-align: left;
+                // &::-webkit-scrollbar {
+                //     width: 10px;
+                //     height: 10px;
+                //     background-color: #393A42;
+                // }
+                // &::-webkit-scrollbar-thumb {
+                //     border-radius: 5px;
+                //     background-color: #545666;
+                // }
+            }
+            .unbing-btn-div {
+                width: 140px;
+                height: 50px;
+                background: var(--u_msg_7);
+                border-radius: 10px;
+                font-weight: 500;
+                font-size: 16px;
+                color: var(--u_msg_6);
+            }
+        }
+    }
+}
+
+//-2号模板差异
+.info-msg-wrap {
+    &.template_2_002 {
+        .info-msg-inner {
+            height: 48px;
+            background: #202837;
+            border-radius: 10px;
+            padding: 0 20px;
+            line-height: 48px;
+            margin-bottom: 4px;
+        }
+        .message-dialog {
+            .message-dialog-content {
+                .unbing-div-center {
+                    color: #fff;
+                }
+                .unbing-div-content {
+                    color: #B1B7CA;
+                }
+                .unbing-btn-div {
+                    border: none !important;
+                }
+            }
+        }
+    }
+}
